@@ -1,0 +1,501 @@
+source,destination,distance_km,blackspot_count,night_time,poor_streetlight,safety_level,via,accident_prone_area
+Tiruchirappalli,Mettupalayam,136,8,1,1,High Risk,Pudukkottai,None
+Nagapattinam,Namakkal,328,2,1,0,High Risk,Karur,None
+Thoothukudi,Perambalur,96,3,0,0,Moderate Risk,Erode → Villupuram,None
+Coimbatore,Nagercoil,142,8,0,0,Safe,Erode,None
+Chidambaram,Ariyalur,75,3,0,0,Safe,Sathyamangalam,None
+Thoothukudi,Ambur,272,6,1,0,High Risk,Sathyamangalam → Perambalur,"Sathyamangalam, Perambalur"
+Ambur,Dharmapuri,239,2,1,0,Safe,Villupuram → Mettupalayam → Sathyamangalam,"Sathyamangalam, Mettupalayam"
+Tiruppur,Mettupalayam,157,8,1,0,High Risk,Chidambaram,None
+Tiruchirappalli,Coimbatore,93,9,1,0,High Risk,Namakkal → Karur,None
+Erode,Pollachi,306,6,0,1,Safe,Karur,Karur
+Karaikudi,Tenkasi,400,9,0,1,High Risk,Sivakasi → Thoothukudi,"Thoothukudi, Sivakasi"
+Mettupalayam,Tenkasi,263,9,0,0,Moderate Risk,Gobichettipalayam → Pattukkottai,None
+Chidambaram,Dharmapuri,175,2,1,0,Moderate Risk,Erode → Mettupalayam → Tiruppur,None
+Tiruppur,Gobichettipalayam,322,8,1,0,Safe,Chennai,None
+Cuddalore,Thanjavur,173,6,0,0,Moderate Risk,Kanchipuram → Sivakasi,Kanchipuram
+Cuddalore,Coimbatore,220,8,0,0,High Risk,Kanchipuram,None
+Tiruchirappalli,Madurai,262,5,0,0,High Risk,Tambaram → Villupuram → Nagercoil,Nagercoil
+Nagapattinam,Chidambaram,249,4,0,1,Safe,Vellore,None
+Dharmapuri,Vellore,254,1,0,1,High Risk,Villupuram,None
+Pattukkottai,Tambaram,297,5,0,1,High Risk,Tenkasi → Madurai,None
+Tambaram,Dindigul,82,2,0,1,High Risk,Sathyamangalam,Sathyamangalam
+Pattukkottai,Tiruchirappalli,277,8,0,1,High Risk,Thanjavur → Mettupalayam,"Mettupalayam, Thanjavur"
+Madurai,Tirunelveli,105,8,1,1,Safe,Tambaram → Coimbatore → Tenkasi,"Tambaram, Tenkasi"
+Chennai,Pollachi,130,8,0,1,Moderate Risk,Salem,None
+Coimbatore,Sathyamangalam,70,6,1,0,Safe,Perambalur → Tenkasi → Pudukkottai,Pudukkottai
+Nagapattinam,Ariyalur,345,9,0,0,High Risk,Erode,None
+Tambaram,Thanjavur,114,3,1,1,High Risk,Karur → Madurai,Karur
+Coimbatore,Ambur,116,4,0,0,High Risk,Tirunelveli → Dharmapuri,Tirunelveli
+Tiruchirappalli,Avadi,342,5,1,0,High Risk,Thoothukudi → Coimbatore,Coimbatore
+Ambur,Nagapattinam,387,10,1,1,High Risk,Thanjavur,Thanjavur
+Chidambaram,Kanchipuram,357,10,1,0,High Risk,Pollachi,None
+Sivakasi,Coimbatore,280,8,0,1,Safe,Chennai → Pattukkottai,"Pattukkottai, Chennai"
+Erode,Tiruppur,282,1,0,0,Moderate Risk,Perambalur → Pattukkottai,None
+Gobichettipalayam,Vellore,182,3,1,0,Safe,Karaikudi,Karaikudi
+Dharmapuri,Mettupalayam,232,7,0,0,Safe,Sathyamangalam → Namakkal → Avadi,"Sathyamangalam, Namakkal"
+Dharmapuri,Karur,191,1,1,0,Moderate Risk,Madurai → Ambur → Cuddalore,None
+Pollachi,Nagapattinam,68,5,1,1,Moderate Risk,Sivakasi → Chidambaram → Pattukkottai,"Chidambaram, Sivakasi, Pattukkottai"
+Sivakasi,Nagercoil,294,3,0,0,Safe,Dindigul → Ambur → Perambalur,None
+Mettupalayam,Chennai,229,7,0,0,High Risk,Nagapattinam → Sathyamangalam → Dindigul,Sathyamangalam
+Gobichettipalayam,Madurai,215,9,1,1,High Risk,Thanjavur → Ramanathapuram,"Thanjavur, Ramanathapuram"
+Ariyalur,Gobichettipalayam,58,2,1,0,Safe,Dindigul → Ambur,Dindigul
+Sivakasi,Nagercoil,116,9,1,1,Moderate Risk,Gobichettipalayam,None
+Erode,Madurai,128,2,1,1,Safe,Karaikudi → Avadi,None
+Namakkal,Tiruchirappalli,363,6,0,1,Safe,Pollachi → Tambaram,"Tambaram, Pollachi"
+Karur,Coimbatore,129,8,0,0,Moderate Risk,Vellore → Mettupalayam → Kanchipuram,"Mettupalayam, Kanchipuram"
+Ramanathapuram,Villupuram,156,8,1,1,Safe,Ariyalur → Karur,"Karur, Ariyalur"
+Pollachi,Tenkasi,170,1,0,0,High Risk,Madurai → Ambur → Villupuram,None
+Coimbatore,Tirunelveli,304,6,1,1,Safe,Dindigul → Tiruppur,"Tiruppur, Dindigul"
+Tambaram,Madurai,222,3,1,0,High Risk,Vellore,Vellore
+Ramanathapuram,Salem,317,7,0,1,Safe,Karur → Dharmapuri → Erode,"Erode, Dharmapuri, Karur"
+Kanchipuram,Pattukkottai,199,6,1,1,Safe,Ramanathapuram → Madurai,None
+Cuddalore,Tiruchirappalli,162,6,1,1,Moderate Risk,Karaikudi → Avadi,None
+Dharmapuri,Nagapattinam,135,2,0,0,High Risk,Dindigul → Thanjavur,"Thanjavur, Dindigul"
+Gobichettipalayam,Kanchipuram,73,6,0,0,Moderate Risk,Nagercoil,None
+Vellore,Avadi,267,8,0,0,High Risk,Villupuram,Villupuram
+Pollachi,Chidambaram,168,5,0,1,High Risk,Karaikudi → Nagapattinam → Dindigul,Nagapattinam
+Tiruppur,Vellore,165,4,0,1,Moderate Risk,Tirunelveli → Dharmapuri,"Dharmapuri, Tirunelveli"
+Dindigul,Pudukkottai,209,9,0,1,High Risk,Villupuram → Madurai → Sivakasi,None
+Tiruchirappalli,Nagercoil,112,8,1,1,Safe,Chidambaram,None
+Namakkal,Thoothukudi,202,5,0,1,High Risk,Karaikudi → Villupuram,"Karaikudi, Villupuram"
+Mettupalayam,Sivakasi,222,4,0,1,Safe,Villupuram → Karur → Dharmapuri,None
+Chennai,Pattukkottai,206,3,1,1,Safe,Mettupalayam,Mettupalayam
+Salem,Tirunelveli,369,6,1,1,Moderate Risk,Ramanathapuram → Nagercoil,None
+Cuddalore,Pattukkottai,158,5,0,1,High Risk,Tenkasi → Namakkal → Coimbatore,None
+Cuddalore,Nagercoil,266,7,1,0,High Risk,Pollachi → Namakkal → Chidambaram,None
+Pollachi,Chennai,297,5,1,1,High Risk,Pattukkottai → Thanjavur,None
+Namakkal,Dindigul,331,9,0,0,Moderate Risk,Tiruchirappalli → Ariyalur → Mettupalayam,None
+Vellore,Thanjavur,247,8,0,1,Moderate Risk,Namakkal → Thoothukudi,Namakkal
+Ambur,Perambalur,245,1,0,1,High Risk,Sathyamangalam → Vellore → Sivakasi,None
+Cuddalore,Ariyalur,210,9,0,0,Safe,Nagercoil,None
+Thanjavur,Chennai,201,2,0,0,High Risk,Pattukkottai → Dharmapuri → Ambur,"Pattukkottai, Ambur, Dharmapuri"
+Chidambaram,Tenkasi,241,10,0,1,Moderate Risk,Tirunelveli → Karur → Thoothukudi,"Thoothukudi, Karur"
+Salem,Thoothukudi,328,2,1,0,Safe,Tiruppur → Erode → Mettupalayam,Mettupalayam
+Pattukkottai,Tiruchirappalli,167,8,0,0,Moderate Risk,Sivakasi → Thoothukudi,Thoothukudi
+Tiruppur,Perambalur,222,4,1,1,Moderate Risk,Nagapattinam,None
+Vellore,Pollachi,384,9,1,0,High Risk,Karaikudi,Karaikudi
+Ariyalur,Nagapattinam,398,9,1,1,Safe,Avadi → Villupuram → Coimbatore,None
+Ariyalur,Chennai,161,1,1,1,Safe,Erode,Erode
+Pudukkottai,Chidambaram,276,7,0,1,Moderate Risk,Nagercoil,None
+Thoothukudi,Nagapattinam,136,9,0,1,Moderate Risk,Salem,None
+Pudukkottai,Tirunelveli,183,8,0,1,Safe,Erode → Thoothukudi,"Erode, Thoothukudi"
+Pudukkottai,Karaikudi,75,1,0,1,High Risk,Erode → Tenkasi → Gobichettipalayam,"Erode, Tenkasi"
+Nagapattinam,Karur,336,10,1,1,Moderate Risk,Sathyamangalam,None
+Tambaram,Pattukkottai,395,6,0,0,Safe,Cuddalore,None
+Tiruchirappalli,Avadi,90,6,0,1,High Risk,Namakkal → Chennai → Ambur,"Chennai, Ambur, Namakkal"
+Sivakasi,Ramanathapuram,270,1,1,1,High Risk,Villupuram → Erode → Cuddalore,"Villupuram, Cuddalore"
+Tenkasi,Tiruppur,349,8,1,1,Safe,Ariyalur → Tambaram → Sivakasi,None
+Ambur,Tambaram,64,10,1,1,High Risk,Madurai → Thoothukudi,"Madurai, Thoothukudi"
+Tambaram,Thanjavur,98,7,0,1,Moderate Risk,Tenkasi → Perambalur → Thoothukudi,"Tenkasi, Thoothukudi"
+Coimbatore,Pattukkottai,251,2,0,1,Safe,Dharmapuri → Karur,None
+Villupuram,Ariyalur,313,8,1,1,High Risk,Chennai,Chennai
+Coimbatore,Thanjavur,336,7,1,1,High Risk,Pudukkottai → Karaikudi → Pattukkottai,Pattukkottai
+Mettupalayam,Dindigul,234,7,1,0,Moderate Risk,Chennai → Nagapattinam,None
+Chennai,Sivakasi,140,3,1,1,Moderate Risk,Ariyalur → Chidambaram,None
+Nagercoil,Avadi,369,8,1,0,Safe,Tiruppur → Ramanathapuram → Ambur,"Tiruppur, Ramanathapuram"
+Thoothukudi,Avadi,233,8,0,0,High Risk,Tambaram,None
+Sathyamangalam,Karur,357,2,0,0,Safe,Coimbatore → Pudukkottai,Coimbatore
+Dindigul,Kanchipuram,185,9,0,0,Safe,Sivakasi → Coimbatore,None
+Perambalur,Tirunelveli,241,3,1,1,Safe,Karur,None
+Thanjavur,Tiruchirappalli,363,3,1,0,High Risk,Sivakasi,Sivakasi
+Villupuram,Pattukkottai,271,10,1,1,Safe,Tenkasi,None
+Villupuram,Thanjavur,143,2,0,0,Moderate Risk,Pudukkottai,None
+Ramanathapuram,Dharmapuri,290,9,0,1,Safe,Nagercoil → Mettupalayam → Kanchipuram,None
+Tiruchirappalli,Coimbatore,121,7,1,0,High Risk,Tiruppur → Salem → Chennai,None
+Tiruppur,Vellore,101,9,0,1,Moderate Risk,Pollachi → Tirunelveli → Tiruchirappalli,Pollachi
+Thoothukudi,Pollachi,52,5,1,1,High Risk,Erode → Villupuram → Salem,Erode
+Sivakasi,Dindigul,98,9,1,1,High Risk,Pudukkottai → Tambaram,None
+Villupuram,Madurai,242,7,0,0,Moderate Risk,Chennai,None
+Tiruchirappalli,Coimbatore,302,5,0,0,Moderate Risk,Madurai,Madurai
+Coimbatore,Dindigul,365,6,1,1,Safe,Mettupalayam → Nagercoil → Nagapattinam,"Mettupalayam, Nagapattinam, Nagercoil"
+Madurai,Tiruchirappalli,239,3,1,0,High Risk,Erode → Cuddalore → Dindigul,None
+Villupuram,Tirunelveli,58,3,0,0,Moderate Risk,Nagercoil → Dindigul,"Nagercoil, Dindigul"
+Tenkasi,Dharmapuri,251,10,0,1,Safe,Tiruppur,None
+Gobichettipalayam,Chennai,179,7,1,0,Moderate Risk,Nagercoil → Ariyalur,Ariyalur
+Thoothukudi,Pollachi,163,10,1,1,Moderate Risk,Dindigul,Dindigul
+Namakkal,Nagercoil,345,8,1,0,High Risk,Mettupalayam → Salem → Thoothukudi,None
+Salem,Sivakasi,331,7,0,0,Moderate Risk,Tambaram → Nagapattinam → Kanchipuram,None
+Tenkasi,Pudukkottai,212,4,0,0,High Risk,Coimbatore → Karur → Nagapattinam,"Coimbatore, Nagapattinam, Karur"
+Namakkal,Ariyalur,254,1,1,1,Moderate Risk,Chennai → Tirunelveli → Dindigul,None
+Ambur,Vellore,59,5,0,1,Moderate Risk,Pudukkottai,None
+Tiruppur,Avadi,332,1,1,1,High Risk,Nagercoil,Nagercoil
+Vellore,Pudukkottai,374,10,1,1,Safe,Nagapattinam → Chennai,None
+Perambalur,Avadi,294,10,0,0,Moderate Risk,Villupuram → Gobichettipalayam,None
+Coimbatore,Pudukkottai,354,7,0,1,High Risk,Namakkal → Karur,Karur
+Chidambaram,Mettupalayam,156,6,1,1,Moderate Risk,Pattukkottai,Pattukkottai
+Avadi,Chidambaram,343,8,0,0,High Risk,Namakkal → Tiruppur → Dharmapuri,Namakkal
+Sivakasi,Tenkasi,359,6,1,0,Moderate Risk,Thoothukudi → Chidambaram → Sathyamangalam,None
+Salem,Thoothukudi,255,10,1,0,High Risk,Coimbatore → Chidambaram,None
+Pollachi,Sivakasi,265,3,1,0,High Risk,Cuddalore,None
+Tenkasi,Pudukkottai,249,3,0,1,Safe,Vellore → Pollachi,None
+Nagercoil,Pattukkottai,370,10,1,0,High Risk,Avadi → Erode,None
+Nagapattinam,Perambalur,174,10,1,1,Safe,Villupuram → Chennai → Vellore,None
+Cuddalore,Gobichettipalayam,255,10,0,1,Moderate Risk,Pattukkottai → Villupuram,"Villupuram, Pattukkottai"
+Mettupalayam,Perambalur,175,2,1,0,Moderate Risk,Tiruppur → Karaikudi,Karaikudi
+Tiruchirappalli,Pollachi,131,6,0,1,High Risk,Mettupalayam → Thanjavur,None
+Tambaram,Gobichettipalayam,76,3,0,0,Moderate Risk,Thanjavur → Perambalur,"Perambalur, Thanjavur"
+Mettupalayam,Avadi,83,5,1,1,High Risk,Ambur,Ambur
+Erode,Nagercoil,161,7,1,1,High Risk,Pattukkottai,None
+Nagapattinam,Gobichettipalayam,246,4,0,0,Moderate Risk,Cuddalore,None
+Tambaram,Dharmapuri,135,9,0,1,High Risk,Coimbatore → Villupuram → Pattukkottai,"Coimbatore, Pattukkottai, Villupuram"
+Dharmapuri,Tenkasi,317,2,1,1,High Risk,Pudukkottai,Pudukkottai
+Dharmapuri,Dindigul,342,8,0,0,Safe,Avadi,None
+Villupuram,Nagercoil,223,4,1,1,High Risk,Salem → Gobichettipalayam → Ambur,None
+Dindigul,Villupuram,314,7,0,1,Safe,Tirunelveli → Gobichettipalayam → Namakkal,None
+Tenkasi,Dharmapuri,162,8,1,0,Safe,Namakkal,None
+Ramanathapuram,Chennai,187,4,1,1,Safe,Pollachi → Pattukkottai,Pattukkottai
+Tiruchirappalli,Tirunelveli,199,4,1,0,Safe,Gobichettipalayam → Coimbatore → Avadi,None
+Thanjavur,Coimbatore,378,9,0,1,Moderate Risk,Tambaram → Ramanathapuram → Perambalur,"Tambaram, Ramanathapuram, Perambalur"
+Salem,Ambur,258,6,0,0,High Risk,Vellore,None
+Kanchipuram,Erode,103,4,1,1,Safe,Coimbatore → Perambalur,Coimbatore
+Karaikudi,Salem,241,6,1,1,High Risk,Nagercoil,Nagercoil
+Mettupalayam,Ramanathapuram,186,4,0,1,Safe,Tambaram,None
+Thanjavur,Karur,391,4,1,1,High Risk,Pattukkottai → Madurai → Namakkal,None
+Tambaram,Ramanathapuram,231,10,1,0,Safe,Tenkasi → Avadi → Dharmapuri,Tenkasi
+Kanchipuram,Dindigul,267,4,1,1,Safe,Chidambaram,None
+Tiruppur,Sivakasi,110,7,1,1,High Risk,Kanchipuram,None
+Tambaram,Avadi,322,6,0,0,Safe,Vellore,None
+Gobichettipalayam,Tambaram,233,9,1,0,Moderate Risk,Tiruchirappalli → Kanchipuram → Pollachi,"Tiruchirappalli, Kanchipuram"
+Ramanathapuram,Tenkasi,244,10,0,1,Moderate Risk,Sivakasi,None
+Pollachi,Salem,265,4,1,1,Safe,Namakkal → Perambalur,Perambalur
+Gobichettipalayam,Sathyamangalam,89,3,0,1,Moderate Risk,Nagercoil,Nagercoil
+Dindigul,Chennai,287,9,1,0,Moderate Risk,Avadi → Tenkasi → Sivakasi,"Avadi, Sivakasi"
+Nagercoil,Kanchipuram,400,5,0,0,Moderate Risk,Sivakasi,Sivakasi
+Mettupalayam,Sathyamangalam,329,3,1,0,Safe,Ramanathapuram,None
+Vellore,Gobichettipalayam,362,1,1,1,Safe,Tenkasi,None
+Villupuram,Sivakasi,140,7,1,1,Moderate Risk,Perambalur → Ambur,None
+Sivakasi,Avadi,143,3,0,0,High Risk,Nagercoil → Kanchipuram → Erode,None
+Nagercoil,Mettupalayam,77,4,0,0,High Risk,Cuddalore → Tambaram → Pudukkottai,"Pudukkottai, Cuddalore, Tambaram"
+Nagapattinam,Sivakasi,170,2,1,1,Moderate Risk,Namakkal → Dharmapuri,Namakkal
+Nagercoil,Chennai,312,1,0,1,Safe,Perambalur,None
+Karaikudi,Dindigul,154,10,1,1,High Risk,Tiruppur,Tiruppur
+Erode,Ambur,152,1,1,1,Moderate Risk,Sathyamangalam → Villupuram,Villupuram
+Gobichettipalayam,Erode,323,3,1,1,High Risk,Salem → Thanjavur,None
+Karur,Sathyamangalam,299,8,1,0,Moderate Risk,Nagercoil,None
+Sivakasi,Ambur,373,2,1,0,High Risk,Avadi,None
+Villupuram,Avadi,389,7,1,1,High Risk,Karaikudi → Perambalur,None
+Pollachi,Pattukkottai,312,4,1,1,Safe,Mettupalayam → Coimbatore → Gobichettipalayam,None
+Ramanathapuram,Tenkasi,91,6,0,0,High Risk,Salem → Tiruppur → Thoothukudi,"Tiruppur, Salem, Thoothukudi"
+Avadi,Tambaram,300,9,1,0,High Risk,Chennai,None
+Vellore,Avadi,273,3,0,1,Safe,Karur → Thoothukudi → Cuddalore,"Karur, Thoothukudi, Cuddalore"
+Cuddalore,Thoothukudi,373,3,1,1,Moderate Risk,Thanjavur,None
+Chennai,Ramanathapuram,326,9,0,1,Safe,Thoothukudi → Madurai → Tiruchirappalli,None
+Nagercoil,Avadi,287,10,1,0,Moderate Risk,Gobichettipalayam → Mettupalayam,None
+Nagapattinam,Salem,168,4,0,1,High Risk,Thanjavur → Cuddalore → Ambur,"Thanjavur, Cuddalore, Ambur"
+Pudukkottai,Pollachi,398,8,1,0,Moderate Risk,Chennai → Karur,None
+Vellore,Nagercoil,329,5,1,0,Moderate Risk,Salem → Nagapattinam,Nagapattinam
+Cuddalore,Namakkal,90,4,1,1,High Risk,Erode → Nagapattinam → Karaikudi,"Karaikudi, Erode, Nagapattinam"
+Gobichettipalayam,Vellore,273,3,0,1,Moderate Risk,Avadi → Thoothukudi → Tenkasi,Tenkasi
+Tiruchirappalli,Sivakasi,92,1,0,0,Safe,Salem → Thoothukudi → Tambaram,None
+Avadi,Tambaram,185,4,0,1,Safe,Salem → Dharmapuri → Kanchipuram,"Kanchipuram, Dharmapuri, Salem"
+Nagapattinam,Mettupalayam,146,5,1,1,Safe,Tiruppur → Avadi → Perambalur,None
+Cuddalore,Ariyalur,371,2,0,1,Safe,Sathyamangalam → Namakkal,None
+Cuddalore,Dindigul,82,9,1,0,Safe,Sathyamangalam,None
+Dharmapuri,Nagercoil,252,3,0,1,Safe,Kanchipuram → Mettupalayam,"Kanchipuram, Mettupalayam"
+Salem,Avadi,124,1,0,1,High Risk,Kanchipuram,Kanchipuram
+Pattukkottai,Karur,168,5,1,0,High Risk,Chennai → Sivakasi → Ramanathapuram,None
+Madurai,Salem,287,9,0,1,High Risk,Nagapattinam,None
+Ramanathapuram,Mettupalayam,138,9,1,1,Moderate Risk,Tambaram → Pollachi,None
+Chennai,Erode,197,10,1,1,Safe,Chidambaram → Sivakasi,"Chidambaram, Sivakasi"
+Pudukkottai,Erode,384,3,1,0,High Risk,Villupuram → Thanjavur,Villupuram
+Coimbatore,Nagercoil,156,4,1,1,Moderate Risk,Chennai,Chennai
+Villupuram,Vellore,159,6,1,1,High Risk,Tenkasi → Mettupalayam,None
+Madurai,Thoothukudi,186,4,0,0,High Risk,Thanjavur,None
+Madurai,Salem,353,10,1,1,Safe,Gobichettipalayam → Thoothukudi → Chennai,"Chennai, Gobichettipalayam"
+Vellore,Ramanathapuram,267,5,1,1,High Risk,Dindigul → Pudukkottai → Perambalur,None
+Pudukkottai,Villupuram,304,3,0,1,Safe,Ramanathapuram → Chidambaram,None
+Dharmapuri,Kanchipuram,340,7,0,0,Moderate Risk,Mettupalayam → Cuddalore → Avadi,"Cuddalore, Mettupalayam, Avadi"
+Avadi,Tiruchirappalli,283,9,0,1,Safe,Dindigul,Dindigul
+Nagapattinam,Ariyalur,313,5,0,0,Safe,Thanjavur,None
+Cuddalore,Coimbatore,57,7,1,1,Safe,Tambaram → Vellore,"Vellore, Tambaram"
+Coimbatore,Sathyamangalam,166,5,0,0,High Risk,Nagercoil → Madurai,None
+Chidambaram,Perambalur,66,3,0,1,Moderate Risk,Ariyalur,None
+Sivakasi,Coimbatore,253,4,0,0,High Risk,Salem → Dharmapuri → Perambalur,None
+Madurai,Erode,251,5,1,1,Moderate Risk,Ambur,None
+Pudukkottai,Sathyamangalam,284,4,1,1,High Risk,Namakkal → Erode → Kanchipuram,None
+Tiruppur,Thanjavur,265,5,0,0,Safe,Chidambaram → Madurai,None
+Coimbatore,Gobichettipalayam,111,7,1,1,Moderate Risk,Tirunelveli,None
+Dindigul,Tiruchirappalli,99,7,1,0,High Risk,Kanchipuram → Tambaram,Kanchipuram
+Perambalur,Pudukkottai,125,9,0,0,Safe,Chidambaram,None
+Nagercoil,Nagapattinam,93,3,0,1,Safe,Sivakasi → Cuddalore → Chennai,Sivakasi
+Perambalur,Thanjavur,298,3,1,1,Moderate Risk,Sivakasi,None
+Ariyalur,Thanjavur,141,10,0,1,High Risk,Sathyamangalam,Sathyamangalam
+Karaikudi,Pollachi,116,3,1,0,High Risk,Thanjavur,None
+Madurai,Namakkal,256,7,1,0,Safe,Erode,None
+Dindigul,Villupuram,136,5,1,1,Moderate Risk,Pollachi → Sathyamangalam,None
+Ariyalur,Karaikudi,131,3,1,1,Moderate Risk,Villupuram → Pollachi → Pudukkottai,"Pudukkottai, Pollachi"
+Ambur,Perambalur,398,3,1,1,High Risk,Salem → Chidambaram → Thoothukudi,None
+Tenkasi,Tiruchirappalli,113,7,0,0,Moderate Risk,Pudukkottai,None
+Tiruppur,Erode,113,3,1,0,High Risk,Kanchipuram,None
+Villupuram,Karur,263,10,1,0,Safe,Sathyamangalam → Ramanathapuram,"Ramanathapuram, Sathyamangalam"
+Tenkasi,Coimbatore,197,10,1,1,High Risk,Karur → Karaikudi,None
+Vellore,Karur,232,2,0,1,Safe,Ambur,Ambur
+Chidambaram,Mettupalayam,160,10,0,1,High Risk,Pollachi → Coimbatore,None
+Thoothukudi,Kanchipuram,394,3,1,1,Safe,Ramanathapuram → Dharmapuri → Cuddalore,"Cuddalore, Ramanathapuram, Dharmapuri"
+Erode,Ramanathapuram,86,5,1,0,Safe,Dharmapuri → Thoothukudi → Cuddalore,"Thoothukudi, Cuddalore, Dharmapuri"
+Perambalur,Salem,364,10,1,0,Moderate Risk,Chidambaram → Cuddalore → Dindigul,"Chidambaram, Dindigul"
+Avadi,Ramanathapuram,366,4,1,1,Moderate Risk,Salem → Chidambaram,None
+Pattukkottai,Pollachi,327,1,1,1,Safe,Erode → Salem → Namakkal,None
+Nagapattinam,Perambalur,225,10,1,1,Moderate Risk,Cuddalore → Tambaram → Avadi,None
+Gobichettipalayam,Thoothukudi,287,2,1,1,Safe,Chennai → Vellore → Nagercoil,None
+Gobichettipalayam,Perambalur,100,9,1,1,High Risk,Vellore → Tenkasi → Thoothukudi,None
+Tiruchirappalli,Sathyamangalam,128,7,0,1,Safe,Karur → Vellore,None
+Tiruchirappalli,Villupuram,205,10,1,1,Moderate Risk,Sathyamangalam → Ariyalur,None
+Mettupalayam,Nagapattinam,168,10,1,1,Moderate Risk,Madurai,None
+Madurai,Tiruppur,343,2,1,1,High Risk,Pattukkottai → Avadi,"Pattukkottai, Avadi"
+Kanchipuram,Erode,322,1,0,0,High Risk,Pollachi → Ambur → Gobichettipalayam,Ambur
+Tirunelveli,Sivakasi,321,7,1,0,Moderate Risk,Ramanathapuram → Vellore → Tambaram,"Tambaram, Vellore"
+Villupuram,Erode,139,2,0,0,Moderate Risk,Karaikudi → Gobichettipalayam,"Gobichettipalayam, Karaikudi"
+Ariyalur,Ambur,378,6,1,0,Moderate Risk,Gobichettipalayam,None
+Chennai,Thoothukudi,54,10,1,0,Safe,Kanchipuram → Cuddalore,None
+Mettupalayam,Tambaram,117,4,0,0,High Risk,Villupuram,Villupuram
+Ambur,Gobichettipalayam,135,4,1,1,Safe,Karur → Tirunelveli → Ramanathapuram,None
+Perambalur,Tambaram,64,10,0,0,Safe,Erode → Pudukkottai,None
+Tirunelveli,Sathyamangalam,150,7,0,0,Safe,Ariyalur,None
+Coimbatore,Namakkal,89,1,0,0,Safe,Tambaram → Ramanathapuram → Avadi,Avadi
+Pudukkottai,Cuddalore,150,2,0,0,Safe,Tiruppur,None
+Cuddalore,Dindigul,205,2,1,0,Safe,Perambalur,Perambalur
+Chennai,Thoothukudi,94,1,0,1,Moderate Risk,Kanchipuram,None
+Nagapattinam,Cuddalore,208,6,1,0,High Risk,Sathyamangalam → Dharmapuri → Tiruchirappalli,None
+Chidambaram,Thanjavur,386,9,1,1,Moderate Risk,Tiruppur → Ramanathapuram → Pollachi,Ramanathapuram
+Cuddalore,Avadi,164,1,0,1,Moderate Risk,Karur,None
+Ambur,Namakkal,268,2,1,1,Safe,Tiruchirappalli → Ramanathapuram,"Tiruchirappalli, Ramanathapuram"
+Ambur,Thanjavur,78,3,0,1,Moderate Risk,Madurai,None
+Mettupalayam,Namakkal,363,5,0,1,Safe,Pattukkottai → Vellore,None
+Pudukkottai,Dindigul,105,6,1,0,Moderate Risk,Namakkal → Villupuram → Tiruppur,Villupuram
+Nagercoil,Dharmapuri,208,10,1,0,High Risk,Cuddalore → Pudukkottai,Cuddalore
+Coimbatore,Ramanathapuram,123,4,1,1,High Risk,Madurai → Tiruchirappalli → Chennai,"Chennai, Madurai"
+Dharmapuri,Nagercoil,294,9,0,1,Safe,Pattukkottai,None
+Salem,Namakkal,60,6,1,1,Moderate Risk,Nagapattinam,None
+Kanchipuram,Perambalur,51,3,1,1,Safe,Chidambaram → Namakkal → Nagapattinam,"Chidambaram, Namakkal, Nagapattinam"
+Ariyalur,Thanjavur,106,8,1,1,Safe,Pudukkottai → Tenkasi → Avadi,None
+Ramanathapuram,Tenkasi,189,5,0,1,Safe,Salem → Karur → Tiruchirappalli,"Tiruchirappalli, Karur, Salem"
+Sathyamangalam,Ramanathapuram,177,4,1,1,Safe,Vellore,None
+Nagapattinam,Tenkasi,309,2,0,0,Moderate Risk,Ramanathapuram → Nagercoil → Ambur,None
+Dindigul,Gobichettipalayam,356,10,0,0,Moderate Risk,Villupuram,None
+Ramanathapuram,Sivakasi,257,9,0,1,High Risk,Coimbatore → Tenkasi → Cuddalore,Coimbatore
+Thoothukudi,Perambalur,208,1,0,0,Moderate Risk,Chidambaram → Namakkal,None
+Ramanathapuram,Kanchipuram,313,8,0,0,Safe,Mettupalayam → Ambur → Perambalur,"Perambalur, Ambur, Mettupalayam"
+Kanchipuram,Tirunelveli,148,10,0,1,Moderate Risk,Mettupalayam → Dharmapuri,"Dharmapuri, Mettupalayam"
+Ambur,Cuddalore,77,2,0,1,High Risk,Vellore → Pollachi → Villupuram,"Vellore, Villupuram"
+Chennai,Villupuram,239,8,0,1,Safe,Vellore → Karaikudi,"Karaikudi, Vellore"
+Gobichettipalayam,Chennai,245,6,0,0,High Risk,Cuddalore,None
+Tiruchirappalli,Dharmapuri,336,6,1,1,Moderate Risk,Nagapattinam → Avadi → Gobichettipalayam,None
+Karur,Ramanathapuram,311,10,0,1,High Risk,Perambalur → Vellore,None
+Dharmapuri,Tirunelveli,254,5,0,1,High Risk,Salem → Sathyamangalam → Avadi,Sathyamangalam
+Villupuram,Erode,138,8,1,1,High Risk,Sivakasi → Nagapattinam → Sathyamangalam,"Sathyamangalam, Sivakasi"
+Pollachi,Perambalur,215,5,1,1,Moderate Risk,Tambaram → Karur → Dindigul,"Tambaram, Dindigul"
+Ramanathapuram,Ambur,121,1,1,0,Moderate Risk,Perambalur → Villupuram,None
+Pudukkottai,Tenkasi,371,6,0,1,High Risk,Tiruchirappalli → Sivakasi,None
+Ramanathapuram,Tambaram,171,8,0,0,High Risk,Salem → Pollachi,None
+Mettupalayam,Dindigul,62,5,1,1,Safe,Tenkasi → Coimbatore,None
+Ariyalur,Tirunelveli,277,8,0,0,High Risk,Nagapattinam → Perambalur,None
+Pudukkottai,Madurai,100,5,1,0,Safe,Salem → Nagapattinam → Vellore,None
+Pattukkottai,Karaikudi,176,4,1,0,Moderate Risk,Mettupalayam,None
+Gobichettipalayam,Ariyalur,77,9,0,1,Moderate Risk,Salem,Salem
+Dindigul,Kanchipuram,61,8,0,0,High Risk,Chidambaram → Nagercoil → Vellore,"Chidambaram, Vellore"
+Pattukkottai,Ariyalur,266,7,0,0,High Risk,Madurai,Madurai
+Sathyamangalam,Nagercoil,273,10,0,1,High Risk,Ramanathapuram → Salem → Chennai,None
+Namakkal,Kanchipuram,226,9,0,1,Safe,Salem,None
+Chennai,Ambur,93,7,1,1,Safe,Chidambaram,Chidambaram
+Erode,Pollachi,172,3,1,0,Safe,Perambalur,Perambalur
+Tenkasi,Thanjavur,270,6,1,0,High Risk,Dindigul → Avadi,Avadi
+Kanchipuram,Namakkal,224,10,0,0,Moderate Risk,Pollachi,Pollachi
+Tiruchirappalli,Mettupalayam,355,3,0,1,Safe,Ariyalur,Ariyalur
+Tenkasi,Tiruppur,399,3,0,1,High Risk,Tambaram → Madurai,"Madurai, Tambaram"
+Karur,Dindigul,318,5,0,0,Moderate Risk,Pollachi → Nagercoil,None
+Mettupalayam,Nagapattinam,185,5,0,0,High Risk,Ramanathapuram → Sivakasi,None
+Ariyalur,Villupuram,138,6,1,0,High Risk,Coimbatore → Dharmapuri,None
+Namakkal,Vellore,379,5,1,1,High Risk,Coimbatore,None
+Karur,Ramanathapuram,235,6,0,0,Safe,Tirunelveli,Tirunelveli
+Tiruppur,Karaikudi,81,2,0,0,High Risk,Salem → Erode,None
+Pollachi,Perambalur,65,10,0,0,Safe,Tiruppur,None
+Thoothukudi,Ramanathapuram,245,6,0,1,Moderate Risk,Thanjavur → Madurai → Ambur,"Madurai, Ambur, Thanjavur"
+Chennai,Cuddalore,286,6,0,1,High Risk,Tiruppur,None
+Gobichettipalayam,Ramanathapuram,283,4,0,0,Moderate Risk,Chennai → Ariyalur → Tiruchirappalli,None
+Ariyalur,Ambur,149,9,0,1,High Risk,Tambaram,None
+Sathyamangalam,Tenkasi,224,1,1,1,Moderate Risk,Sivakasi → Ramanathapuram,None
+Tirunelveli,Dharmapuri,250,7,1,0,Moderate Risk,Madurai → Ramanathapuram,Madurai
+Madurai,Nagercoil,69,7,0,0,Safe,Tiruppur → Nagapattinam → Sivakasi,"Sivakasi, Nagapattinam"
+Salem,Gobichettipalayam,176,6,1,1,High Risk,Dindigul,None
+Madurai,Pollachi,116,5,1,0,Safe,Karaikudi → Nagercoil,None
+Nagercoil,Villupuram,217,6,0,1,Safe,Pudukkottai → Tenkasi,None
+Namakkal,Pattukkottai,61,9,1,1,Safe,Gobichettipalayam → Sathyamangalam → Ariyalur,"Ariyalur, Gobichettipalayam, Sathyamangalam"
+Perambalur,Mettupalayam,119,2,0,0,Moderate Risk,Sathyamangalam → Thoothukudi,Sathyamangalam
+Ramanathapuram,Chidambaram,391,4,1,1,Moderate Risk,Erode → Avadi,Erode
+Tirunelveli,Salem,215,9,1,0,Moderate Risk,Mettupalayam,None
+Tiruchirappalli,Thoothukudi,210,5,1,0,Safe,Pattukkottai,None
+Ramanathapuram,Coimbatore,100,10,0,0,Safe,Dharmapuri → Mettupalayam,None
+Nagercoil,Karur,163,2,0,0,Safe,Thoothukudi,Thoothukudi
+Tiruchirappalli,Pollachi,182,1,0,0,Moderate Risk,Kanchipuram → Ariyalur → Villupuram,"Kanchipuram, Villupuram"
+Ambur,Vellore,110,9,1,0,Moderate Risk,Thoothukudi,None
+Tambaram,Tirunelveli,55,5,1,1,Safe,Dindigul,Dindigul
+Vellore,Namakkal,260,6,0,0,Safe,Madurai → Cuddalore → Tirunelveli,"Madurai, Tirunelveli"
+Sathyamangalam,Ambur,372,3,0,1,High Risk,Madurai,None
+Nagercoil,Tirunelveli,339,5,1,1,High Risk,Coimbatore,None
+Salem,Dharmapuri,71,7,1,1,Safe,Karur → Dindigul,None
+Tiruchirappalli,Cuddalore,149,9,0,1,Moderate Risk,Coimbatore → Salem,None
+Avadi,Sivakasi,100,5,0,1,Moderate Risk,Karur → Salem → Tenkasi,None
+Villupuram,Ambur,216,4,0,1,High Risk,Thanjavur → Gobichettipalayam,Thanjavur
+Pudukkottai,Salem,216,10,1,1,High Risk,Pollachi → Sathyamangalam,Pollachi
+Avadi,Ariyalur,318,1,1,1,High Risk,Dindigul → Cuddalore → Dharmapuri,"Dindigul, Dharmapuri"
+Kanchipuram,Perambalur,196,2,0,0,Safe,Cuddalore → Tirunelveli → Sathyamangalam,None
+Karaikudi,Tiruppur,54,8,1,0,Moderate Risk,Pattukkottai → Chennai,None
+Tiruppur,Nagercoil,197,4,0,0,High Risk,Tambaram → Karur,"Tambaram, Karur"
+Tiruppur,Pudukkottai,280,5,0,1,High Risk,Tenkasi → Nagapattinam,None
+Karaikudi,Avadi,69,4,1,1,Moderate Risk,Perambalur → Madurai → Pudukkottai,"Madurai, Perambalur"
+Sathyamangalam,Mettupalayam,321,4,1,0,Safe,Thanjavur,None
+Sathyamangalam,Tiruchirappalli,268,8,1,0,Moderate Risk,Tirunelveli → Madurai → Avadi,None
+Erode,Chennai,383,9,1,1,Safe,Sivakasi → Nagapattinam,None
+Tiruppur,Ambur,257,7,0,1,High Risk,Pudukkottai,None
+Coimbatore,Chidambaram,126,9,1,0,Safe,Chennai → Thanjavur → Dindigul,None
+Gobichettipalayam,Tenkasi,157,4,1,1,High Risk,Sathyamangalam → Ariyalur,"Sathyamangalam, Ariyalur"
+Tirunelveli,Sivakasi,274,10,1,1,High Risk,Dharmapuri → Coimbatore → Tiruppur,Coimbatore
+Karaikudi,Tenkasi,111,3,0,1,Safe,Namakkal → Pudukkottai → Sathyamangalam,Sathyamangalam
+Tiruchirappalli,Nagercoil,167,6,1,1,Safe,Ambur → Avadi → Pattukkottai,"Ambur, Avadi, Pattukkottai"
+Namakkal,Mettupalayam,351,4,0,1,Moderate Risk,Chennai → Dindigul → Chidambaram,"Dindigul, Chidambaram"
+Dharmapuri,Ramanathapuram,286,2,1,0,Moderate Risk,Coimbatore → Perambalur → Salem,None
+Ramanathapuram,Chidambaram,183,6,0,0,Safe,Tiruchirappalli → Sivakasi → Dindigul,None
+Pollachi,Gobichettipalayam,316,1,1,1,High Risk,Mettupalayam,Mettupalayam
+Sivakasi,Tiruppur,287,4,1,0,Safe,Ramanathapuram → Pattukkottai,None
+Karur,Dindigul,62,7,1,1,High Risk,Ariyalur → Madurai → Nagapattinam,None
+Perambalur,Nagercoil,322,6,0,1,High Risk,Dindigul → Namakkal → Cuddalore,"Cuddalore, Dindigul"
+Villupuram,Chidambaram,288,8,1,1,Safe,Pattukkottai → Nagercoil,"Nagercoil, Pattukkottai"
+Mettupalayam,Chidambaram,74,8,0,1,Moderate Risk,Thoothukudi,None
+Dharmapuri,Mettupalayam,351,7,1,1,High Risk,Ambur,None
+Mettupalayam,Pollachi,187,10,1,1,Safe,Tiruchirappalli → Madurai,None
+Ramanathapuram,Dharmapuri,89,1,0,0,Moderate Risk,Ambur → Gobichettipalayam,None
+Thanjavur,Pudukkottai,69,5,0,1,Moderate Risk,Namakkal,None
+Erode,Pollachi,97,8,0,1,Safe,Tirunelveli,Tirunelveli
+Thoothukudi,Karaikudi,174,3,0,1,Safe,Thanjavur,None
+Tiruppur,Ramanathapuram,160,10,0,0,Safe,Karur,None
+Tiruchirappalli,Pudukkottai,154,4,0,1,Moderate Risk,Ariyalur → Mettupalayam → Cuddalore,"Cuddalore, Mettupalayam"
+Coimbatore,Perambalur,317,5,1,0,Safe,Tenkasi,None
+Madurai,Thoothukudi,325,1,1,0,Safe,Chennai → Salem → Tambaram,"Salem, Tambaram, Chennai"
+Tiruppur,Salem,142,6,0,1,Moderate Risk,Chidambaram,Chidambaram
+Tirunelveli,Namakkal,269,1,1,1,High Risk,Coimbatore → Tiruchirappalli,None
+Salem,Coimbatore,140,4,0,0,High Risk,Nagercoil → Nagapattinam → Tirunelveli,"Nagercoil, Tirunelveli"
+Erode,Thoothukudi,87,3,1,1,High Risk,Tirunelveli → Salem → Kanchipuram,None
+Pattukkottai,Villupuram,327,3,0,0,Moderate Risk,Coimbatore → Vellore → Salem,Coimbatore
+Vellore,Mettupalayam,344,5,0,1,Moderate Risk,Erode,Erode
+Pudukkottai,Sivakasi,320,7,0,0,High Risk,Ambur → Pattukkottai,None
+Nagercoil,Tiruppur,197,8,1,0,Safe,Chennai,None
+Perambalur,Sivakasi,176,3,0,1,Moderate Risk,Kanchipuram,Kanchipuram
+Chennai,Pollachi,375,4,0,1,Moderate Risk,Avadi → Nagercoil,Avadi
+Sathyamangalam,Dharmapuri,122,6,1,0,Moderate Risk,Chennai → Tiruppur → Ariyalur,None
+Pollachi,Ramanathapuram,61,10,1,0,Moderate Risk,Thoothukudi → Thanjavur,None
+Nagapattinam,Avadi,138,8,0,0,High Risk,Chennai,None
+Nagapattinam,Tirunelveli,221,5,1,1,Safe,Gobichettipalayam → Sathyamangalam,None
+Vellore,Salem,164,2,1,0,High Risk,Erode,None
+Ariyalur,Gobichettipalayam,63,8,1,1,Moderate Risk,Karaikudi,None
+Vellore,Namakkal,241,2,1,1,Moderate Risk,Kanchipuram,None
+Nagapattinam,Madurai,93,10,1,1,Safe,Vellore,None
+Tiruppur,Tenkasi,384,3,1,0,Safe,Vellore,None
+Madurai,Perambalur,400,3,1,1,High Risk,Coimbatore → Thanjavur,Coimbatore
+Avadi,Gobichettipalayam,187,6,0,0,High Risk,Villupuram,None
+Villupuram,Tambaram,141,7,0,0,Safe,Namakkal → Dharmapuri,"Dharmapuri, Namakkal"
+Mettupalayam,Pudukkottai,137,3,0,0,High Risk,Karaikudi,Karaikudi
+Pudukkottai,Tenkasi,206,9,0,1,Moderate Risk,Vellore → Chennai,None
+Pollachi,Chennai,236,2,0,0,Moderate Risk,Vellore,None
+Chidambaram,Mettupalayam,248,2,1,1,Safe,Cuddalore → Nagapattinam → Erode,None
+Gobichettipalayam,Chennai,52,3,1,1,Moderate Risk,Thanjavur → Ramanathapuram → Dharmapuri,"Thanjavur, Ramanathapuram, Dharmapuri"
+Thanjavur,Thoothukudi,255,2,0,0,High Risk,Tenkasi,None
+Sivakasi,Pollachi,177,10,0,0,Safe,Erode,Erode
+Ramanathapuram,Nagercoil,144,3,0,1,Moderate Risk,Nagapattinam → Tambaram → Tiruchirappalli,None
+Mettupalayam,Ariyalur,206,1,0,1,Moderate Risk,Madurai → Villupuram,Madurai
+Cuddalore,Ambur,281,6,0,0,Moderate Risk,Gobichettipalayam → Nagercoil,None
+Pudukkottai,Thoothukudi,329,6,1,0,Moderate Risk,Pattukkottai → Tenkasi → Dharmapuri,Dharmapuri
+Chennai,Cuddalore,138,10,0,1,Moderate Risk,Karaikudi → Pollachi → Salem,None
+Perambalur,Sathyamangalam,121,7,0,1,Safe,Tiruppur → Gobichettipalayam → Erode,None
+Sathyamangalam,Thoothukudi,247,5,0,0,Safe,Pattukkottai → Karaikudi,"Pattukkottai, Karaikudi"
+Avadi,Tambaram,196,5,1,0,Moderate Risk,Erode → Karaikudi → Dindigul,None
+Karaikudi,Tirunelveli,151,4,0,1,Safe,Perambalur → Coimbatore → Erode,None
+Karur,Dharmapuri,313,1,0,0,High Risk,Mettupalayam,None
+Villupuram,Thoothukudi,111,4,0,1,Moderate Risk,Nagercoil,None
+Tiruchirappalli,Madurai,300,7,1,1,High Risk,Ambur → Chennai → Erode,"Ambur, Chennai, Erode"
+Kanchipuram,Nagercoil,244,5,1,0,Moderate Risk,Vellore,None
+Vellore,Villupuram,237,9,0,0,High Risk,Nagercoil → Pattukkottai,"Pattukkottai, Nagercoil"
+Coimbatore,Thoothukudi,197,8,1,0,High Risk,Madurai → Mettupalayam → Pudukkottai,None
+Pollachi,Dharmapuri,264,6,0,1,Safe,Vellore,Vellore
+Tenkasi,Dindigul,51,3,0,1,High Risk,Tiruchirappalli → Vellore → Thanjavur,Vellore
+Madurai,Salem,236,4,0,1,High Risk,Chidambaram,None
+Nagapattinam,Kanchipuram,255,10,0,1,High Risk,Perambalur,Perambalur
+Avadi,Karaikudi,337,7,1,0,High Risk,Chidambaram → Ariyalur → Mettupalayam,None
+Dindigul,Pattukkottai,74,1,1,1,Safe,Karur,None
+Ambur,Chennai,179,8,1,0,Safe,Kanchipuram → Nagercoil,Kanchipuram
+Gobichettipalayam,Nagercoil,155,2,0,0,Safe,Madurai,None
+Vellore,Avadi,274,3,0,1,Moderate Risk,Karur → Namakkal → Mettupalayam,Karur
+Vellore,Tambaram,100,10,1,1,Moderate Risk,Ariyalur,Ariyalur
+Tenkasi,Thanjavur,107,9,1,0,Moderate Risk,Pollachi → Coimbatore → Ramanathapuram,None
+Ambur,Dindigul,229,5,0,0,High Risk,Erode → Tiruchirappalli → Sathyamangalam,None
+Dindigul,Karur,338,8,0,1,High Risk,Ariyalur → Vellore,None
+Namakkal,Ambur,330,3,1,1,Moderate Risk,Avadi,None
+Sathyamangalam,Villupuram,364,4,1,0,Safe,Coimbatore,None
+Tambaram,Ramanathapuram,337,2,1,0,Moderate Risk,Tiruppur → Vellore → Salem,None
+Nagapattinam,Coimbatore,139,7,1,1,Moderate Risk,Karur → Dharmapuri → Villupuram,"Karur, Villupuram, Dharmapuri"
+Salem,Ariyalur,133,1,0,1,High Risk,Tiruchirappalli → Ambur,None
+Thoothukudi,Tiruppur,148,6,1,1,High Risk,Tambaram → Madurai,"Madurai, Tambaram"
+Tambaram,Thanjavur,151,7,1,0,High Risk,Chennai,None
+Tirunelveli,Nagercoil,218,5,0,0,Safe,Pattukkottai → Perambalur → Chennai,"Chennai, Pattukkottai"
+Tenkasi,Tiruchirappalli,162,1,1,1,Safe,Nagercoil → Erode → Tirunelveli,Erode
+Thoothukudi,Coimbatore,140,1,1,1,Moderate Risk,Tiruppur,None
+Ariyalur,Avadi,230,4,1,1,Moderate Risk,Chidambaram → Tenkasi → Gobichettipalayam,None
+Karaikudi,Kanchipuram,213,6,1,1,High Risk,Thoothukudi,None
+Villupuram,Thanjavur,244,4,1,0,Moderate Risk,Nagercoil → Sivakasi → Pudukkottai,Pudukkottai
+Nagapattinam,Ambur,349,2,1,1,Safe,Perambalur → Mettupalayam → Tirunelveli,"Mettupalayam, Perambalur"
+Vellore,Nagercoil,260,8,1,0,Safe,Dindigul → Namakkal,None
+Dindigul,Gobichettipalayam,394,5,1,0,High Risk,Karaikudi → Cuddalore,Cuddalore
+Thoothukudi,Chennai,225,10,0,0,High Risk,Pudukkottai → Sivakasi,"Sivakasi, Pudukkottai"
+Perambalur,Coimbatore,346,7,1,1,Safe,Pollachi → Karaikudi,None
+Namakkal,Sathyamangalam,132,8,0,1,Moderate Risk,Thoothukudi → Kanchipuram,"Thoothukudi, Kanchipuram"
+Karaikudi,Gobichettipalayam,221,8,0,1,Safe,Avadi → Chennai,Avadi
+Thoothukudi,Mettupalayam,266,7,1,1,High Risk,Chidambaram → Pattukkottai,None
+Nagapattinam,Villupuram,251,3,0,0,High Risk,Dindigul,Dindigul
+Ariyalur,Karur,174,1,0,0,Safe,Thoothukudi,Thoothukudi
+Ambur,Vellore,348,7,0,0,High Risk,Coimbatore → Cuddalore → Nagapattinam,Coimbatore
+Karaikudi,Erode,52,3,1,0,High Risk,Perambalur → Karur,None
+Salem,Coimbatore,243,2,0,1,High Risk,Nagercoil → Dharmapuri → Avadi,Nagercoil
+Chennai,Tenkasi,182,4,0,0,Moderate Risk,Vellore → Salem → Tiruppur,"Salem, Tiruppur, Vellore"
+Tiruppur,Gobichettipalayam,225,9,1,0,High Risk,Dharmapuri → Tenkasi,None
+Villupuram,Madurai,295,9,1,0,High Risk,Tenkasi → Chidambaram,Chidambaram
+Nagapattinam,Pattukkottai,158,7,1,1,Moderate Risk,Tambaram → Gobichettipalayam,None
+Pudukkottai,Mettupalayam,184,7,0,0,High Risk,Namakkal,None
+Avadi,Dharmapuri,153,8,0,0,Safe,Pudukkottai → Sivakasi → Chidambaram,Pudukkottai
+Avadi,Coimbatore,235,1,1,0,Safe,Cuddalore,None
+Erode,Mettupalayam,263,3,1,0,Safe,Sivakasi → Tenkasi,"Tenkasi, Sivakasi"
+Ramanathapuram,Chidambaram,400,3,0,0,Safe,Tambaram → Dharmapuri,None
+Tenkasi,Dindigul,330,9,1,1,High Risk,Thanjavur,None
+Thoothukudi,Thanjavur,393,7,1,0,High Risk,Dindigul → Ramanathapuram → Karaikudi,None
+Kanchipuram,Dharmapuri,62,3,1,0,Moderate Risk,Dindigul → Chidambaram,"Chidambaram, Dindigul"
+Tenkasi,Ariyalur,204,1,1,1,Safe,Karur → Ramanathapuram,None
+Sivakasi,Vellore,362,10,0,1,High Risk,Ramanathapuram → Nagercoil,Nagercoil
+Mettupalayam,Tiruppur,152,9,1,0,Safe,Chidambaram,None
+Coimbatore,Villupuram,76,4,0,1,Moderate Risk,Perambalur → Chidambaram,None
+Mettupalayam,Chennai,380,5,1,0,Moderate Risk,Vellore,Vellore
+Karaikudi,Gobichettipalayam,394,4,1,0,High Risk,Thanjavur → Chennai → Coimbatore,"Thanjavur, Chennai"
+Tirunelveli,Erode,96,2,0,0,Safe,Thanjavur → Pudukkottai,Thanjavur
+Perambalur,Chennai,168,5,0,1,Moderate Risk,Mettupalayam,Mettupalayam
+Kanchipuram,Salem,71,7,1,0,High Risk,Erode → Nagercoil → Karaikudi,Erode
+Kanchipuram,Sathyamangalam,62,9,1,0,Moderate Risk,Tiruppur → Pudukkottai → Dharmapuri,"Pudukkottai, Dharmapuri"
+Salem,Namakkal,328,6,0,1,Moderate Risk,Pattukkottai → Tirunelveli → Cuddalore,"Tirunelveli, Cuddalore, Pattukkottai"
+Erode,Dindigul,91,6,0,0,High Risk,Ariyalur → Perambalur,None
+Coimbatore,Erode,320,7,0,1,High Risk,Madurai → Pollachi,"Madurai, Pollachi"
+Thoothukudi,Pollachi,138,1,0,0,High Risk,Tenkasi → Dharmapuri → Mettupalayam,None
+Nagercoil,Perambalur,390,2,1,1,High Risk,Sivakasi,Sivakasi
+Tirunelveli,Ariyalur,397,3,1,1,High Risk,Dharmapuri,None
+Nagercoil,Namakkal,275,1,0,1,Moderate Risk,Tirunelveli → Gobichettipalayam,Tirunelveli
+Tiruppur,Avadi,396,1,1,0,Safe,Karaikudi → Erode → Gobichettipalayam,None
+Mettupalayam,Nagercoil,293,9,0,1,Moderate Risk,Nagapattinam,None
+Gobichettipalayam,Thanjavur,286,5,0,1,Safe,Sivakasi,None
+Tambaram,Sivakasi,286,3,1,0,Safe,Kanchipuram,None
+Cuddalore,Tenkasi,318,2,1,1,Safe,Nagapattinam,Nagapattinam
+Karaikudi,Tambaram,295,7,0,1,High Risk,Sivakasi → Madurai,"Madurai, Sivakasi"
+Salem,Nagercoil,198,5,0,1,High Risk,Pollachi → Ramanathapuram → Gobichettipalayam,None
+Vellore,Pudukkottai,71,1,1,0,Safe,Gobichettipalayam → Dharmapuri → Karur,Karur
+Chennai,Erode,312,8,0,1,High Risk,Namakkal,None
+Dindigul,Pattukkottai,98,3,0,0,Safe,Vellore,None
+Coimbatore,Perambalur,290,3,0,0,Moderate Risk,Thoothukudi → Pattukkottai,Thoothukudi
+Salem,Tirunelveli,103,6,0,1,Moderate Risk,Chidambaram,None
+Villupuram,Chidambaram,260,5,0,0,High Risk,Pollachi → Madurai,None
+Chidambaram,Perambalur,67,9,0,1,High Risk,Vellore → Ambur,None
