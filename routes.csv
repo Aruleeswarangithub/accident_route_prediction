@@ -1,501 +1,1003 @@
-source,destination,distance_km,blackspot_count,night_time,poor_streetlight,safety_level,via,accident_prone_area
-Tiruchirappalli,Mettupalayam,136,8,1,1,High Risk,Pudukkottai,None
-Nagapattinam,Namakkal,328,2,1,0,High Risk,Karur,None
-Thoothukudi,Perambalur,96,3,0,0,Moderate Risk,Erode → Villupuram,None
-Coimbatore,Nagercoil,142,8,0,0,Safe,Erode,None
-Chidambaram,Ariyalur,75,3,0,0,Safe,Sathyamangalam,None
-Thoothukudi,Ambur,272,6,1,0,High Risk,Sathyamangalam → Perambalur,"Sathyamangalam, Perambalur"
-Ambur,Dharmapuri,239,2,1,0,Safe,Villupuram → Mettupalayam → Sathyamangalam,"Sathyamangalam, Mettupalayam"
-Tiruppur,Mettupalayam,157,8,1,0,High Risk,Chidambaram,None
-Tiruchirappalli,Coimbatore,93,9,1,0,High Risk,Namakkal → Karur,None
-Erode,Pollachi,306,6,0,1,Safe,Karur,Karur
-Karaikudi,Tenkasi,400,9,0,1,High Risk,Sivakasi → Thoothukudi,"Thoothukudi, Sivakasi"
-Mettupalayam,Tenkasi,263,9,0,0,Moderate Risk,Gobichettipalayam → Pattukkottai,None
-Chidambaram,Dharmapuri,175,2,1,0,Moderate Risk,Erode → Mettupalayam → Tiruppur,None
-Tiruppur,Gobichettipalayam,322,8,1,0,Safe,Chennai,None
-Cuddalore,Thanjavur,173,6,0,0,Moderate Risk,Kanchipuram → Sivakasi,Kanchipuram
-Cuddalore,Coimbatore,220,8,0,0,High Risk,Kanchipuram,None
-Tiruchirappalli,Madurai,262,5,0,0,High Risk,Tambaram → Villupuram → Nagercoil,Nagercoil
-Nagapattinam,Chidambaram,249,4,0,1,Safe,Vellore,None
-Dharmapuri,Vellore,254,1,0,1,High Risk,Villupuram,None
-Pattukkottai,Tambaram,297,5,0,1,High Risk,Tenkasi → Madurai,None
-Tambaram,Dindigul,82,2,0,1,High Risk,Sathyamangalam,Sathyamangalam
-Pattukkottai,Tiruchirappalli,277,8,0,1,High Risk,Thanjavur → Mettupalayam,"Mettupalayam, Thanjavur"
-Madurai,Tirunelveli,105,8,1,1,Safe,Tambaram → Coimbatore → Tenkasi,"Tambaram, Tenkasi"
-Chennai,Pollachi,130,8,0,1,Moderate Risk,Salem,None
-Coimbatore,Sathyamangalam,70,6,1,0,Safe,Perambalur → Tenkasi → Pudukkottai,Pudukkottai
-Nagapattinam,Ariyalur,345,9,0,0,High Risk,Erode,None
-Tambaram,Thanjavur,114,3,1,1,High Risk,Karur → Madurai,Karur
-Coimbatore,Ambur,116,4,0,0,High Risk,Tirunelveli → Dharmapuri,Tirunelveli
-Tiruchirappalli,Avadi,342,5,1,0,High Risk,Thoothukudi → Coimbatore,Coimbatore
-Ambur,Nagapattinam,387,10,1,1,High Risk,Thanjavur,Thanjavur
-Chidambaram,Kanchipuram,357,10,1,0,High Risk,Pollachi,None
-Sivakasi,Coimbatore,280,8,0,1,Safe,Chennai → Pattukkottai,"Pattukkottai, Chennai"
-Erode,Tiruppur,282,1,0,0,Moderate Risk,Perambalur → Pattukkottai,None
-Gobichettipalayam,Vellore,182,3,1,0,Safe,Karaikudi,Karaikudi
-Dharmapuri,Mettupalayam,232,7,0,0,Safe,Sathyamangalam → Namakkal → Avadi,"Sathyamangalam, Namakkal"
-Dharmapuri,Karur,191,1,1,0,Moderate Risk,Madurai → Ambur → Cuddalore,None
-Pollachi,Nagapattinam,68,5,1,1,Moderate Risk,Sivakasi → Chidambaram → Pattukkottai,"Chidambaram, Sivakasi, Pattukkottai"
-Sivakasi,Nagercoil,294,3,0,0,Safe,Dindigul → Ambur → Perambalur,None
-Mettupalayam,Chennai,229,7,0,0,High Risk,Nagapattinam → Sathyamangalam → Dindigul,Sathyamangalam
-Gobichettipalayam,Madurai,215,9,1,1,High Risk,Thanjavur → Ramanathapuram,"Thanjavur, Ramanathapuram"
-Ariyalur,Gobichettipalayam,58,2,1,0,Safe,Dindigul → Ambur,Dindigul
-Sivakasi,Nagercoil,116,9,1,1,Moderate Risk,Gobichettipalayam,None
-Erode,Madurai,128,2,1,1,Safe,Karaikudi → Avadi,None
-Namakkal,Tiruchirappalli,363,6,0,1,Safe,Pollachi → Tambaram,"Tambaram, Pollachi"
-Karur,Coimbatore,129,8,0,0,Moderate Risk,Vellore → Mettupalayam → Kanchipuram,"Mettupalayam, Kanchipuram"
-Ramanathapuram,Villupuram,156,8,1,1,Safe,Ariyalur → Karur,"Karur, Ariyalur"
-Pollachi,Tenkasi,170,1,0,0,High Risk,Madurai → Ambur → Villupuram,None
-Coimbatore,Tirunelveli,304,6,1,1,Safe,Dindigul → Tiruppur,"Tiruppur, Dindigul"
-Tambaram,Madurai,222,3,1,0,High Risk,Vellore,Vellore
-Ramanathapuram,Salem,317,7,0,1,Safe,Karur → Dharmapuri → Erode,"Erode, Dharmapuri, Karur"
-Kanchipuram,Pattukkottai,199,6,1,1,Safe,Ramanathapuram → Madurai,None
-Cuddalore,Tiruchirappalli,162,6,1,1,Moderate Risk,Karaikudi → Avadi,None
-Dharmapuri,Nagapattinam,135,2,0,0,High Risk,Dindigul → Thanjavur,"Thanjavur, Dindigul"
-Gobichettipalayam,Kanchipuram,73,6,0,0,Moderate Risk,Nagercoil,None
-Vellore,Avadi,267,8,0,0,High Risk,Villupuram,Villupuram
-Pollachi,Chidambaram,168,5,0,1,High Risk,Karaikudi → Nagapattinam → Dindigul,Nagapattinam
-Tiruppur,Vellore,165,4,0,1,Moderate Risk,Tirunelveli → Dharmapuri,"Dharmapuri, Tirunelveli"
-Dindigul,Pudukkottai,209,9,0,1,High Risk,Villupuram → Madurai → Sivakasi,None
-Tiruchirappalli,Nagercoil,112,8,1,1,Safe,Chidambaram,None
-Namakkal,Thoothukudi,202,5,0,1,High Risk,Karaikudi → Villupuram,"Karaikudi, Villupuram"
-Mettupalayam,Sivakasi,222,4,0,1,Safe,Villupuram → Karur → Dharmapuri,None
-Chennai,Pattukkottai,206,3,1,1,Safe,Mettupalayam,Mettupalayam
-Salem,Tirunelveli,369,6,1,1,Moderate Risk,Ramanathapuram → Nagercoil,None
-Cuddalore,Pattukkottai,158,5,0,1,High Risk,Tenkasi → Namakkal → Coimbatore,None
-Cuddalore,Nagercoil,266,7,1,0,High Risk,Pollachi → Namakkal → Chidambaram,None
-Pollachi,Chennai,297,5,1,1,High Risk,Pattukkottai → Thanjavur,None
-Namakkal,Dindigul,331,9,0,0,Moderate Risk,Tiruchirappalli → Ariyalur → Mettupalayam,None
-Vellore,Thanjavur,247,8,0,1,Moderate Risk,Namakkal → Thoothukudi,Namakkal
-Ambur,Perambalur,245,1,0,1,High Risk,Sathyamangalam → Vellore → Sivakasi,None
-Cuddalore,Ariyalur,210,9,0,0,Safe,Nagercoil,None
-Thanjavur,Chennai,201,2,0,0,High Risk,Pattukkottai → Dharmapuri → Ambur,"Pattukkottai, Ambur, Dharmapuri"
-Chidambaram,Tenkasi,241,10,0,1,Moderate Risk,Tirunelveli → Karur → Thoothukudi,"Thoothukudi, Karur"
-Salem,Thoothukudi,328,2,1,0,Safe,Tiruppur → Erode → Mettupalayam,Mettupalayam
-Pattukkottai,Tiruchirappalli,167,8,0,0,Moderate Risk,Sivakasi → Thoothukudi,Thoothukudi
-Tiruppur,Perambalur,222,4,1,1,Moderate Risk,Nagapattinam,None
-Vellore,Pollachi,384,9,1,0,High Risk,Karaikudi,Karaikudi
-Ariyalur,Nagapattinam,398,9,1,1,Safe,Avadi → Villupuram → Coimbatore,None
-Ariyalur,Chennai,161,1,1,1,Safe,Erode,Erode
-Pudukkottai,Chidambaram,276,7,0,1,Moderate Risk,Nagercoil,None
-Thoothukudi,Nagapattinam,136,9,0,1,Moderate Risk,Salem,None
-Pudukkottai,Tirunelveli,183,8,0,1,Safe,Erode → Thoothukudi,"Erode, Thoothukudi"
-Pudukkottai,Karaikudi,75,1,0,1,High Risk,Erode → Tenkasi → Gobichettipalayam,"Erode, Tenkasi"
-Nagapattinam,Karur,336,10,1,1,Moderate Risk,Sathyamangalam,None
-Tambaram,Pattukkottai,395,6,0,0,Safe,Cuddalore,None
-Tiruchirappalli,Avadi,90,6,0,1,High Risk,Namakkal → Chennai → Ambur,"Chennai, Ambur, Namakkal"
-Sivakasi,Ramanathapuram,270,1,1,1,High Risk,Villupuram → Erode → Cuddalore,"Villupuram, Cuddalore"
-Tenkasi,Tiruppur,349,8,1,1,Safe,Ariyalur → Tambaram → Sivakasi,None
-Ambur,Tambaram,64,10,1,1,High Risk,Madurai → Thoothukudi,"Madurai, Thoothukudi"
-Tambaram,Thanjavur,98,7,0,1,Moderate Risk,Tenkasi → Perambalur → Thoothukudi,"Tenkasi, Thoothukudi"
-Coimbatore,Pattukkottai,251,2,0,1,Safe,Dharmapuri → Karur,None
-Villupuram,Ariyalur,313,8,1,1,High Risk,Chennai,Chennai
-Coimbatore,Thanjavur,336,7,1,1,High Risk,Pudukkottai → Karaikudi → Pattukkottai,Pattukkottai
-Mettupalayam,Dindigul,234,7,1,0,Moderate Risk,Chennai → Nagapattinam,None
-Chennai,Sivakasi,140,3,1,1,Moderate Risk,Ariyalur → Chidambaram,None
-Nagercoil,Avadi,369,8,1,0,Safe,Tiruppur → Ramanathapuram → Ambur,"Tiruppur, Ramanathapuram"
-Thoothukudi,Avadi,233,8,0,0,High Risk,Tambaram,None
-Sathyamangalam,Karur,357,2,0,0,Safe,Coimbatore → Pudukkottai,Coimbatore
-Dindigul,Kanchipuram,185,9,0,0,Safe,Sivakasi → Coimbatore,None
-Perambalur,Tirunelveli,241,3,1,1,Safe,Karur,None
-Thanjavur,Tiruchirappalli,363,3,1,0,High Risk,Sivakasi,Sivakasi
-Villupuram,Pattukkottai,271,10,1,1,Safe,Tenkasi,None
-Villupuram,Thanjavur,143,2,0,0,Moderate Risk,Pudukkottai,None
-Ramanathapuram,Dharmapuri,290,9,0,1,Safe,Nagercoil → Mettupalayam → Kanchipuram,None
-Tiruchirappalli,Coimbatore,121,7,1,0,High Risk,Tiruppur → Salem → Chennai,None
-Tiruppur,Vellore,101,9,0,1,Moderate Risk,Pollachi → Tirunelveli → Tiruchirappalli,Pollachi
-Thoothukudi,Pollachi,52,5,1,1,High Risk,Erode → Villupuram → Salem,Erode
-Sivakasi,Dindigul,98,9,1,1,High Risk,Pudukkottai → Tambaram,None
-Villupuram,Madurai,242,7,0,0,Moderate Risk,Chennai,None
-Tiruchirappalli,Coimbatore,302,5,0,0,Moderate Risk,Madurai,Madurai
-Coimbatore,Dindigul,365,6,1,1,Safe,Mettupalayam → Nagercoil → Nagapattinam,"Mettupalayam, Nagapattinam, Nagercoil"
-Madurai,Tiruchirappalli,239,3,1,0,High Risk,Erode → Cuddalore → Dindigul,None
-Villupuram,Tirunelveli,58,3,0,0,Moderate Risk,Nagercoil → Dindigul,"Nagercoil, Dindigul"
-Tenkasi,Dharmapuri,251,10,0,1,Safe,Tiruppur,None
-Gobichettipalayam,Chennai,179,7,1,0,Moderate Risk,Nagercoil → Ariyalur,Ariyalur
-Thoothukudi,Pollachi,163,10,1,1,Moderate Risk,Dindigul,Dindigul
-Namakkal,Nagercoil,345,8,1,0,High Risk,Mettupalayam → Salem → Thoothukudi,None
-Salem,Sivakasi,331,7,0,0,Moderate Risk,Tambaram → Nagapattinam → Kanchipuram,None
-Tenkasi,Pudukkottai,212,4,0,0,High Risk,Coimbatore → Karur → Nagapattinam,"Coimbatore, Nagapattinam, Karur"
-Namakkal,Ariyalur,254,1,1,1,Moderate Risk,Chennai → Tirunelveli → Dindigul,None
-Ambur,Vellore,59,5,0,1,Moderate Risk,Pudukkottai,None
-Tiruppur,Avadi,332,1,1,1,High Risk,Nagercoil,Nagercoil
-Vellore,Pudukkottai,374,10,1,1,Safe,Nagapattinam → Chennai,None
-Perambalur,Avadi,294,10,0,0,Moderate Risk,Villupuram → Gobichettipalayam,None
-Coimbatore,Pudukkottai,354,7,0,1,High Risk,Namakkal → Karur,Karur
-Chidambaram,Mettupalayam,156,6,1,1,Moderate Risk,Pattukkottai,Pattukkottai
-Avadi,Chidambaram,343,8,0,0,High Risk,Namakkal → Tiruppur → Dharmapuri,Namakkal
-Sivakasi,Tenkasi,359,6,1,0,Moderate Risk,Thoothukudi → Chidambaram → Sathyamangalam,None
-Salem,Thoothukudi,255,10,1,0,High Risk,Coimbatore → Chidambaram,None
-Pollachi,Sivakasi,265,3,1,0,High Risk,Cuddalore,None
-Tenkasi,Pudukkottai,249,3,0,1,Safe,Vellore → Pollachi,None
-Nagercoil,Pattukkottai,370,10,1,0,High Risk,Avadi → Erode,None
-Nagapattinam,Perambalur,174,10,1,1,Safe,Villupuram → Chennai → Vellore,None
-Cuddalore,Gobichettipalayam,255,10,0,1,Moderate Risk,Pattukkottai → Villupuram,"Villupuram, Pattukkottai"
-Mettupalayam,Perambalur,175,2,1,0,Moderate Risk,Tiruppur → Karaikudi,Karaikudi
-Tiruchirappalli,Pollachi,131,6,0,1,High Risk,Mettupalayam → Thanjavur,None
-Tambaram,Gobichettipalayam,76,3,0,0,Moderate Risk,Thanjavur → Perambalur,"Perambalur, Thanjavur"
-Mettupalayam,Avadi,83,5,1,1,High Risk,Ambur,Ambur
-Erode,Nagercoil,161,7,1,1,High Risk,Pattukkottai,None
-Nagapattinam,Gobichettipalayam,246,4,0,0,Moderate Risk,Cuddalore,None
-Tambaram,Dharmapuri,135,9,0,1,High Risk,Coimbatore → Villupuram → Pattukkottai,"Coimbatore, Pattukkottai, Villupuram"
-Dharmapuri,Tenkasi,317,2,1,1,High Risk,Pudukkottai,Pudukkottai
-Dharmapuri,Dindigul,342,8,0,0,Safe,Avadi,None
-Villupuram,Nagercoil,223,4,1,1,High Risk,Salem → Gobichettipalayam → Ambur,None
-Dindigul,Villupuram,314,7,0,1,Safe,Tirunelveli → Gobichettipalayam → Namakkal,None
-Tenkasi,Dharmapuri,162,8,1,0,Safe,Namakkal,None
-Ramanathapuram,Chennai,187,4,1,1,Safe,Pollachi → Pattukkottai,Pattukkottai
-Tiruchirappalli,Tirunelveli,199,4,1,0,Safe,Gobichettipalayam → Coimbatore → Avadi,None
-Thanjavur,Coimbatore,378,9,0,1,Moderate Risk,Tambaram → Ramanathapuram → Perambalur,"Tambaram, Ramanathapuram, Perambalur"
-Salem,Ambur,258,6,0,0,High Risk,Vellore,None
-Kanchipuram,Erode,103,4,1,1,Safe,Coimbatore → Perambalur,Coimbatore
-Karaikudi,Salem,241,6,1,1,High Risk,Nagercoil,Nagercoil
-Mettupalayam,Ramanathapuram,186,4,0,1,Safe,Tambaram,None
-Thanjavur,Karur,391,4,1,1,High Risk,Pattukkottai → Madurai → Namakkal,None
-Tambaram,Ramanathapuram,231,10,1,0,Safe,Tenkasi → Avadi → Dharmapuri,Tenkasi
-Kanchipuram,Dindigul,267,4,1,1,Safe,Chidambaram,None
-Tiruppur,Sivakasi,110,7,1,1,High Risk,Kanchipuram,None
-Tambaram,Avadi,322,6,0,0,Safe,Vellore,None
-Gobichettipalayam,Tambaram,233,9,1,0,Moderate Risk,Tiruchirappalli → Kanchipuram → Pollachi,"Tiruchirappalli, Kanchipuram"
-Ramanathapuram,Tenkasi,244,10,0,1,Moderate Risk,Sivakasi,None
-Pollachi,Salem,265,4,1,1,Safe,Namakkal → Perambalur,Perambalur
-Gobichettipalayam,Sathyamangalam,89,3,0,1,Moderate Risk,Nagercoil,Nagercoil
-Dindigul,Chennai,287,9,1,0,Moderate Risk,Avadi → Tenkasi → Sivakasi,"Avadi, Sivakasi"
-Nagercoil,Kanchipuram,400,5,0,0,Moderate Risk,Sivakasi,Sivakasi
-Mettupalayam,Sathyamangalam,329,3,1,0,Safe,Ramanathapuram,None
-Vellore,Gobichettipalayam,362,1,1,1,Safe,Tenkasi,None
-Villupuram,Sivakasi,140,7,1,1,Moderate Risk,Perambalur → Ambur,None
-Sivakasi,Avadi,143,3,0,0,High Risk,Nagercoil → Kanchipuram → Erode,None
-Nagercoil,Mettupalayam,77,4,0,0,High Risk,Cuddalore → Tambaram → Pudukkottai,"Pudukkottai, Cuddalore, Tambaram"
-Nagapattinam,Sivakasi,170,2,1,1,Moderate Risk,Namakkal → Dharmapuri,Namakkal
-Nagercoil,Chennai,312,1,0,1,Safe,Perambalur,None
-Karaikudi,Dindigul,154,10,1,1,High Risk,Tiruppur,Tiruppur
-Erode,Ambur,152,1,1,1,Moderate Risk,Sathyamangalam → Villupuram,Villupuram
-Gobichettipalayam,Erode,323,3,1,1,High Risk,Salem → Thanjavur,None
-Karur,Sathyamangalam,299,8,1,0,Moderate Risk,Nagercoil,None
-Sivakasi,Ambur,373,2,1,0,High Risk,Avadi,None
-Villupuram,Avadi,389,7,1,1,High Risk,Karaikudi → Perambalur,None
-Pollachi,Pattukkottai,312,4,1,1,Safe,Mettupalayam → Coimbatore → Gobichettipalayam,None
-Ramanathapuram,Tenkasi,91,6,0,0,High Risk,Salem → Tiruppur → Thoothukudi,"Tiruppur, Salem, Thoothukudi"
-Avadi,Tambaram,300,9,1,0,High Risk,Chennai,None
-Vellore,Avadi,273,3,0,1,Safe,Karur → Thoothukudi → Cuddalore,"Karur, Thoothukudi, Cuddalore"
-Cuddalore,Thoothukudi,373,3,1,1,Moderate Risk,Thanjavur,None
-Chennai,Ramanathapuram,326,9,0,1,Safe,Thoothukudi → Madurai → Tiruchirappalli,None
-Nagercoil,Avadi,287,10,1,0,Moderate Risk,Gobichettipalayam → Mettupalayam,None
-Nagapattinam,Salem,168,4,0,1,High Risk,Thanjavur → Cuddalore → Ambur,"Thanjavur, Cuddalore, Ambur"
-Pudukkottai,Pollachi,398,8,1,0,Moderate Risk,Chennai → Karur,None
-Vellore,Nagercoil,329,5,1,0,Moderate Risk,Salem → Nagapattinam,Nagapattinam
-Cuddalore,Namakkal,90,4,1,1,High Risk,Erode → Nagapattinam → Karaikudi,"Karaikudi, Erode, Nagapattinam"
-Gobichettipalayam,Vellore,273,3,0,1,Moderate Risk,Avadi → Thoothukudi → Tenkasi,Tenkasi
-Tiruchirappalli,Sivakasi,92,1,0,0,Safe,Salem → Thoothukudi → Tambaram,None
-Avadi,Tambaram,185,4,0,1,Safe,Salem → Dharmapuri → Kanchipuram,"Kanchipuram, Dharmapuri, Salem"
-Nagapattinam,Mettupalayam,146,5,1,1,Safe,Tiruppur → Avadi → Perambalur,None
-Cuddalore,Ariyalur,371,2,0,1,Safe,Sathyamangalam → Namakkal,None
-Cuddalore,Dindigul,82,9,1,0,Safe,Sathyamangalam,None
-Dharmapuri,Nagercoil,252,3,0,1,Safe,Kanchipuram → Mettupalayam,"Kanchipuram, Mettupalayam"
-Salem,Avadi,124,1,0,1,High Risk,Kanchipuram,Kanchipuram
-Pattukkottai,Karur,168,5,1,0,High Risk,Chennai → Sivakasi → Ramanathapuram,None
-Madurai,Salem,287,9,0,1,High Risk,Nagapattinam,None
-Ramanathapuram,Mettupalayam,138,9,1,1,Moderate Risk,Tambaram → Pollachi,None
-Chennai,Erode,197,10,1,1,Safe,Chidambaram → Sivakasi,"Chidambaram, Sivakasi"
-Pudukkottai,Erode,384,3,1,0,High Risk,Villupuram → Thanjavur,Villupuram
-Coimbatore,Nagercoil,156,4,1,1,Moderate Risk,Chennai,Chennai
-Villupuram,Vellore,159,6,1,1,High Risk,Tenkasi → Mettupalayam,None
-Madurai,Thoothukudi,186,4,0,0,High Risk,Thanjavur,None
-Madurai,Salem,353,10,1,1,Safe,Gobichettipalayam → Thoothukudi → Chennai,"Chennai, Gobichettipalayam"
-Vellore,Ramanathapuram,267,5,1,1,High Risk,Dindigul → Pudukkottai → Perambalur,None
-Pudukkottai,Villupuram,304,3,0,1,Safe,Ramanathapuram → Chidambaram,None
-Dharmapuri,Kanchipuram,340,7,0,0,Moderate Risk,Mettupalayam → Cuddalore → Avadi,"Cuddalore, Mettupalayam, Avadi"
-Avadi,Tiruchirappalli,283,9,0,1,Safe,Dindigul,Dindigul
-Nagapattinam,Ariyalur,313,5,0,0,Safe,Thanjavur,None
-Cuddalore,Coimbatore,57,7,1,1,Safe,Tambaram → Vellore,"Vellore, Tambaram"
-Coimbatore,Sathyamangalam,166,5,0,0,High Risk,Nagercoil → Madurai,None
-Chidambaram,Perambalur,66,3,0,1,Moderate Risk,Ariyalur,None
-Sivakasi,Coimbatore,253,4,0,0,High Risk,Salem → Dharmapuri → Perambalur,None
-Madurai,Erode,251,5,1,1,Moderate Risk,Ambur,None
-Pudukkottai,Sathyamangalam,284,4,1,1,High Risk,Namakkal → Erode → Kanchipuram,None
-Tiruppur,Thanjavur,265,5,0,0,Safe,Chidambaram → Madurai,None
-Coimbatore,Gobichettipalayam,111,7,1,1,Moderate Risk,Tirunelveli,None
-Dindigul,Tiruchirappalli,99,7,1,0,High Risk,Kanchipuram → Tambaram,Kanchipuram
-Perambalur,Pudukkottai,125,9,0,0,Safe,Chidambaram,None
-Nagercoil,Nagapattinam,93,3,0,1,Safe,Sivakasi → Cuddalore → Chennai,Sivakasi
-Perambalur,Thanjavur,298,3,1,1,Moderate Risk,Sivakasi,None
-Ariyalur,Thanjavur,141,10,0,1,High Risk,Sathyamangalam,Sathyamangalam
-Karaikudi,Pollachi,116,3,1,0,High Risk,Thanjavur,None
-Madurai,Namakkal,256,7,1,0,Safe,Erode,None
-Dindigul,Villupuram,136,5,1,1,Moderate Risk,Pollachi → Sathyamangalam,None
-Ariyalur,Karaikudi,131,3,1,1,Moderate Risk,Villupuram → Pollachi → Pudukkottai,"Pudukkottai, Pollachi"
-Ambur,Perambalur,398,3,1,1,High Risk,Salem → Chidambaram → Thoothukudi,None
-Tenkasi,Tiruchirappalli,113,7,0,0,Moderate Risk,Pudukkottai,None
-Tiruppur,Erode,113,3,1,0,High Risk,Kanchipuram,None
-Villupuram,Karur,263,10,1,0,Safe,Sathyamangalam → Ramanathapuram,"Ramanathapuram, Sathyamangalam"
-Tenkasi,Coimbatore,197,10,1,1,High Risk,Karur → Karaikudi,None
-Vellore,Karur,232,2,0,1,Safe,Ambur,Ambur
-Chidambaram,Mettupalayam,160,10,0,1,High Risk,Pollachi → Coimbatore,None
-Thoothukudi,Kanchipuram,394,3,1,1,Safe,Ramanathapuram → Dharmapuri → Cuddalore,"Cuddalore, Ramanathapuram, Dharmapuri"
-Erode,Ramanathapuram,86,5,1,0,Safe,Dharmapuri → Thoothukudi → Cuddalore,"Thoothukudi, Cuddalore, Dharmapuri"
-Perambalur,Salem,364,10,1,0,Moderate Risk,Chidambaram → Cuddalore → Dindigul,"Chidambaram, Dindigul"
-Avadi,Ramanathapuram,366,4,1,1,Moderate Risk,Salem → Chidambaram,None
-Pattukkottai,Pollachi,327,1,1,1,Safe,Erode → Salem → Namakkal,None
-Nagapattinam,Perambalur,225,10,1,1,Moderate Risk,Cuddalore → Tambaram → Avadi,None
-Gobichettipalayam,Thoothukudi,287,2,1,1,Safe,Chennai → Vellore → Nagercoil,None
-Gobichettipalayam,Perambalur,100,9,1,1,High Risk,Vellore → Tenkasi → Thoothukudi,None
-Tiruchirappalli,Sathyamangalam,128,7,0,1,Safe,Karur → Vellore,None
-Tiruchirappalli,Villupuram,205,10,1,1,Moderate Risk,Sathyamangalam → Ariyalur,None
-Mettupalayam,Nagapattinam,168,10,1,1,Moderate Risk,Madurai,None
-Madurai,Tiruppur,343,2,1,1,High Risk,Pattukkottai → Avadi,"Pattukkottai, Avadi"
-Kanchipuram,Erode,322,1,0,0,High Risk,Pollachi → Ambur → Gobichettipalayam,Ambur
-Tirunelveli,Sivakasi,321,7,1,0,Moderate Risk,Ramanathapuram → Vellore → Tambaram,"Tambaram, Vellore"
-Villupuram,Erode,139,2,0,0,Moderate Risk,Karaikudi → Gobichettipalayam,"Gobichettipalayam, Karaikudi"
-Ariyalur,Ambur,378,6,1,0,Moderate Risk,Gobichettipalayam,None
-Chennai,Thoothukudi,54,10,1,0,Safe,Kanchipuram → Cuddalore,None
-Mettupalayam,Tambaram,117,4,0,0,High Risk,Villupuram,Villupuram
-Ambur,Gobichettipalayam,135,4,1,1,Safe,Karur → Tirunelveli → Ramanathapuram,None
-Perambalur,Tambaram,64,10,0,0,Safe,Erode → Pudukkottai,None
-Tirunelveli,Sathyamangalam,150,7,0,0,Safe,Ariyalur,None
-Coimbatore,Namakkal,89,1,0,0,Safe,Tambaram → Ramanathapuram → Avadi,Avadi
-Pudukkottai,Cuddalore,150,2,0,0,Safe,Tiruppur,None
-Cuddalore,Dindigul,205,2,1,0,Safe,Perambalur,Perambalur
-Chennai,Thoothukudi,94,1,0,1,Moderate Risk,Kanchipuram,None
-Nagapattinam,Cuddalore,208,6,1,0,High Risk,Sathyamangalam → Dharmapuri → Tiruchirappalli,None
-Chidambaram,Thanjavur,386,9,1,1,Moderate Risk,Tiruppur → Ramanathapuram → Pollachi,Ramanathapuram
-Cuddalore,Avadi,164,1,0,1,Moderate Risk,Karur,None
-Ambur,Namakkal,268,2,1,1,Safe,Tiruchirappalli → Ramanathapuram,"Tiruchirappalli, Ramanathapuram"
-Ambur,Thanjavur,78,3,0,1,Moderate Risk,Madurai,None
-Mettupalayam,Namakkal,363,5,0,1,Safe,Pattukkottai → Vellore,None
-Pudukkottai,Dindigul,105,6,1,0,Moderate Risk,Namakkal → Villupuram → Tiruppur,Villupuram
-Nagercoil,Dharmapuri,208,10,1,0,High Risk,Cuddalore → Pudukkottai,Cuddalore
-Coimbatore,Ramanathapuram,123,4,1,1,High Risk,Madurai → Tiruchirappalli → Chennai,"Chennai, Madurai"
-Dharmapuri,Nagercoil,294,9,0,1,Safe,Pattukkottai,None
-Salem,Namakkal,60,6,1,1,Moderate Risk,Nagapattinam,None
-Kanchipuram,Perambalur,51,3,1,1,Safe,Chidambaram → Namakkal → Nagapattinam,"Chidambaram, Namakkal, Nagapattinam"
-Ariyalur,Thanjavur,106,8,1,1,Safe,Pudukkottai → Tenkasi → Avadi,None
-Ramanathapuram,Tenkasi,189,5,0,1,Safe,Salem → Karur → Tiruchirappalli,"Tiruchirappalli, Karur, Salem"
-Sathyamangalam,Ramanathapuram,177,4,1,1,Safe,Vellore,None
-Nagapattinam,Tenkasi,309,2,0,0,Moderate Risk,Ramanathapuram → Nagercoil → Ambur,None
-Dindigul,Gobichettipalayam,356,10,0,0,Moderate Risk,Villupuram,None
-Ramanathapuram,Sivakasi,257,9,0,1,High Risk,Coimbatore → Tenkasi → Cuddalore,Coimbatore
-Thoothukudi,Perambalur,208,1,0,0,Moderate Risk,Chidambaram → Namakkal,None
-Ramanathapuram,Kanchipuram,313,8,0,0,Safe,Mettupalayam → Ambur → Perambalur,"Perambalur, Ambur, Mettupalayam"
-Kanchipuram,Tirunelveli,148,10,0,1,Moderate Risk,Mettupalayam → Dharmapuri,"Dharmapuri, Mettupalayam"
-Ambur,Cuddalore,77,2,0,1,High Risk,Vellore → Pollachi → Villupuram,"Vellore, Villupuram"
-Chennai,Villupuram,239,8,0,1,Safe,Vellore → Karaikudi,"Karaikudi, Vellore"
-Gobichettipalayam,Chennai,245,6,0,0,High Risk,Cuddalore,None
-Tiruchirappalli,Dharmapuri,336,6,1,1,Moderate Risk,Nagapattinam → Avadi → Gobichettipalayam,None
-Karur,Ramanathapuram,311,10,0,1,High Risk,Perambalur → Vellore,None
-Dharmapuri,Tirunelveli,254,5,0,1,High Risk,Salem → Sathyamangalam → Avadi,Sathyamangalam
-Villupuram,Erode,138,8,1,1,High Risk,Sivakasi → Nagapattinam → Sathyamangalam,"Sathyamangalam, Sivakasi"
-Pollachi,Perambalur,215,5,1,1,Moderate Risk,Tambaram → Karur → Dindigul,"Tambaram, Dindigul"
-Ramanathapuram,Ambur,121,1,1,0,Moderate Risk,Perambalur → Villupuram,None
-Pudukkottai,Tenkasi,371,6,0,1,High Risk,Tiruchirappalli → Sivakasi,None
-Ramanathapuram,Tambaram,171,8,0,0,High Risk,Salem → Pollachi,None
-Mettupalayam,Dindigul,62,5,1,1,Safe,Tenkasi → Coimbatore,None
-Ariyalur,Tirunelveli,277,8,0,0,High Risk,Nagapattinam → Perambalur,None
-Pudukkottai,Madurai,100,5,1,0,Safe,Salem → Nagapattinam → Vellore,None
-Pattukkottai,Karaikudi,176,4,1,0,Moderate Risk,Mettupalayam,None
-Gobichettipalayam,Ariyalur,77,9,0,1,Moderate Risk,Salem,Salem
-Dindigul,Kanchipuram,61,8,0,0,High Risk,Chidambaram → Nagercoil → Vellore,"Chidambaram, Vellore"
-Pattukkottai,Ariyalur,266,7,0,0,High Risk,Madurai,Madurai
-Sathyamangalam,Nagercoil,273,10,0,1,High Risk,Ramanathapuram → Salem → Chennai,None
-Namakkal,Kanchipuram,226,9,0,1,Safe,Salem,None
-Chennai,Ambur,93,7,1,1,Safe,Chidambaram,Chidambaram
-Erode,Pollachi,172,3,1,0,Safe,Perambalur,Perambalur
-Tenkasi,Thanjavur,270,6,1,0,High Risk,Dindigul → Avadi,Avadi
-Kanchipuram,Namakkal,224,10,0,0,Moderate Risk,Pollachi,Pollachi
-Tiruchirappalli,Mettupalayam,355,3,0,1,Safe,Ariyalur,Ariyalur
-Tenkasi,Tiruppur,399,3,0,1,High Risk,Tambaram → Madurai,"Madurai, Tambaram"
-Karur,Dindigul,318,5,0,0,Moderate Risk,Pollachi → Nagercoil,None
-Mettupalayam,Nagapattinam,185,5,0,0,High Risk,Ramanathapuram → Sivakasi,None
-Ariyalur,Villupuram,138,6,1,0,High Risk,Coimbatore → Dharmapuri,None
-Namakkal,Vellore,379,5,1,1,High Risk,Coimbatore,None
-Karur,Ramanathapuram,235,6,0,0,Safe,Tirunelveli,Tirunelveli
-Tiruppur,Karaikudi,81,2,0,0,High Risk,Salem → Erode,None
-Pollachi,Perambalur,65,10,0,0,Safe,Tiruppur,None
-Thoothukudi,Ramanathapuram,245,6,0,1,Moderate Risk,Thanjavur → Madurai → Ambur,"Madurai, Ambur, Thanjavur"
-Chennai,Cuddalore,286,6,0,1,High Risk,Tiruppur,None
-Gobichettipalayam,Ramanathapuram,283,4,0,0,Moderate Risk,Chennai → Ariyalur → Tiruchirappalli,None
-Ariyalur,Ambur,149,9,0,1,High Risk,Tambaram,None
-Sathyamangalam,Tenkasi,224,1,1,1,Moderate Risk,Sivakasi → Ramanathapuram,None
-Tirunelveli,Dharmapuri,250,7,1,0,Moderate Risk,Madurai → Ramanathapuram,Madurai
-Madurai,Nagercoil,69,7,0,0,Safe,Tiruppur → Nagapattinam → Sivakasi,"Sivakasi, Nagapattinam"
-Salem,Gobichettipalayam,176,6,1,1,High Risk,Dindigul,None
-Madurai,Pollachi,116,5,1,0,Safe,Karaikudi → Nagercoil,None
-Nagercoil,Villupuram,217,6,0,1,Safe,Pudukkottai → Tenkasi,None
-Namakkal,Pattukkottai,61,9,1,1,Safe,Gobichettipalayam → Sathyamangalam → Ariyalur,"Ariyalur, Gobichettipalayam, Sathyamangalam"
-Perambalur,Mettupalayam,119,2,0,0,Moderate Risk,Sathyamangalam → Thoothukudi,Sathyamangalam
-Ramanathapuram,Chidambaram,391,4,1,1,Moderate Risk,Erode → Avadi,Erode
-Tirunelveli,Salem,215,9,1,0,Moderate Risk,Mettupalayam,None
-Tiruchirappalli,Thoothukudi,210,5,1,0,Safe,Pattukkottai,None
-Ramanathapuram,Coimbatore,100,10,0,0,Safe,Dharmapuri → Mettupalayam,None
-Nagercoil,Karur,163,2,0,0,Safe,Thoothukudi,Thoothukudi
-Tiruchirappalli,Pollachi,182,1,0,0,Moderate Risk,Kanchipuram → Ariyalur → Villupuram,"Kanchipuram, Villupuram"
-Ambur,Vellore,110,9,1,0,Moderate Risk,Thoothukudi,None
-Tambaram,Tirunelveli,55,5,1,1,Safe,Dindigul,Dindigul
-Vellore,Namakkal,260,6,0,0,Safe,Madurai → Cuddalore → Tirunelveli,"Madurai, Tirunelveli"
-Sathyamangalam,Ambur,372,3,0,1,High Risk,Madurai,None
-Nagercoil,Tirunelveli,339,5,1,1,High Risk,Coimbatore,None
-Salem,Dharmapuri,71,7,1,1,Safe,Karur → Dindigul,None
-Tiruchirappalli,Cuddalore,149,9,0,1,Moderate Risk,Coimbatore → Salem,None
-Avadi,Sivakasi,100,5,0,1,Moderate Risk,Karur → Salem → Tenkasi,None
-Villupuram,Ambur,216,4,0,1,High Risk,Thanjavur → Gobichettipalayam,Thanjavur
-Pudukkottai,Salem,216,10,1,1,High Risk,Pollachi → Sathyamangalam,Pollachi
-Avadi,Ariyalur,318,1,1,1,High Risk,Dindigul → Cuddalore → Dharmapuri,"Dindigul, Dharmapuri"
-Kanchipuram,Perambalur,196,2,0,0,Safe,Cuddalore → Tirunelveli → Sathyamangalam,None
-Karaikudi,Tiruppur,54,8,1,0,Moderate Risk,Pattukkottai → Chennai,None
-Tiruppur,Nagercoil,197,4,0,0,High Risk,Tambaram → Karur,"Tambaram, Karur"
-Tiruppur,Pudukkottai,280,5,0,1,High Risk,Tenkasi → Nagapattinam,None
-Karaikudi,Avadi,69,4,1,1,Moderate Risk,Perambalur → Madurai → Pudukkottai,"Madurai, Perambalur"
-Sathyamangalam,Mettupalayam,321,4,1,0,Safe,Thanjavur,None
-Sathyamangalam,Tiruchirappalli,268,8,1,0,Moderate Risk,Tirunelveli → Madurai → Avadi,None
-Erode,Chennai,383,9,1,1,Safe,Sivakasi → Nagapattinam,None
-Tiruppur,Ambur,257,7,0,1,High Risk,Pudukkottai,None
-Coimbatore,Chidambaram,126,9,1,0,Safe,Chennai → Thanjavur → Dindigul,None
-Gobichettipalayam,Tenkasi,157,4,1,1,High Risk,Sathyamangalam → Ariyalur,"Sathyamangalam, Ariyalur"
-Tirunelveli,Sivakasi,274,10,1,1,High Risk,Dharmapuri → Coimbatore → Tiruppur,Coimbatore
-Karaikudi,Tenkasi,111,3,0,1,Safe,Namakkal → Pudukkottai → Sathyamangalam,Sathyamangalam
-Tiruchirappalli,Nagercoil,167,6,1,1,Safe,Ambur → Avadi → Pattukkottai,"Ambur, Avadi, Pattukkottai"
-Namakkal,Mettupalayam,351,4,0,1,Moderate Risk,Chennai → Dindigul → Chidambaram,"Dindigul, Chidambaram"
-Dharmapuri,Ramanathapuram,286,2,1,0,Moderate Risk,Coimbatore → Perambalur → Salem,None
-Ramanathapuram,Chidambaram,183,6,0,0,Safe,Tiruchirappalli → Sivakasi → Dindigul,None
-Pollachi,Gobichettipalayam,316,1,1,1,High Risk,Mettupalayam,Mettupalayam
-Sivakasi,Tiruppur,287,4,1,0,Safe,Ramanathapuram → Pattukkottai,None
-Karur,Dindigul,62,7,1,1,High Risk,Ariyalur → Madurai → Nagapattinam,None
-Perambalur,Nagercoil,322,6,0,1,High Risk,Dindigul → Namakkal → Cuddalore,"Cuddalore, Dindigul"
-Villupuram,Chidambaram,288,8,1,1,Safe,Pattukkottai → Nagercoil,"Nagercoil, Pattukkottai"
-Mettupalayam,Chidambaram,74,8,0,1,Moderate Risk,Thoothukudi,None
-Dharmapuri,Mettupalayam,351,7,1,1,High Risk,Ambur,None
-Mettupalayam,Pollachi,187,10,1,1,Safe,Tiruchirappalli → Madurai,None
-Ramanathapuram,Dharmapuri,89,1,0,0,Moderate Risk,Ambur → Gobichettipalayam,None
-Thanjavur,Pudukkottai,69,5,0,1,Moderate Risk,Namakkal,None
-Erode,Pollachi,97,8,0,1,Safe,Tirunelveli,Tirunelveli
-Thoothukudi,Karaikudi,174,3,0,1,Safe,Thanjavur,None
-Tiruppur,Ramanathapuram,160,10,0,0,Safe,Karur,None
-Tiruchirappalli,Pudukkottai,154,4,0,1,Moderate Risk,Ariyalur → Mettupalayam → Cuddalore,"Cuddalore, Mettupalayam"
-Coimbatore,Perambalur,317,5,1,0,Safe,Tenkasi,None
-Madurai,Thoothukudi,325,1,1,0,Safe,Chennai → Salem → Tambaram,"Salem, Tambaram, Chennai"
-Tiruppur,Salem,142,6,0,1,Moderate Risk,Chidambaram,Chidambaram
-Tirunelveli,Namakkal,269,1,1,1,High Risk,Coimbatore → Tiruchirappalli,None
-Salem,Coimbatore,140,4,0,0,High Risk,Nagercoil → Nagapattinam → Tirunelveli,"Nagercoil, Tirunelveli"
-Erode,Thoothukudi,87,3,1,1,High Risk,Tirunelveli → Salem → Kanchipuram,None
-Pattukkottai,Villupuram,327,3,0,0,Moderate Risk,Coimbatore → Vellore → Salem,Coimbatore
-Vellore,Mettupalayam,344,5,0,1,Moderate Risk,Erode,Erode
-Pudukkottai,Sivakasi,320,7,0,0,High Risk,Ambur → Pattukkottai,None
-Nagercoil,Tiruppur,197,8,1,0,Safe,Chennai,None
-Perambalur,Sivakasi,176,3,0,1,Moderate Risk,Kanchipuram,Kanchipuram
-Chennai,Pollachi,375,4,0,1,Moderate Risk,Avadi → Nagercoil,Avadi
-Sathyamangalam,Dharmapuri,122,6,1,0,Moderate Risk,Chennai → Tiruppur → Ariyalur,None
-Pollachi,Ramanathapuram,61,10,1,0,Moderate Risk,Thoothukudi → Thanjavur,None
-Nagapattinam,Avadi,138,8,0,0,High Risk,Chennai,None
-Nagapattinam,Tirunelveli,221,5,1,1,Safe,Gobichettipalayam → Sathyamangalam,None
-Vellore,Salem,164,2,1,0,High Risk,Erode,None
-Ariyalur,Gobichettipalayam,63,8,1,1,Moderate Risk,Karaikudi,None
-Vellore,Namakkal,241,2,1,1,Moderate Risk,Kanchipuram,None
-Nagapattinam,Madurai,93,10,1,1,Safe,Vellore,None
-Tiruppur,Tenkasi,384,3,1,0,Safe,Vellore,None
-Madurai,Perambalur,400,3,1,1,High Risk,Coimbatore → Thanjavur,Coimbatore
-Avadi,Gobichettipalayam,187,6,0,0,High Risk,Villupuram,None
-Villupuram,Tambaram,141,7,0,0,Safe,Namakkal → Dharmapuri,"Dharmapuri, Namakkal"
-Mettupalayam,Pudukkottai,137,3,0,0,High Risk,Karaikudi,Karaikudi
-Pudukkottai,Tenkasi,206,9,0,1,Moderate Risk,Vellore → Chennai,None
-Pollachi,Chennai,236,2,0,0,Moderate Risk,Vellore,None
-Chidambaram,Mettupalayam,248,2,1,1,Safe,Cuddalore → Nagapattinam → Erode,None
-Gobichettipalayam,Chennai,52,3,1,1,Moderate Risk,Thanjavur → Ramanathapuram → Dharmapuri,"Thanjavur, Ramanathapuram, Dharmapuri"
-Thanjavur,Thoothukudi,255,2,0,0,High Risk,Tenkasi,None
-Sivakasi,Pollachi,177,10,0,0,Safe,Erode,Erode
-Ramanathapuram,Nagercoil,144,3,0,1,Moderate Risk,Nagapattinam → Tambaram → Tiruchirappalli,None
-Mettupalayam,Ariyalur,206,1,0,1,Moderate Risk,Madurai → Villupuram,Madurai
-Cuddalore,Ambur,281,6,0,0,Moderate Risk,Gobichettipalayam → Nagercoil,None
-Pudukkottai,Thoothukudi,329,6,1,0,Moderate Risk,Pattukkottai → Tenkasi → Dharmapuri,Dharmapuri
-Chennai,Cuddalore,138,10,0,1,Moderate Risk,Karaikudi → Pollachi → Salem,None
-Perambalur,Sathyamangalam,121,7,0,1,Safe,Tiruppur → Gobichettipalayam → Erode,None
-Sathyamangalam,Thoothukudi,247,5,0,0,Safe,Pattukkottai → Karaikudi,"Pattukkottai, Karaikudi"
-Avadi,Tambaram,196,5,1,0,Moderate Risk,Erode → Karaikudi → Dindigul,None
-Karaikudi,Tirunelveli,151,4,0,1,Safe,Perambalur → Coimbatore → Erode,None
-Karur,Dharmapuri,313,1,0,0,High Risk,Mettupalayam,None
-Villupuram,Thoothukudi,111,4,0,1,Moderate Risk,Nagercoil,None
-Tiruchirappalli,Madurai,300,7,1,1,High Risk,Ambur → Chennai → Erode,"Ambur, Chennai, Erode"
-Kanchipuram,Nagercoil,244,5,1,0,Moderate Risk,Vellore,None
-Vellore,Villupuram,237,9,0,0,High Risk,Nagercoil → Pattukkottai,"Pattukkottai, Nagercoil"
-Coimbatore,Thoothukudi,197,8,1,0,High Risk,Madurai → Mettupalayam → Pudukkottai,None
-Pollachi,Dharmapuri,264,6,0,1,Safe,Vellore,Vellore
-Tenkasi,Dindigul,51,3,0,1,High Risk,Tiruchirappalli → Vellore → Thanjavur,Vellore
-Madurai,Salem,236,4,0,1,High Risk,Chidambaram,None
-Nagapattinam,Kanchipuram,255,10,0,1,High Risk,Perambalur,Perambalur
-Avadi,Karaikudi,337,7,1,0,High Risk,Chidambaram → Ariyalur → Mettupalayam,None
-Dindigul,Pattukkottai,74,1,1,1,Safe,Karur,None
-Ambur,Chennai,179,8,1,0,Safe,Kanchipuram → Nagercoil,Kanchipuram
-Gobichettipalayam,Nagercoil,155,2,0,0,Safe,Madurai,None
-Vellore,Avadi,274,3,0,1,Moderate Risk,Karur → Namakkal → Mettupalayam,Karur
-Vellore,Tambaram,100,10,1,1,Moderate Risk,Ariyalur,Ariyalur
-Tenkasi,Thanjavur,107,9,1,0,Moderate Risk,Pollachi → Coimbatore → Ramanathapuram,None
-Ambur,Dindigul,229,5,0,0,High Risk,Erode → Tiruchirappalli → Sathyamangalam,None
-Dindigul,Karur,338,8,0,1,High Risk,Ariyalur → Vellore,None
-Namakkal,Ambur,330,3,1,1,Moderate Risk,Avadi,None
-Sathyamangalam,Villupuram,364,4,1,0,Safe,Coimbatore,None
-Tambaram,Ramanathapuram,337,2,1,0,Moderate Risk,Tiruppur → Vellore → Salem,None
-Nagapattinam,Coimbatore,139,7,1,1,Moderate Risk,Karur → Dharmapuri → Villupuram,"Karur, Villupuram, Dharmapuri"
-Salem,Ariyalur,133,1,0,1,High Risk,Tiruchirappalli → Ambur,None
-Thoothukudi,Tiruppur,148,6,1,1,High Risk,Tambaram → Madurai,"Madurai, Tambaram"
-Tambaram,Thanjavur,151,7,1,0,High Risk,Chennai,None
-Tirunelveli,Nagercoil,218,5,0,0,Safe,Pattukkottai → Perambalur → Chennai,"Chennai, Pattukkottai"
-Tenkasi,Tiruchirappalli,162,1,1,1,Safe,Nagercoil → Erode → Tirunelveli,Erode
-Thoothukudi,Coimbatore,140,1,1,1,Moderate Risk,Tiruppur,None
-Ariyalur,Avadi,230,4,1,1,Moderate Risk,Chidambaram → Tenkasi → Gobichettipalayam,None
-Karaikudi,Kanchipuram,213,6,1,1,High Risk,Thoothukudi,None
-Villupuram,Thanjavur,244,4,1,0,Moderate Risk,Nagercoil → Sivakasi → Pudukkottai,Pudukkottai
-Nagapattinam,Ambur,349,2,1,1,Safe,Perambalur → Mettupalayam → Tirunelveli,"Mettupalayam, Perambalur"
-Vellore,Nagercoil,260,8,1,0,Safe,Dindigul → Namakkal,None
-Dindigul,Gobichettipalayam,394,5,1,0,High Risk,Karaikudi → Cuddalore,Cuddalore
-Thoothukudi,Chennai,225,10,0,0,High Risk,Pudukkottai → Sivakasi,"Sivakasi, Pudukkottai"
-Perambalur,Coimbatore,346,7,1,1,Safe,Pollachi → Karaikudi,None
-Namakkal,Sathyamangalam,132,8,0,1,Moderate Risk,Thoothukudi → Kanchipuram,"Thoothukudi, Kanchipuram"
-Karaikudi,Gobichettipalayam,221,8,0,1,Safe,Avadi → Chennai,Avadi
-Thoothukudi,Mettupalayam,266,7,1,1,High Risk,Chidambaram → Pattukkottai,None
-Nagapattinam,Villupuram,251,3,0,0,High Risk,Dindigul,Dindigul
-Ariyalur,Karur,174,1,0,0,Safe,Thoothukudi,Thoothukudi
-Ambur,Vellore,348,7,0,0,High Risk,Coimbatore → Cuddalore → Nagapattinam,Coimbatore
-Karaikudi,Erode,52,3,1,0,High Risk,Perambalur → Karur,None
-Salem,Coimbatore,243,2,0,1,High Risk,Nagercoil → Dharmapuri → Avadi,Nagercoil
-Chennai,Tenkasi,182,4,0,0,Moderate Risk,Vellore → Salem → Tiruppur,"Salem, Tiruppur, Vellore"
-Tiruppur,Gobichettipalayam,225,9,1,0,High Risk,Dharmapuri → Tenkasi,None
-Villupuram,Madurai,295,9,1,0,High Risk,Tenkasi → Chidambaram,Chidambaram
-Nagapattinam,Pattukkottai,158,7,1,1,Moderate Risk,Tambaram → Gobichettipalayam,None
-Pudukkottai,Mettupalayam,184,7,0,0,High Risk,Namakkal,None
-Avadi,Dharmapuri,153,8,0,0,Safe,Pudukkottai → Sivakasi → Chidambaram,Pudukkottai
-Avadi,Coimbatore,235,1,1,0,Safe,Cuddalore,None
-Erode,Mettupalayam,263,3,1,0,Safe,Sivakasi → Tenkasi,"Tenkasi, Sivakasi"
-Ramanathapuram,Chidambaram,400,3,0,0,Safe,Tambaram → Dharmapuri,None
-Tenkasi,Dindigul,330,9,1,1,High Risk,Thanjavur,None
-Thoothukudi,Thanjavur,393,7,1,0,High Risk,Dindigul → Ramanathapuram → Karaikudi,None
-Kanchipuram,Dharmapuri,62,3,1,0,Moderate Risk,Dindigul → Chidambaram,"Chidambaram, Dindigul"
-Tenkasi,Ariyalur,204,1,1,1,Safe,Karur → Ramanathapuram,None
-Sivakasi,Vellore,362,10,0,1,High Risk,Ramanathapuram → Nagercoil,Nagercoil
-Mettupalayam,Tiruppur,152,9,1,0,Safe,Chidambaram,None
-Coimbatore,Villupuram,76,4,0,1,Moderate Risk,Perambalur → Chidambaram,None
-Mettupalayam,Chennai,380,5,1,0,Moderate Risk,Vellore,Vellore
-Karaikudi,Gobichettipalayam,394,4,1,0,High Risk,Thanjavur → Chennai → Coimbatore,"Thanjavur, Chennai"
-Tirunelveli,Erode,96,2,0,0,Safe,Thanjavur → Pudukkottai,Thanjavur
-Perambalur,Chennai,168,5,0,1,Moderate Risk,Mettupalayam,Mettupalayam
-Kanchipuram,Salem,71,7,1,0,High Risk,Erode → Nagercoil → Karaikudi,Erode
-Kanchipuram,Sathyamangalam,62,9,1,0,Moderate Risk,Tiruppur → Pudukkottai → Dharmapuri,"Pudukkottai, Dharmapuri"
-Salem,Namakkal,328,6,0,1,Moderate Risk,Pattukkottai → Tirunelveli → Cuddalore,"Tirunelveli, Cuddalore, Pattukkottai"
-Erode,Dindigul,91,6,0,0,High Risk,Ariyalur → Perambalur,None
-Coimbatore,Erode,320,7,0,1,High Risk,Madurai → Pollachi,"Madurai, Pollachi"
-Thoothukudi,Pollachi,138,1,0,0,High Risk,Tenkasi → Dharmapuri → Mettupalayam,None
-Nagercoil,Perambalur,390,2,1,1,High Risk,Sivakasi,Sivakasi
-Tirunelveli,Ariyalur,397,3,1,1,High Risk,Dharmapuri,None
-Nagercoil,Namakkal,275,1,0,1,Moderate Risk,Tirunelveli → Gobichettipalayam,Tirunelveli
-Tiruppur,Avadi,396,1,1,0,Safe,Karaikudi → Erode → Gobichettipalayam,None
-Mettupalayam,Nagercoil,293,9,0,1,Moderate Risk,Nagapattinam,None
-Gobichettipalayam,Thanjavur,286,5,0,1,Safe,Sivakasi,None
-Tambaram,Sivakasi,286,3,1,0,Safe,Kanchipuram,None
-Cuddalore,Tenkasi,318,2,1,1,Safe,Nagapattinam,Nagapattinam
-Karaikudi,Tambaram,295,7,0,1,High Risk,Sivakasi → Madurai,"Madurai, Sivakasi"
-Salem,Nagercoil,198,5,0,1,High Risk,Pollachi → Ramanathapuram → Gobichettipalayam,None
-Vellore,Pudukkottai,71,1,1,0,Safe,Gobichettipalayam → Dharmapuri → Karur,Karur
-Chennai,Erode,312,8,0,1,High Risk,Namakkal,None
-Dindigul,Pattukkottai,98,3,0,0,Safe,Vellore,None
-Coimbatore,Perambalur,290,3,0,0,Moderate Risk,Thoothukudi → Pattukkottai,Thoothukudi
-Salem,Tirunelveli,103,6,0,1,Moderate Risk,Chidambaram,None
-Villupuram,Chidambaram,260,5,0,0,High Risk,Pollachi → Madurai,None
-Chidambaram,Perambalur,67,9,0,1,High Risk,Vellore → Ambur,None
+route_name,source,destination,via,distance_km,blackspot_count,night_time,poor_streetlight,accident_prone_areas
+Route 928,Namakkal,Karur,Namakkal → Erode → Karur,337,0,1,1,Bhavani Junction
+Route 362,Chennai,Krishnagiri,Chennai → Krishnagiri → Krishnagiri,128,3,0,1,"NH-81 Junction, Kangeyam Circle"
+Route 650,Hosur,Erode,Hosur → Salem → Erode,207,2,0,1,"Karur NH-44, Kodumudi Stretch"
+Route 321,Erode,Salem,Erode → Coimbatore → Salem,322,0,1,0,"Kangeyam Circle, Bhavani Junction, Namakkal Bypass"
+Route 53,Erode,Hosur,Erode → Dharmapuri → Hosur,131,3,1,1,Krishnagiri Bypass
+Route 985,Erode,Hosur,Erode → Coimbatore → Hosur,104,4,0,1,"NH-81 Junction, Bhavani Junction"
+Route 102,Krishnagiri,Karur,Krishnagiri → Karur → Karur,168,2,0,0,"Kodumudi Stretch, Namakkal Bypass"
+Route 412,Erode,Krishnagiri,Erode → Namakkal → Krishnagiri,173,4,1,1,"Namakkal Bypass, Bhavani Junction, Karur NH-44"
+Route 663,Coimbatore,Namakkal,Coimbatore → Dharmapuri → Namakkal,315,2,1,0,Kangeyam Circle
+Route 836,Tiruppur,Dharmapuri,Tiruppur → Tiruppur → Dharmapuri,94,3,1,0,"Perundurai Highway, Hosur Toll Plaza"
+Route 967,Hosur,Karur,Hosur → Tiruppur → Karur,334,1,0,1,"NH-81 Junction, Mettur Ghat"
+Route 301,Hosur,Namakkal,Hosur → Namakkal → Namakkal,300,4,0,0,Hosur Toll Plaza
+Route 349,Chennai,Karur,Chennai → Tiruppur → Karur,248,0,1,1,"Mettur Ghat, NH-81 Junction"
+Route 924,Namakkal,Tiruppur,Namakkal → Salem → Tiruppur,120,4,0,0,Kangeyam Circle
+Route 856,Namakkal,Chennai,Namakkal → Hosur → Chennai,266,4,1,1,"NH-81 Junction, Namakkal Bypass"
+Route 306,Coimbatore,Salem,Coimbatore → Dharmapuri → Salem,301,3,1,1,"Hosur Toll Plaza, Perundurai Highway, Krishnagiri Bypass"
+Route 461,Hosur,Coimbatore,Hosur → Tiruppur → Coimbatore,163,2,1,0,"Kodumudi Stretch, Krishnagiri Bypass"
+Route 916,Hosur,Salem,Hosur → Tiruppur → Salem,324,2,0,0,"Namakkal Bypass, NH-81 Junction"
+Route 314,Salem,Namakkal,Salem → Coimbatore → Namakkal,269,4,0,1,"Hosur Toll Plaza, Bhavani Junction"
+Route 584,Chennai,Namakkal,Chennai → Karur → Namakkal,222,3,1,0,"Kangeyam Circle, NH-81 Junction, Perundurai Highway"
+Route 873,Dharmapuri,Karur,Dharmapuri → Coimbatore → Karur,113,3,1,1,Namakkal Bypass
+Route 516,Erode,Tiruppur,Erode → Tiruppur → Tiruppur,121,3,0,1,"Perundurai Highway, NH-81 Junction"
+Route 57,Hosur,Krishnagiri,Hosur → Namakkal → Krishnagiri,277,2,0,1,"Bhavani Junction, Karur NH-44, Hosur Toll Plaza"
+Route 801,Karur,Erode,Karur → Dharmapuri → Erode,123,0,1,1,Krishnagiri Bypass
+Route 833,Chennai,Hosur,Chennai → Karur → Hosur,100,0,0,0,Perundurai Highway
+Route 525,Salem,Chennai,Salem → Krishnagiri → Chennai,172,4,1,1,"Bhavani Junction, NH-81 Junction"
+Route 606,Salem,Krishnagiri,Salem → Krishnagiri → Krishnagiri,133,0,0,0,"Karur NH-44, Perundurai Highway, Krishnagiri Bypass"
+Route 555,Karur,Salem,Karur → Dharmapuri → Salem,186,2,1,0,Bhavani Junction
+Route 102,Dharmapuri,Salem,Dharmapuri → Erode → Salem,179,3,0,0,"Kodumudi Stretch, Kangeyam Circle"
+Route 641,Erode,Salem,Erode → Dharmapuri → Salem,166,5,1,0,Hosur Toll Plaza
+Route 364,Krishnagiri,Chennai,Krishnagiri → Namakkal → Chennai,302,3,0,0,NH-81 Junction
+Route 155,Karur,Namakkal,Karur → Krishnagiri → Namakkal,247,5,0,0,"Hosur Toll Plaza, Kangeyam Circle"
+Route 853,Coimbatore,Krishnagiri,Coimbatore → Coimbatore → Krishnagiri,274,4,0,0,Bhavani Junction
+Route 282,Hosur,Dharmapuri,Hosur → Krishnagiri → Dharmapuri,299,5,0,0,"NH-81 Junction, Hosur Toll Plaza"
+Route 383,Erode,Salem,Erode → Dharmapuri → Salem,116,5,0,1,"NH-81 Junction, Mettur Ghat"
+Route 676,Chennai,Namakkal,Chennai → Krishnagiri → Namakkal,178,5,1,0,"Karur NH-44, Hosur Toll Plaza"
+Route 100,Hosur,Tiruppur,Hosur → Krishnagiri → Tiruppur,139,2,1,1,"Krishnagiri Bypass, Kodumudi Stretch"
+Route 729,Chennai,Coimbatore,Chennai → Namakkal → Coimbatore,161,0,1,1,Karur NH-44
+Route 941,Karur,Dharmapuri,Karur → Hosur → Dharmapuri,138,1,0,1,NH-81 Junction
+Route 839,Hosur,Karur,Hosur → Karur → Karur,273,5,0,1,"Hosur Toll Plaza, Krishnagiri Bypass"
+Route 72,Coimbatore,Chennai,Coimbatore → Erode → Chennai,308,4,0,1,"Krishnagiri Bypass, Bhavani Junction, Kodumudi Stretch"
+Route 357,Namakkal,Coimbatore,Namakkal → Namakkal → Coimbatore,134,3,1,1,"Mettur Ghat, Kangeyam Circle, Kodumudi Stretch"
+Route 752,Erode,Karur,Erode → Tiruppur → Karur,348,1,0,0,Hosur Toll Plaza
+Route 517,Tiruppur,Karur,Tiruppur → Dharmapuri → Karur,130,2,0,1,"NH-81 Junction, Hosur Toll Plaza"
+Route 872,Krishnagiri,Coimbatore,Krishnagiri → Namakkal → Coimbatore,181,3,0,0,"Kodumudi Stretch, Karur NH-44, Hosur Toll Plaza"
+Route 658,Karur,Chennai,Karur → Hosur → Chennai,223,3,0,1,"Hosur Toll Plaza, Kangeyam Circle"
+Route 174,Chennai,Coimbatore,Chennai → Krishnagiri → Coimbatore,332,1,1,1,"Krishnagiri Bypass, Kangeyam Circle, Bhavani Junction"
+Route 317,Coimbatore,Erode,Coimbatore → Karur → Erode,189,5,0,0,"Kodumudi Stretch, Krishnagiri Bypass, Namakkal Bypass"
+Route 382,Dharmapuri,Coimbatore,Dharmapuri → Hosur → Coimbatore,116,1,0,0,"Kodumudi Stretch, Kangeyam Circle, Perundurai Highway"
+Route 71,Erode,Chennai,Erode → Dharmapuri → Chennai,216,0,0,0,"Hosur Toll Plaza, Perundurai Highway"
+Route 167,Dharmapuri,Namakkal,Dharmapuri → Tiruppur → Namakkal,80,0,1,0,"Namakkal Bypass, Perundurai Highway"
+Route 436,Namakkal,Dharmapuri,Namakkal → Karur → Dharmapuri,100,2,0,1,"Mettur Ghat, Krishnagiri Bypass"
+Route 812,Karur,Coimbatore,Karur → Tiruppur → Coimbatore,179,3,1,0,"Mettur Ghat, Hosur Toll Plaza"
+Route 853,Karur,Hosur,Karur → Namakkal → Hosur,207,4,1,0,NH-81 Junction
+Route 840,Coimbatore,Krishnagiri,Coimbatore → Salem → Krishnagiri,244,3,0,0,"Kangeyam Circle, Krishnagiri Bypass"
+Route 686,Hosur,Salem,Hosur → Erode → Salem,161,0,1,1,"Karur NH-44, Namakkal Bypass, Perundurai Highway"
+Route 391,Dharmapuri,Namakkal,Dharmapuri → Salem → Namakkal,130,4,0,0,"Mettur Ghat, Karur NH-44, Namakkal Bypass"
+Route 876,Hosur,Erode,Hosur → Chennai → Erode,130,4,1,1,"Perundurai Highway, Karur NH-44, Hosur Toll Plaza"
+Route 54,Chennai,Dharmapuri,Chennai → Hosur → Dharmapuri,172,2,0,1,Hosur Toll Plaza
+Route 147,Hosur,Tiruppur,Hosur → Namakkal → Tiruppur,286,0,0,0,Krishnagiri Bypass
+Route 206,Karur,Chennai,Karur → Namakkal → Chennai,169,1,0,1,"Kodumudi Stretch, Hosur Toll Plaza"
+Route 141,Salem,Dharmapuri,Salem → Coimbatore → Dharmapuri,198,1,1,0,"Krishnagiri Bypass, Kangeyam Circle"
+Route 607,Hosur,Dharmapuri,Hosur → Dharmapuri → Dharmapuri,204,4,1,1,"Karur NH-44, Hosur Toll Plaza"
+Route 711,Namakkal,Tiruppur,Namakkal → Dharmapuri → Tiruppur,275,2,0,1,"Karur NH-44, Hosur Toll Plaza"
+Route 151,Karur,Erode,Karur → Krishnagiri → Erode,211,0,0,0,Krishnagiri Bypass
+Route 533,Karur,Chennai,Karur → Coimbatore → Chennai,188,1,0,0,"NH-81 Junction, Perundurai Highway"
+Route 981,Krishnagiri,Tiruppur,Krishnagiri → Krishnagiri → Tiruppur,266,4,0,0,"Kangeyam Circle, NH-81 Junction"
+Route 169,Namakkal,Hosur,Namakkal → Hosur → Hosur,96,0,0,0,"Kangeyam Circle, Mettur Ghat"
+Route 381,Namakkal,Coimbatore,Namakkal → Chennai → Coimbatore,86,4,0,0,"Kangeyam Circle, Mettur Ghat"
+Route 595,Krishnagiri,Tiruppur,Krishnagiri → Krishnagiri → Tiruppur,210,1,0,1,"Bhavani Junction, Kangeyam Circle, Mettur Ghat"
+Route 166,Erode,Chennai,Erode → Chennai → Chennai,332,0,0,0,Krishnagiri Bypass
+Route 169,Dharmapuri,Namakkal,Dharmapuri → Coimbatore → Namakkal,126,5,0,1,"Krishnagiri Bypass, Kodumudi Stretch, Perundurai Highway"
+Route 407,Erode,Dharmapuri,Erode → Hosur → Dharmapuri,257,3,1,1,"Karur NH-44, Bhavani Junction"
+Route 799,Tiruppur,Namakkal,Tiruppur → Namakkal → Namakkal,277,1,0,0,NH-81 Junction
+Route 779,Tiruppur,Coimbatore,Tiruppur → Hosur → Coimbatore,166,5,1,0,"Kangeyam Circle, Bhavani Junction, Karur NH-44"
+Route 324,Dharmapuri,Krishnagiri,Dharmapuri → Krishnagiri → Krishnagiri,266,5,1,0,Karur NH-44
+Route 852,Salem,Namakkal,Salem → Chennai → Namakkal,348,1,0,1,Perundurai Highway
+Route 102,Salem,Karur,Salem → Namakkal → Karur,102,5,1,1,"Perundurai Highway, Karur NH-44, Kangeyam Circle"
+Route 305,Dharmapuri,Karur,Dharmapuri → Namakkal → Karur,117,0,0,0,Perundurai Highway
+Route 289,Tiruppur,Hosur,Tiruppur → Salem → Hosur,288,4,1,1,Hosur Toll Plaza
+Route 880,Tiruppur,Dharmapuri,Tiruppur → Tiruppur → Dharmapuri,280,3,0,1,Mettur Ghat
+Route 371,Dharmapuri,Erode,Dharmapuri → Dharmapuri → Erode,133,0,0,0,"Perundurai Highway, Namakkal Bypass, Hosur Toll Plaza"
+Route 260,Namakkal,Hosur,Namakkal → Tiruppur → Hosur,144,1,1,0,"Bhavani Junction, Mettur Ghat"
+Route 271,Coimbatore,Salem,Coimbatore → Hosur → Salem,235,0,0,1,Krishnagiri Bypass
+Route 816,Coimbatore,Salem,Coimbatore → Karur → Salem,236,4,0,0,"Perundurai Highway, Karur NH-44, Kangeyam Circle"
+Route 864,Coimbatore,Chennai,Coimbatore → Chennai → Chennai,293,5,1,1,Kangeyam Circle
+Route 657,Salem,Krishnagiri,Salem → Salem → Krishnagiri,274,2,0,1,Kodumudi Stretch
+Route 827,Salem,Erode,Salem → Hosur → Erode,116,2,1,0,"Namakkal Bypass, Bhavani Junction, Karur NH-44"
+Route 107,Dharmapuri,Karur,Dharmapuri → Erode → Karur,200,0,0,0,Krishnagiri Bypass
+Route 104,Tiruppur,Hosur,Tiruppur → Coimbatore → Hosur,114,1,0,0,"NH-81 Junction, Bhavani Junction, Hosur Toll Plaza"
+Route 375,Tiruppur,Namakkal,Tiruppur → Hosur → Namakkal,315,5,1,1,Kangeyam Circle
+Route 366,Dharmapuri,Hosur,Dharmapuri → Karur → Hosur,202,0,1,0,"Namakkal Bypass, NH-81 Junction, Hosur Toll Plaza"
+Route 823,Erode,Chennai,Erode → Chennai → Chennai,133,1,1,1,Mettur Ghat
+Route 624,Karur,Salem,Karur → Karur → Salem,341,4,1,0,"Namakkal Bypass, Hosur Toll Plaza, Bhavani Junction"
+Route 636,Erode,Tiruppur,Erode → Karur → Tiruppur,92,5,1,1,"Kangeyam Circle, Kodumudi Stretch, Bhavani Junction"
+Route 615,Tiruppur,Coimbatore,Tiruppur → Erode → Coimbatore,194,3,0,0,Kangeyam Circle
+Route 998,Krishnagiri,Salem,Krishnagiri → Krishnagiri → Salem,195,0,1,1,"Hosur Toll Plaza, Kangeyam Circle, Namakkal Bypass"
+Route 287,Hosur,Salem,Hosur → Chennai → Salem,281,3,1,0,Mettur Ghat
+Route 612,Hosur,Karur,Hosur → Tiruppur → Karur,299,3,1,1,Bhavani Junction
+Route 605,Tiruppur,Dharmapuri,Tiruppur → Krishnagiri → Dharmapuri,334,1,0,0,"Perundurai Highway, Kangeyam Circle"
+Route 101,Salem,Erode,Salem → Krishnagiri → Erode,152,1,0,0,"Kodumudi Stretch, NH-81 Junction, Krishnagiri Bypass"
+Route 471,Namakkal,Chennai,Namakkal → Namakkal → Chennai,272,2,1,1,"NH-81 Junction, Bhavani Junction"
+Route 430,Karur,Salem,Karur → Erode → Salem,106,2,1,1,"Karur NH-44, Mettur Ghat"
+Route 163,Salem,Karur,Salem → Karur → Karur,302,2,0,1,"Perundurai Highway, Krishnagiri Bypass, Bhavani Junction"
+Route 959,Karur,Tiruppur,Karur → Hosur → Tiruppur,122,4,1,0,"Kangeyam Circle, Namakkal Bypass"
+Route 848,Dharmapuri,Tiruppur,Dharmapuri → Tiruppur → Tiruppur,140,5,0,0,"Kodumudi Stretch, Bhavani Junction, Hosur Toll Plaza"
+Route 743,Chennai,Hosur,Chennai → Hosur → Hosur,245,0,1,1,Perundurai Highway
+Route 710,Coimbatore,Dharmapuri,Coimbatore → Erode → Dharmapuri,150,4,1,0,"Namakkal Bypass, Karur NH-44"
+Route 299,Salem,Dharmapuri,Salem → Krishnagiri → Dharmapuri,238,3,1,1,"Karur NH-44, Perundurai Highway, NH-81 Junction"
+Route 367,Hosur,Salem,Hosur → Tiruppur → Salem,169,2,1,0,"Perundurai Highway, Namakkal Bypass, Kangeyam Circle"
+Route 270,Dharmapuri,Tiruppur,Dharmapuri → Namakkal → Tiruppur,177,5,1,0,Kodumudi Stretch
+Route 198,Karur,Salem,Karur → Coimbatore → Salem,281,4,1,0,"NH-81 Junction, Mettur Ghat"
+Route 636,Salem,Erode,Salem → Hosur → Erode,233,2,0,1,"Krishnagiri Bypass, Hosur Toll Plaza, Namakkal Bypass"
+Route 431,Dharmapuri,Coimbatore,Dharmapuri → Karur → Coimbatore,142,3,1,0,"Namakkal Bypass, Kangeyam Circle, Kodumudi Stretch"
+Route 349,Hosur,Namakkal,Hosur → Hosur → Namakkal,116,5,0,1,"Namakkal Bypass, Krishnagiri Bypass"
+Route 850,Karur,Krishnagiri,Karur → Erode → Krishnagiri,174,2,1,1,"Bhavani Junction, Mettur Ghat"
+Route 822,Karur,Chennai,Karur → Coimbatore → Chennai,105,5,1,0,Karur NH-44
+Route 32,Erode,Salem,Erode → Namakkal → Salem,341,2,1,1,"Kodumudi Stretch, Hosur Toll Plaza, Namakkal Bypass"
+Route 806,Salem,Hosur,Salem → Salem → Hosur,81,4,0,0,"Krishnagiri Bypass, Perundurai Highway"
+Route 397,Dharmapuri,Krishnagiri,Dharmapuri → Dharmapuri → Krishnagiri,324,1,0,0,"Mettur Ghat, Perundurai Highway"
+Route 910,Salem,Hosur,Salem → Salem → Hosur,248,5,0,0,"NH-81 Junction, Kodumudi Stretch"
+Route 921,Coimbatore,Salem,Coimbatore → Dharmapuri → Salem,242,2,1,0,"NH-81 Junction, Kodumudi Stretch, Karur NH-44"
+Route 472,Coimbatore,Dharmapuri,Coimbatore → Krishnagiri → Dharmapuri,132,0,0,0,"NH-81 Junction, Karur NH-44"
+Route 225,Coimbatore,Hosur,Coimbatore → Krishnagiri → Hosur,167,5,1,0,"Hosur Toll Plaza, Mettur Ghat, Karur NH-44"
+Route 687,Krishnagiri,Coimbatore,Krishnagiri → Krishnagiri → Coimbatore,299,1,1,1,"NH-81 Junction, Perundurai Highway"
+Route 936,Tiruppur,Hosur,Tiruppur → Krishnagiri → Hosur,290,1,0,1,"Kodumudi Stretch, Karur NH-44, Perundurai Highway"
+Route 154,Karur,Krishnagiri,Karur → Karur → Krishnagiri,294,2,0,0,"Krishnagiri Bypass, Kangeyam Circle, Perundurai Highway"
+Route 968,Karur,Krishnagiri,Karur → Erode → Krishnagiri,93,4,1,1,"Kangeyam Circle, NH-81 Junction, Bhavani Junction"
+Route 369,Tiruppur,Coimbatore,Tiruppur → Namakkal → Coimbatore,323,3,1,0,"Namakkal Bypass, Kangeyam Circle"
+Route 105,Hosur,Karur,Hosur → Erode → Karur,125,1,0,0,"Kangeyam Circle, Bhavani Junction"
+Route 903,Dharmapuri,Krishnagiri,Dharmapuri → Erode → Krishnagiri,266,1,1,1,"NH-81 Junction, Mettur Ghat, Perundurai Highway"
+Route 93,Tiruppur,Hosur,Tiruppur → Namakkal → Hosur,89,1,1,0,"Mettur Ghat, Perundurai Highway, Krishnagiri Bypass"
+Route 923,Salem,Tiruppur,Salem → Krishnagiri → Tiruppur,323,4,1,0,Mettur Ghat
+Route 532,Karur,Namakkal,Karur → Krishnagiri → Namakkal,85,1,0,1,"Mettur Ghat, Namakkal Bypass, NH-81 Junction"
+Route 531,Namakkal,Karur,Namakkal → Hosur → Karur,140,2,0,1,Perundurai Highway
+Route 827,Chennai,Tiruppur,Chennai → Chennai → Tiruppur,337,3,0,0,"Kangeyam Circle, Karur NH-44, Mettur Ghat"
+Route 192,Hosur,Tiruppur,Hosur → Namakkal → Tiruppur,113,3,0,0,Krishnagiri Bypass
+Route 678,Erode,Namakkal,Erode → Coimbatore → Namakkal,325,5,0,0,"Hosur Toll Plaza, Kangeyam Circle"
+Route 593,Dharmapuri,Coimbatore,Dharmapuri → Krishnagiri → Coimbatore,306,3,0,0,"Krishnagiri Bypass, Mettur Ghat, NH-81 Junction"
+Route 973,Namakkal,Krishnagiri,Namakkal → Hosur → Krishnagiri,119,0,1,0,Hosur Toll Plaza
+Route 75,Erode,Coimbatore,Erode → Chennai → Coimbatore,227,1,1,0,Perundurai Highway
+Route 992,Hosur,Salem,Hosur → Hosur → Salem,307,2,0,1,Krishnagiri Bypass
+Route 175,Erode,Hosur,Erode → Tiruppur → Hosur,144,2,0,0,"Kangeyam Circle, Perundurai Highway, Hosur Toll Plaza"
+Route 810,Tiruppur,Hosur,Tiruppur → Karur → Hosur,81,1,1,0,Namakkal Bypass
+Route 903,Namakkal,Salem,Namakkal → Krishnagiri → Salem,161,1,1,0,"Krishnagiri Bypass, Perundurai Highway, Karur NH-44"
+Route 757,Chennai,Krishnagiri,Chennai → Chennai → Krishnagiri,164,4,0,0,"Mettur Ghat, NH-81 Junction"
+Route 34,Erode,Hosur,Erode → Tiruppur → Hosur,150,0,1,1,"Bhavani Junction, Namakkal Bypass, Kangeyam Circle"
+Route 783,Erode,Chennai,Erode → Chennai → Chennai,216,3,0,1,Hosur Toll Plaza
+Route 523,Salem,Krishnagiri,Salem → Dharmapuri → Krishnagiri,278,1,1,0,"Krishnagiri Bypass, Namakkal Bypass"
+Route 545,Karur,Krishnagiri,Karur → Coimbatore → Krishnagiri,110,5,1,1,Kangeyam Circle
+Route 541,Karur,Chennai,Karur → Hosur → Chennai,149,5,1,0,"Karur NH-44, Bhavani Junction, NH-81 Junction"
+Route 478,Namakkal,Tiruppur,Namakkal → Coimbatore → Tiruppur,180,4,1,1,"Bhavani Junction, Kangeyam Circle"
+Route 969,Erode,Coimbatore,Erode → Chennai → Coimbatore,174,5,1,1,NH-81 Junction
+Route 599,Erode,Krishnagiri,Erode → Erode → Krishnagiri,128,0,1,1,"Kangeyam Circle, Karur NH-44"
+Route 107,Salem,Coimbatore,Salem → Namakkal → Coimbatore,106,3,1,0,"Bhavani Junction, Hosur Toll Plaza"
+Route 129,Karur,Chennai,Karur → Erode → Chennai,303,2,0,1,"Namakkal Bypass, Kodumudi Stretch, Krishnagiri Bypass"
+Route 28,Coimbatore,Namakkal,Coimbatore → Karur → Namakkal,109,5,1,1,"Namakkal Bypass, Bhavani Junction, Hosur Toll Plaza"
+Route 33,Salem,Krishnagiri,Salem → Salem → Krishnagiri,295,5,1,1,Karur NH-44
+Route 26,Coimbatore,Namakkal,Coimbatore → Hosur → Namakkal,196,4,0,0,"Kangeyam Circle, Kodumudi Stretch"
+Route 631,Dharmapuri,Hosur,Dharmapuri → Salem → Hosur,211,5,0,1,NH-81 Junction
+Route 429,Coimbatore,Salem,Coimbatore → Karur → Salem,149,5,1,0,"Hosur Toll Plaza, Perundurai Highway"
+Route 412,Namakkal,Hosur,Namakkal → Tiruppur → Hosur,295,1,0,1,"Kangeyam Circle, Bhavani Junction, Mettur Ghat"
+Route 214,Krishnagiri,Chennai,Krishnagiri → Krishnagiri → Chennai,159,5,1,1,"Kodumudi Stretch, Bhavani Junction"
+Route 738,Namakkal,Dharmapuri,Namakkal → Dharmapuri → Dharmapuri,285,5,0,1,"Namakkal Bypass, Karur NH-44, Kodumudi Stretch"
+Route 574,Karur,Salem,Karur → Dharmapuri → Salem,254,2,1,1,"Perundurai Highway, Hosur Toll Plaza, Bhavani Junction"
+Route 371,Salem,Coimbatore,Salem → Namakkal → Coimbatore,178,3,0,1,"Karur NH-44, Kangeyam Circle, Kodumudi Stretch"
+Route 362,Coimbatore,Krishnagiri,Coimbatore → Tiruppur → Krishnagiri,211,3,1,0,"Hosur Toll Plaza, Mettur Ghat, Kodumudi Stretch"
+Route 929,Hosur,Erode,Hosur → Erode → Erode,270,2,1,0,Kangeyam Circle
+Route 262,Dharmapuri,Hosur,Dharmapuri → Tiruppur → Hosur,264,1,1,1,"Kangeyam Circle, Karur NH-44"
+Route 563,Chennai,Namakkal,Chennai → Coimbatore → Namakkal,86,2,1,1,Perundurai Highway
+Route 827,Salem,Coimbatore,Salem → Karur → Coimbatore,116,1,1,1,"Krishnagiri Bypass, Karur NH-44"
+Route 214,Chennai,Karur,Chennai → Chennai → Karur,325,3,1,1,"Hosur Toll Plaza, Kodumudi Stretch"
+Route 225,Krishnagiri,Salem,Krishnagiri → Karur → Salem,170,1,0,1,"Karur NH-44, NH-81 Junction, Kangeyam Circle"
+Route 87,Tiruppur,Hosur,Tiruppur → Namakkal → Hosur,210,5,1,0,"Namakkal Bypass, Krishnagiri Bypass, Karur NH-44"
+Route 473,Tiruppur,Coimbatore,Tiruppur → Erode → Coimbatore,169,0,1,0,Kodumudi Stretch
+Route 737,Tiruppur,Namakkal,Tiruppur → Chennai → Namakkal,82,2,1,0,Karur NH-44
+Route 243,Dharmapuri,Salem,Dharmapuri → Coimbatore → Salem,157,3,1,0,Namakkal Bypass
+Route 11,Chennai,Krishnagiri,Chennai → Chennai → Krishnagiri,154,0,0,0,"Hosur Toll Plaza, Krishnagiri Bypass, Namakkal Bypass"
+Route 371,Erode,Namakkal,Erode → Chennai → Namakkal,316,0,1,1,"Namakkal Bypass, Krishnagiri Bypass"
+Route 203,Salem,Krishnagiri,Salem → Karur → Krishnagiri,217,0,1,1,"Mettur Ghat, Krishnagiri Bypass, Bhavani Junction"
+Route 758,Coimbatore,Salem,Coimbatore → Dharmapuri → Salem,259,3,1,1,"Karur NH-44, Namakkal Bypass"
+Route 232,Hosur,Namakkal,Hosur → Salem → Namakkal,120,2,0,1,"Krishnagiri Bypass, Karur NH-44, Bhavani Junction"
+Route 313,Krishnagiri,Tiruppur,Krishnagiri → Chennai → Tiruppur,339,4,0,0,"Hosur Toll Plaza, Krishnagiri Bypass, Mettur Ghat"
+Route 873,Tiruppur,Coimbatore,Tiruppur → Erode → Coimbatore,333,4,0,1,"NH-81 Junction, Perundurai Highway, Namakkal Bypass"
+Route 594,Hosur,Salem,Hosur → Erode → Salem,323,0,1,0,"Mettur Ghat, Kodumudi Stretch, Perundurai Highway"
+Route 788,Chennai,Salem,Chennai → Dharmapuri → Salem,144,4,0,0,Kangeyam Circle
+Route 416,Hosur,Krishnagiri,Hosur → Tiruppur → Krishnagiri,341,5,1,1,Namakkal Bypass
+Route 723,Dharmapuri,Erode,Dharmapuri → Salem → Erode,241,2,1,0,"Hosur Toll Plaza, Kodumudi Stretch, Kangeyam Circle"
+Route 138,Chennai,Krishnagiri,Chennai → Dharmapuri → Krishnagiri,311,0,1,1,NH-81 Junction
+Route 398,Erode,Krishnagiri,Erode → Hosur → Krishnagiri,232,0,0,1,"NH-81 Junction, Perundurai Highway"
+Route 301,Krishnagiri,Dharmapuri,Krishnagiri → Dharmapuri → Dharmapuri,119,3,1,1,"Namakkal Bypass, Mettur Ghat"
+Route 662,Coimbatore,Erode,Coimbatore → Erode → Erode,277,1,1,1,"NH-81 Junction, Bhavani Junction"
+Route 356,Dharmapuri,Salem,Dharmapuri → Namakkal → Salem,277,3,1,1,"Hosur Toll Plaza, Kodumudi Stretch"
+Route 214,Dharmapuri,Tiruppur,Dharmapuri → Coimbatore → Tiruppur,153,2,1,1,Mettur Ghat
+Route 701,Coimbatore,Tiruppur,Coimbatore → Krishnagiri → Tiruppur,310,3,0,1,"Perundurai Highway, NH-81 Junction"
+Route 980,Hosur,Karur,Hosur → Hosur → Karur,216,1,1,0,"Krishnagiri Bypass, Namakkal Bypass, NH-81 Junction"
+Route 509,Tiruppur,Hosur,Tiruppur → Karur → Hosur,198,5,1,0,Karur NH-44
+Route 150,Coimbatore,Dharmapuri,Coimbatore → Namakkal → Dharmapuri,312,0,0,0,Kodumudi Stretch
+Route 625,Coimbatore,Salem,Coimbatore → Erode → Salem,137,4,0,1,Perundurai Highway
+Route 684,Karur,Tiruppur,Karur → Namakkal → Tiruppur,337,2,0,0,Karur NH-44
+Route 291,Coimbatore,Namakkal,Coimbatore → Erode → Namakkal,343,5,1,1,Mettur Ghat
+Route 188,Chennai,Coimbatore,Chennai → Dharmapuri → Coimbatore,267,5,1,0,Bhavani Junction
+Route 698,Karur,Salem,Karur → Chennai → Salem,96,0,0,1,"Kangeyam Circle, Namakkal Bypass, Perundurai Highway"
+Route 363,Tiruppur,Erode,Tiruppur → Salem → Erode,150,2,0,1,"Kangeyam Circle, Kodumudi Stretch"
+Route 180,Krishnagiri,Tiruppur,Krishnagiri → Tiruppur → Tiruppur,278,1,1,0,"Perundurai Highway, Kodumudi Stretch"
+Route 348,Tiruppur,Coimbatore,Tiruppur → Dharmapuri → Coimbatore,215,1,1,0,Kodumudi Stretch
+Route 309,Chennai,Karur,Chennai → Krishnagiri → Karur,175,2,1,0,"Kodumudi Stretch, NH-81 Junction"
+Route 707,Tiruppur,Salem,Tiruppur → Namakkal → Salem,92,5,0,0,"Mettur Ghat, Perundurai Highway, Kodumudi Stretch"
+Route 233,Salem,Dharmapuri,Salem → Namakkal → Dharmapuri,237,2,1,0,"Kodumudi Stretch, Karur NH-44"
+Route 687,Karur,Krishnagiri,Karur → Coimbatore → Krishnagiri,163,5,1,0,Namakkal Bypass
+Route 645,Chennai,Tiruppur,Chennai → Chennai → Tiruppur,286,3,1,0,"Hosur Toll Plaza, Karur NH-44, Namakkal Bypass"
+Route 89,Krishnagiri,Coimbatore,Krishnagiri → Namakkal → Coimbatore,173,5,0,1,Mettur Ghat
+Route 825,Salem,Krishnagiri,Salem → Namakkal → Krishnagiri,139,0,1,0,"Krishnagiri Bypass, Namakkal Bypass"
+Route 494,Hosur,Krishnagiri,Hosur → Coimbatore → Krishnagiri,227,5,0,1,Namakkal Bypass
+Route 854,Krishnagiri,Coimbatore,Krishnagiri → Hosur → Coimbatore,278,1,1,1,Kangeyam Circle
+Route 980,Chennai,Tiruppur,Chennai → Chennai → Tiruppur,247,4,0,1,"Hosur Toll Plaza, Mettur Ghat"
+Route 569,Karur,Krishnagiri,Karur → Karur → Krishnagiri,181,0,1,1,"Namakkal Bypass, Kangeyam Circle"
+Route 733,Dharmapuri,Hosur,Dharmapuri → Chennai → Hosur,99,4,1,0,Bhavani Junction
+Route 967,Krishnagiri,Tiruppur,Krishnagiri → Hosur → Tiruppur,305,3,1,0,Namakkal Bypass
+Route 763,Karur,Dharmapuri,Karur → Salem → Dharmapuri,139,2,1,1,"Kangeyam Circle, Namakkal Bypass"
+Route 913,Karur,Chennai,Karur → Salem → Chennai,314,4,0,1,"NH-81 Junction, Krishnagiri Bypass"
+Route 790,Chennai,Namakkal,Chennai → Hosur → Namakkal,256,2,1,0,Mettur Ghat
+Route 961,Erode,Namakkal,Erode → Salem → Namakkal,201,5,1,1,"Kangeyam Circle, NH-81 Junction"
+Route 680,Namakkal,Salem,Namakkal → Chennai → Salem,278,1,0,0,"Bhavani Junction, Kodumudi Stretch, NH-81 Junction"
+Route 709,Tiruppur,Chennai,Tiruppur → Krishnagiri → Chennai,136,5,1,0,Hosur Toll Plaza
+Route 727,Namakkal,Krishnagiri,Namakkal → Erode → Krishnagiri,107,1,0,1,"Krishnagiri Bypass, NH-81 Junction"
+Route 715,Dharmapuri,Salem,Dharmapuri → Namakkal → Salem,256,0,0,1,"Kangeyam Circle, NH-81 Junction"
+Route 744,Tiruppur,Chennai,Tiruppur → Tiruppur → Chennai,138,0,0,0,"Kangeyam Circle, Kodumudi Stretch, Bhavani Junction"
+Route 91,Dharmapuri,Salem,Dharmapuri → Chennai → Salem,91,5,1,0,"Perundurai Highway, Kangeyam Circle"
+Route 363,Chennai,Salem,Chennai → Hosur → Salem,329,2,1,0,Kangeyam Circle
+Route 585,Dharmapuri,Namakkal,Dharmapuri → Tiruppur → Namakkal,157,4,0,0,Krishnagiri Bypass
+Route 396,Erode,Coimbatore,Erode → Tiruppur → Coimbatore,115,1,1,1,"Bhavani Junction, Mettur Ghat"
+Route 865,Krishnagiri,Coimbatore,Krishnagiri → Krishnagiri → Coimbatore,334,1,0,1,NH-81 Junction
+Route 88,Namakkal,Krishnagiri,Namakkal → Hosur → Krishnagiri,82,0,0,1,Namakkal Bypass
+Route 297,Erode,Dharmapuri,Erode → Krishnagiri → Dharmapuri,149,3,1,0,"Bhavani Junction, Perundurai Highway"
+Route 822,Chennai,Coimbatore,Chennai → Dharmapuri → Coimbatore,97,4,1,0,Mettur Ghat
+Route 303,Karur,Chennai,Karur → Salem → Chennai,324,2,1,0,"Namakkal Bypass, Mettur Ghat, Bhavani Junction"
+Route 393,Coimbatore,Erode,Coimbatore → Namakkal → Erode,261,0,0,1,Bhavani Junction
+Route 114,Tiruppur,Coimbatore,Tiruppur → Erode → Coimbatore,141,1,1,1,"Kodumudi Stretch, Krishnagiri Bypass, Namakkal Bypass"
+Route 560,Namakkal,Karur,Namakkal → Chennai → Karur,340,0,1,0,"Krishnagiri Bypass, Perundurai Highway"
+Route 994,Coimbatore,Erode,Coimbatore → Namakkal → Erode,153,2,0,1,Karur NH-44
+Route 700,Hosur,Karur,Hosur → Chennai → Karur,227,1,0,1,"NH-81 Junction, Namakkal Bypass, Perundurai Highway"
+Route 447,Dharmapuri,Chennai,Dharmapuri → Karur → Chennai,174,3,0,1,"Krishnagiri Bypass, Perundurai Highway"
+Route 766,Namakkal,Chennai,Namakkal → Chennai → Chennai,93,5,1,0,"Krishnagiri Bypass, Hosur Toll Plaza, Karur NH-44"
+Route 742,Tiruppur,Coimbatore,Tiruppur → Chennai → Coimbatore,127,4,1,0,Perundurai Highway
+Route 257,Tiruppur,Krishnagiri,Tiruppur → Erode → Krishnagiri,206,0,1,0,Bhavani Junction
+Route 756,Chennai,Coimbatore,Chennai → Dharmapuri → Coimbatore,152,4,0,0,NH-81 Junction
+Route 953,Karur,Chennai,Karur → Coimbatore → Chennai,169,1,0,0,Bhavani Junction
+Route 238,Hosur,Chennai,Hosur → Tiruppur → Chennai,198,1,1,0,"Mettur Ghat, NH-81 Junction"
+Route 21,Chennai,Coimbatore,Chennai → Salem → Coimbatore,173,4,1,1,"Krishnagiri Bypass, Mettur Ghat, Hosur Toll Plaza"
+Route 734,Dharmapuri,Coimbatore,Dharmapuri → Dharmapuri → Coimbatore,327,0,1,0,"Mettur Ghat, Krishnagiri Bypass"
+Route 423,Salem,Coimbatore,Salem → Namakkal → Coimbatore,224,5,0,1,"Bhavani Junction, Perundurai Highway, Kodumudi Stretch"
+Route 817,Hosur,Tiruppur,Hosur → Chennai → Tiruppur,208,5,1,0,"Krishnagiri Bypass, Hosur Toll Plaza"
+Route 100,Karur,Chennai,Karur → Dharmapuri → Chennai,289,4,1,0,"Hosur Toll Plaza, Kodumudi Stretch, Kangeyam Circle"
+Route 57,Dharmapuri,Krishnagiri,Dharmapuri → Erode → Krishnagiri,129,3,0,0,Kangeyam Circle
+Route 839,Hosur,Tiruppur,Hosur → Chennai → Tiruppur,269,0,0,1,"Mettur Ghat, Karur NH-44"
+Route 369,Erode,Namakkal,Erode → Salem → Namakkal,257,4,1,0,"Namakkal Bypass, Perundurai Highway, Hosur Toll Plaza"
+Route 287,Krishnagiri,Hosur,Krishnagiri → Namakkal → Hosur,221,2,1,0,"Bhavani Junction, Hosur Toll Plaza"
+Route 723,Chennai,Karur,Chennai → Karur → Karur,140,1,1,1,"Perundurai Highway, Kangeyam Circle"
+Route 297,Hosur,Erode,Hosur → Krishnagiri → Erode,198,4,1,0,"Kangeyam Circle, Krishnagiri Bypass, Hosur Toll Plaza"
+Route 178,Tiruppur,Dharmapuri,Tiruppur → Dharmapuri → Dharmapuri,303,4,1,0,"Bhavani Junction, Namakkal Bypass"
+Route 956,Hosur,Tiruppur,Hosur → Chennai → Tiruppur,88,5,0,0,Hosur Toll Plaza
+Route 415,Tiruppur,Erode,Tiruppur → Salem → Erode,276,5,1,1,"NH-81 Junction, Namakkal Bypass, Bhavani Junction"
+Route 767,Krishnagiri,Tiruppur,Krishnagiri → Krishnagiri → Tiruppur,256,1,1,0,"Bhavani Junction, Hosur Toll Plaza"
+Route 973,Erode,Karur,Erode → Chennai → Karur,333,5,1,0,Mettur Ghat
+Route 864,Erode,Coimbatore,Erode → Tiruppur → Coimbatore,254,1,1,1,Karur NH-44
+Route 362,Namakkal,Dharmapuri,Namakkal → Chennai → Dharmapuri,216,2,0,1,"Kodumudi Stretch, Karur NH-44"
+Route 753,Hosur,Salem,Hosur → Namakkal → Salem,125,4,0,1,"Kodumudi Stretch, Namakkal Bypass"
+Route 394,Karur,Tiruppur,Karur → Coimbatore → Tiruppur,168,4,1,0,Mettur Ghat
+Route 604,Salem,Krishnagiri,Salem → Hosur → Krishnagiri,261,3,1,1,"Kodumudi Stretch, Mettur Ghat"
+Route 956,Dharmapuri,Salem,Dharmapuri → Karur → Salem,349,0,0,0,"NH-81 Junction, Kodumudi Stretch, Krishnagiri Bypass"
+Route 79,Hosur,Coimbatore,Hosur → Salem → Coimbatore,167,0,0,1,Hosur Toll Plaza
+Route 602,Chennai,Krishnagiri,Chennai → Tiruppur → Krishnagiri,261,3,0,0,Kodumudi Stretch
+Route 484,Coimbatore,Erode,Coimbatore → Coimbatore → Erode,308,2,1,1,"Karur NH-44, Perundurai Highway"
+Route 48,Karur,Krishnagiri,Karur → Dharmapuri → Krishnagiri,345,5,0,0,"Namakkal Bypass, Mettur Ghat, Perundurai Highway"
+Route 710,Salem,Coimbatore,Salem → Coimbatore → Coimbatore,347,0,1,0,"NH-81 Junction, Namakkal Bypass"
+Route 848,Krishnagiri,Tiruppur,Krishnagiri → Karur → Tiruppur,101,4,1,1,"Kodumudi Stretch, NH-81 Junction"
+Route 927,Namakkal,Krishnagiri,Namakkal → Hosur → Krishnagiri,166,3,1,0,"Perundurai Highway, Kodumudi Stretch, Mettur Ghat"
+Route 560,Namakkal,Coimbatore,Namakkal → Coimbatore → Coimbatore,133,4,1,1,"Bhavani Junction, Karur NH-44"
+Route 619,Krishnagiri,Dharmapuri,Krishnagiri → Erode → Dharmapuri,91,5,1,1,"Namakkal Bypass, Hosur Toll Plaza, Krishnagiri Bypass"
+Route 99,Hosur,Chennai,Hosur → Hosur → Chennai,134,0,1,1,"Perundurai Highway, Krishnagiri Bypass"
+Route 775,Krishnagiri,Salem,Krishnagiri → Tiruppur → Salem,213,1,0,0,"Krishnagiri Bypass, Hosur Toll Plaza, Namakkal Bypass"
+Route 763,Hosur,Dharmapuri,Hosur → Salem → Dharmapuri,117,4,0,0,"Kangeyam Circle, Perundurai Highway"
+Route 558,Hosur,Tiruppur,Hosur → Chennai → Tiruppur,117,3,0,0,Krishnagiri Bypass
+Route 27,Hosur,Chennai,Hosur → Erode → Chennai,117,2,0,1,"Bhavani Junction, Kodumudi Stretch"
+Route 66,Erode,Dharmapuri,Erode → Coimbatore → Dharmapuri,340,4,0,1,NH-81 Junction
+Route 788,Hosur,Dharmapuri,Hosur → Erode → Dharmapuri,159,4,0,1,"Mettur Ghat, NH-81 Junction"
+Route 607,Tiruppur,Namakkal,Tiruppur → Namakkal → Namakkal,217,4,1,1,Kangeyam Circle
+Route 670,Namakkal,Chennai,Namakkal → Coimbatore → Chennai,100,5,0,0,"Krishnagiri Bypass, Kodumudi Stretch"
+Route 815,Chennai,Erode,Chennai → Tiruppur → Erode,123,0,1,0,"Kangeyam Circle, Mettur Ghat"
+Route 919,Chennai,Erode,Chennai → Chennai → Erode,218,4,1,1,"Namakkal Bypass, Bhavani Junction, Karur NH-44"
+Route 448,Coimbatore,Erode,Coimbatore → Namakkal → Erode,250,2,0,1,"Karur NH-44, Krishnagiri Bypass"
+Route 716,Karur,Coimbatore,Karur → Chennai → Coimbatore,289,3,0,1,"Karur NH-44, NH-81 Junction"
+Route 803,Hosur,Dharmapuri,Hosur → Salem → Dharmapuri,228,3,1,1,"Kangeyam Circle, Karur NH-44, NH-81 Junction"
+Route 754,Tiruppur,Karur,Tiruppur → Tiruppur → Karur,84,0,1,0,"Mettur Ghat, Krishnagiri Bypass"
+Route 466,Erode,Coimbatore,Erode → Hosur → Coimbatore,229,5,1,1,"NH-81 Junction, Perundurai Highway"
+Route 917,Chennai,Krishnagiri,Chennai → Salem → Krishnagiri,163,4,1,1,"Kodumudi Stretch, Mettur Ghat, Namakkal Bypass"
+Route 164,Salem,Coimbatore,Salem → Tiruppur → Coimbatore,102,0,0,1,Krishnagiri Bypass
+Route 634,Dharmapuri,Chennai,Dharmapuri → Namakkal → Chennai,208,0,1,0,"Karur NH-44, NH-81 Junction, Krishnagiri Bypass"
+Route 622,Erode,Hosur,Erode → Coimbatore → Hosur,165,0,1,0,Bhavani Junction
+Route 744,Chennai,Namakkal,Chennai → Namakkal → Namakkal,314,2,1,0,"Bhavani Junction, Perundurai Highway, Kangeyam Circle"
+Route 489,Namakkal,Hosur,Namakkal → Salem → Hosur,171,4,1,1,"Hosur Toll Plaza, Mettur Ghat, Krishnagiri Bypass"
+Route 309,Karur,Salem,Karur → Krishnagiri → Salem,338,5,0,0,"Mettur Ghat, Krishnagiri Bypass, Kodumudi Stretch"
+Route 984,Dharmapuri,Hosur,Dharmapuri → Chennai → Hosur,124,4,1,0,"Perundurai Highway, Mettur Ghat, Kodumudi Stretch"
+Route 443,Dharmapuri,Erode,Dharmapuri → Namakkal → Erode,180,1,0,1,"Mettur Ghat, NH-81 Junction, Namakkal Bypass"
+Route 594,Karur,Krishnagiri,Karur → Chennai → Krishnagiri,221,4,0,0,"Perundurai Highway, Kodumudi Stretch, NH-81 Junction"
+Route 940,Chennai,Tiruppur,Chennai → Hosur → Tiruppur,212,4,1,0,Kangeyam Circle
+Route 587,Hosur,Karur,Hosur → Karur → Karur,147,5,0,0,"Karur NH-44, Perundurai Highway, Kangeyam Circle"
+Route 42,Chennai,Hosur,Chennai → Namakkal → Hosur,230,0,1,0,Hosur Toll Plaza
+Route 224,Karur,Hosur,Karur → Salem → Hosur,228,5,0,1,"Kangeyam Circle, Kodumudi Stretch"
+Route 788,Krishnagiri,Dharmapuri,Krishnagiri → Karur → Dharmapuri,105,4,0,0,"Hosur Toll Plaza, Karur NH-44"
+Route 890,Coimbatore,Salem,Coimbatore → Salem → Salem,246,1,1,0,"NH-81 Junction, Hosur Toll Plaza, Kangeyam Circle"
+Route 283,Coimbatore,Chennai,Coimbatore → Tiruppur → Chennai,221,2,1,0,"Namakkal Bypass, Karur NH-44, Bhavani Junction"
+Route 939,Hosur,Coimbatore,Hosur → Salem → Coimbatore,273,5,1,0,"NH-81 Junction, Namakkal Bypass"
+Route 277,Tiruppur,Namakkal,Tiruppur → Chennai → Namakkal,152,5,1,0,"Kodumudi Stretch, Kangeyam Circle, Bhavani Junction"
+Route 39,Karur,Coimbatore,Karur → Hosur → Coimbatore,184,4,1,1,"Namakkal Bypass, Karur NH-44, Mettur Ghat"
+Route 841,Karur,Dharmapuri,Karur → Salem → Dharmapuri,257,3,0,1,"Perundurai Highway, Namakkal Bypass"
+Route 266,Hosur,Chennai,Hosur → Dharmapuri → Chennai,129,1,0,1,Hosur Toll Plaza
+Route 998,Krishnagiri,Chennai,Krishnagiri → Krishnagiri → Chennai,173,4,1,1,"Namakkal Bypass, Kangeyam Circle"
+Route 959,Dharmapuri,Salem,Dharmapuri → Krishnagiri → Salem,319,4,0,1,"Bhavani Junction, Hosur Toll Plaza, Perundurai Highway"
+Route 15,Erode,Hosur,Erode → Dharmapuri → Hosur,174,1,0,1,"Krishnagiri Bypass, Hosur Toll Plaza"
+Route 339,Coimbatore,Karur,Coimbatore → Salem → Karur,209,0,1,0,"Kodumudi Stretch, Karur NH-44"
+Route 199,Coimbatore,Namakkal,Coimbatore → Dharmapuri → Namakkal,250,5,0,0,"Kodumudi Stretch, Mettur Ghat"
+Route 838,Dharmapuri,Krishnagiri,Dharmapuri → Karur → Krishnagiri,166,2,0,1,"Bhavani Junction, Kangeyam Circle, Hosur Toll Plaza"
+Route 341,Karur,Namakkal,Karur → Salem → Namakkal,179,2,0,0,"Kodumudi Stretch, Karur NH-44, Krishnagiri Bypass"
+Route 502,Coimbatore,Salem,Coimbatore → Namakkal → Salem,223,0,1,1,NH-81 Junction
+Route 353,Namakkal,Hosur,Namakkal → Karur → Hosur,182,4,1,1,"Krishnagiri Bypass, Kodumudi Stretch"
+Route 404,Hosur,Dharmapuri,Hosur → Karur → Dharmapuri,121,4,0,1,"Mettur Ghat, Perundurai Highway, Namakkal Bypass"
+Route 852,Erode,Hosur,Erode → Tiruppur → Hosur,88,3,0,1,"Kangeyam Circle, Karur NH-44, Hosur Toll Plaza"
+Route 570,Chennai,Namakkal,Chennai → Chennai → Namakkal,346,4,0,0,"Hosur Toll Plaza, Namakkal Bypass"
+Route 269,Salem,Tiruppur,Salem → Tiruppur → Tiruppur,246,1,0,0,"Krishnagiri Bypass, Hosur Toll Plaza, Mettur Ghat"
+Route 917,Coimbatore,Tiruppur,Coimbatore → Krishnagiri → Tiruppur,97,2,1,1,"Karur NH-44, Kodumudi Stretch"
+Route 624,Dharmapuri,Coimbatore,Dharmapuri → Tiruppur → Coimbatore,229,5,1,0,Namakkal Bypass
+Route 352,Hosur,Karur,Hosur → Tiruppur → Karur,101,5,0,1,Bhavani Junction
+Route 277,Tiruppur,Hosur,Tiruppur → Krishnagiri → Hosur,342,4,1,0,"Krishnagiri Bypass, Perundurai Highway, Hosur Toll Plaza"
+Route 936,Tiruppur,Chennai,Tiruppur → Salem → Chennai,107,5,1,0,Kodumudi Stretch
+Route 281,Coimbatore,Karur,Coimbatore → Hosur → Karur,318,4,1,1,Kangeyam Circle
+Route 692,Coimbatore,Namakkal,Coimbatore → Krishnagiri → Namakkal,286,5,0,1,"NH-81 Junction, Mettur Ghat"
+Route 106,Salem,Karur,Salem → Krishnagiri → Karur,185,5,0,0,"Karur NH-44, Namakkal Bypass, Hosur Toll Plaza"
+Route 393,Salem,Coimbatore,Salem → Karur → Coimbatore,190,5,1,0,Kodumudi Stretch
+Route 350,Erode,Coimbatore,Erode → Coimbatore → Coimbatore,144,3,0,1,"Hosur Toll Plaza, Krishnagiri Bypass, Namakkal Bypass"
+Route 676,Karur,Tiruppur,Karur → Namakkal → Tiruppur,220,3,1,1,"Hosur Toll Plaza, Perundurai Highway"
+Route 178,Karur,Coimbatore,Karur → Namakkal → Coimbatore,212,5,1,0,Mettur Ghat
+Route 41,Hosur,Karur,Hosur → Karur → Karur,168,4,1,0,"Karur NH-44, Krishnagiri Bypass"
+Route 38,Karur,Dharmapuri,Karur → Chennai → Dharmapuri,342,3,1,0,"Karur NH-44, Mettur Ghat, Kodumudi Stretch"
+Route 582,Namakkal,Erode,Namakkal → Krishnagiri → Erode,94,2,0,0,"Mettur Ghat, Krishnagiri Bypass, NH-81 Junction"
+Route 484,Chennai,Karur,Chennai → Erode → Karur,334,1,1,1,Krishnagiri Bypass
+Route 741,Chennai,Hosur,Chennai → Krishnagiri → Hosur,171,2,0,1,"Namakkal Bypass, Kangeyam Circle"
+Route 834,Erode,Karur,Erode → Chennai → Karur,349,4,1,0,"NH-81 Junction, Mettur Ghat"
+Route 75,Namakkal,Tiruppur,Namakkal → Hosur → Tiruppur,280,4,0,1,Krishnagiri Bypass
+Route 365,Coimbatore,Erode,Coimbatore → Tiruppur → Erode,122,2,0,1,"Namakkal Bypass, Krishnagiri Bypass, Perundurai Highway"
+Route 47,Krishnagiri,Chennai,Krishnagiri → Erode → Chennai,169,5,1,0,"Mettur Ghat, Perundurai Highway, NH-81 Junction"
+Route 821,Namakkal,Coimbatore,Namakkal → Salem → Coimbatore,269,3,0,1,Krishnagiri Bypass
+Route 108,Coimbatore,Tiruppur,Coimbatore → Chennai → Tiruppur,159,5,0,0,Mettur Ghat
+Route 904,Karur,Chennai,Karur → Dharmapuri → Chennai,119,5,1,0,Kangeyam Circle
+Route 431,Karur,Erode,Karur → Hosur → Erode,184,0,1,1,"Karur NH-44, NH-81 Junction"
+Route 25,Tiruppur,Krishnagiri,Tiruppur → Chennai → Krishnagiri,254,3,0,1,"Krishnagiri Bypass, NH-81 Junction"
+Route 964,Tiruppur,Karur,Tiruppur → Salem → Karur,238,4,0,0,"Namakkal Bypass, Hosur Toll Plaza"
+Route 266,Chennai,Namakkal,Chennai → Coimbatore → Namakkal,148,1,0,0,Hosur Toll Plaza
+Route 964,Karur,Krishnagiri,Karur → Salem → Krishnagiri,346,0,0,0,NH-81 Junction
+Route 332,Coimbatore,Chennai,Coimbatore → Namakkal → Chennai,273,0,1,1,"Hosur Toll Plaza, Mettur Ghat"
+Route 848,Hosur,Namakkal,Hosur → Tiruppur → Namakkal,193,5,1,0,"Mettur Ghat, Bhavani Junction, NH-81 Junction"
+Route 665,Salem,Chennai,Salem → Salem → Chennai,302,5,0,0,Bhavani Junction
+Route 858,Namakkal,Karur,Namakkal → Hosur → Karur,161,4,1,0,"NH-81 Junction, Hosur Toll Plaza"
+Route 154,Chennai,Krishnagiri,Chennai → Dharmapuri → Krishnagiri,310,3,1,0,Perundurai Highway
+Route 673,Krishnagiri,Erode,Krishnagiri → Namakkal → Erode,174,4,0,1,Hosur Toll Plaza
+Route 855,Dharmapuri,Salem,Dharmapuri → Namakkal → Salem,175,1,1,0,"Namakkal Bypass, Krishnagiri Bypass, NH-81 Junction"
+Route 762,Erode,Dharmapuri,Erode → Salem → Dharmapuri,133,3,1,1,"Hosur Toll Plaza, Mettur Ghat"
+Route 235,Dharmapuri,Salem,Dharmapuri → Coimbatore → Salem,156,3,1,1,"Hosur Toll Plaza, Kodumudi Stretch"
+Route 378,Erode,Krishnagiri,Erode → Krishnagiri → Krishnagiri,131,5,0,0,"Namakkal Bypass, NH-81 Junction"
+Route 74,Karur,Hosur,Karur → Namakkal → Hosur,129,0,0,0,NH-81 Junction
+Route 534,Karur,Coimbatore,Karur → Chennai → Coimbatore,252,1,0,1,"NH-81 Junction, Karur NH-44, Hosur Toll Plaza"
+Route 304,Karur,Chennai,Karur → Dharmapuri → Chennai,231,4,0,1,Kodumudi Stretch
+Route 661,Coimbatore,Salem,Coimbatore → Karur → Salem,169,0,0,1,Namakkal Bypass
+Route 76,Salem,Namakkal,Salem → Karur → Namakkal,155,2,1,1,Mettur Ghat
+Route 285,Chennai,Namakkal,Chennai → Karur → Namakkal,346,0,1,1,"Hosur Toll Plaza, Perundurai Highway, NH-81 Junction"
+Route 896,Namakkal,Karur,Namakkal → Krishnagiri → Karur,196,0,0,1,"Kangeyam Circle, Perundurai Highway"
+Route 304,Dharmapuri,Karur,Dharmapuri → Dharmapuri → Karur,83,4,1,1,"Kangeyam Circle, Namakkal Bypass, Perundurai Highway"
+Route 442,Hosur,Chennai,Hosur → Namakkal → Chennai,289,0,0,1,"Mettur Ghat, Bhavani Junction, Namakkal Bypass"
+Route 392,Karur,Dharmapuri,Karur → Karur → Dharmapuri,260,1,1,0,NH-81 Junction
+Route 631,Dharmapuri,Tiruppur,Dharmapuri → Karur → Tiruppur,247,1,0,1,"Hosur Toll Plaza, Krishnagiri Bypass"
+Route 858,Namakkal,Krishnagiri,Namakkal → Erode → Krishnagiri,178,4,1,0,"Kodumudi Stretch, Krishnagiri Bypass"
+Route 573,Chennai,Erode,Chennai → Salem → Erode,242,0,0,1,"Namakkal Bypass, Hosur Toll Plaza, Perundurai Highway"
+Route 294,Salem,Erode,Salem → Hosur → Erode,254,0,0,0,"Kangeyam Circle, Kodumudi Stretch"
+Route 878,Dharmapuri,Hosur,Dharmapuri → Krishnagiri → Hosur,128,0,1,1,"Krishnagiri Bypass, Karur NH-44"
+Route 298,Erode,Hosur,Erode → Chennai → Hosur,128,4,1,0,Bhavani Junction
+Route 810,Dharmapuri,Hosur,Dharmapuri → Krishnagiri → Hosur,123,1,1,1,Hosur Toll Plaza
+Route 803,Krishnagiri,Salem,Krishnagiri → Tiruppur → Salem,159,1,0,1,Karur NH-44
+Route 328,Krishnagiri,Karur,Krishnagiri → Tiruppur → Karur,131,5,0,1,Mettur Ghat
+Route 830,Namakkal,Krishnagiri,Namakkal → Tiruppur → Krishnagiri,319,3,1,1,"Krishnagiri Bypass, Namakkal Bypass"
+Route 802,Hosur,Erode,Hosur → Erode → Erode,167,2,0,1,"NH-81 Junction, Hosur Toll Plaza"
+Route 256,Tiruppur,Salem,Tiruppur → Coimbatore → Salem,243,4,0,1,"Hosur Toll Plaza, Perundurai Highway, Namakkal Bypass"
+Route 283,Hosur,Erode,Hosur → Hosur → Erode,337,4,0,0,"Krishnagiri Bypass, Mettur Ghat"
+Route 918,Hosur,Tiruppur,Hosur → Krishnagiri → Tiruppur,81,5,0,0,"Krishnagiri Bypass, Kangeyam Circle"
+Route 545,Hosur,Salem,Hosur → Tiruppur → Salem,130,3,1,0,Kangeyam Circle
+Route 859,Coimbatore,Namakkal,Coimbatore → Krishnagiri → Namakkal,94,3,0,0,"Bhavani Junction, NH-81 Junction"
+Route 710,Coimbatore,Dharmapuri,Coimbatore → Dharmapuri → Dharmapuri,203,2,1,1,Hosur Toll Plaza
+Route 136,Salem,Dharmapuri,Salem → Dharmapuri → Dharmapuri,330,4,1,1,Bhavani Junction
+Route 145,Tiruppur,Dharmapuri,Tiruppur → Dharmapuri → Dharmapuri,117,5,1,0,"Hosur Toll Plaza, Perundurai Highway"
+Route 660,Tiruppur,Karur,Tiruppur → Krishnagiri → Karur,175,3,0,1,"Namakkal Bypass, Krishnagiri Bypass, Bhavani Junction"
+Route 538,Namakkal,Erode,Namakkal → Chennai → Erode,189,5,1,1,Namakkal Bypass
+Route 529,Hosur,Coimbatore,Hosur → Tiruppur → Coimbatore,283,2,0,1,Mettur Ghat
+Route 383,Salem,Krishnagiri,Salem → Krishnagiri → Krishnagiri,245,5,0,0,"Kodumudi Stretch, Perundurai Highway"
+Route 218,Dharmapuri,Namakkal,Dharmapuri → Karur → Namakkal,137,1,1,1,Perundurai Highway
+Route 154,Dharmapuri,Salem,Dharmapuri → Dharmapuri → Salem,340,5,1,0,"Namakkal Bypass, Perundurai Highway, Hosur Toll Plaza"
+Route 228,Salem,Chennai,Salem → Dharmapuri → Chennai,257,3,1,0,"Mettur Ghat, Hosur Toll Plaza"
+Route 208,Namakkal,Hosur,Namakkal → Karur → Hosur,320,1,0,0,"NH-81 Junction, Karur NH-44"
+Route 367,Karur,Erode,Karur → Hosur → Erode,175,0,1,1,Krishnagiri Bypass
+Route 234,Krishnagiri,Dharmapuri,Krishnagiri → Chennai → Dharmapuri,319,3,0,1,"Karur NH-44, NH-81 Junction, Namakkal Bypass"
+Route 77,Hosur,Tiruppur,Hosur → Erode → Tiruppur,143,5,0,0,"Mettur Ghat, Karur NH-44"
+Route 84,Hosur,Coimbatore,Hosur → Hosur → Coimbatore,314,1,1,1,"Perundurai Highway, Krishnagiri Bypass, Bhavani Junction"
+Route 279,Coimbatore,Hosur,Coimbatore → Chennai → Hosur,215,2,0,0,"Namakkal Bypass, Kangeyam Circle, NH-81 Junction"
+Route 103,Coimbatore,Chennai,Coimbatore → Chennai → Chennai,137,2,1,1,"Namakkal Bypass, Kodumudi Stretch"
+Route 960,Salem,Krishnagiri,Salem → Erode → Krishnagiri,89,0,0,0,"Bhavani Junction, Hosur Toll Plaza"
+Route 369,Dharmapuri,Namakkal,Dharmapuri → Chennai → Namakkal,310,5,0,0,Kodumudi Stretch
+Route 977,Krishnagiri,Coimbatore,Krishnagiri → Krishnagiri → Coimbatore,243,5,1,0,"Bhavani Junction, Kangeyam Circle"
+Route 233,Karur,Dharmapuri,Karur → Dharmapuri → Dharmapuri,196,4,0,1,"Mettur Ghat, Krishnagiri Bypass"
+Route 826,Erode,Tiruppur,Erode → Tiruppur → Tiruppur,344,1,0,0,Mettur Ghat
+Route 334,Coimbatore,Erode,Coimbatore → Coimbatore → Erode,139,3,0,0,"Kangeyam Circle, Bhavani Junction"
+Route 638,Tiruppur,Hosur,Tiruppur → Erode → Hosur,193,1,0,1,"Perundurai Highway, Krishnagiri Bypass"
+Route 98,Salem,Coimbatore,Salem → Erode → Coimbatore,224,4,1,1,"Mettur Ghat, Kodumudi Stretch, NH-81 Junction"
+Route 10,Tiruppur,Salem,Tiruppur → Tiruppur → Salem,109,3,1,0,"Kangeyam Circle, Krishnagiri Bypass"
+Route 59,Dharmapuri,Chennai,Dharmapuri → Hosur → Chennai,165,2,1,0,"Mettur Ghat, Hosur Toll Plaza"
+Route 975,Erode,Krishnagiri,Erode → Salem → Krishnagiri,201,2,0,1,"NH-81 Junction, Namakkal Bypass, Perundurai Highway"
+Route 380,Namakkal,Dharmapuri,Namakkal → Chennai → Dharmapuri,220,0,0,1,Perundurai Highway
+Route 709,Karur,Chennai,Karur → Tiruppur → Chennai,104,0,1,1,Karur NH-44
+Route 719,Chennai,Tiruppur,Chennai → Coimbatore → Tiruppur,233,3,1,1,Perundurai Highway
+Route 543,Dharmapuri,Namakkal,Dharmapuri → Krishnagiri → Namakkal,154,3,0,0,"Perundurai Highway, Karur NH-44, NH-81 Junction"
+Route 222,Krishnagiri,Coimbatore,Krishnagiri → Hosur → Coimbatore,119,4,1,1,"Mettur Ghat, Kangeyam Circle, Perundurai Highway"
+Route 153,Erode,Hosur,Erode → Salem → Hosur,109,4,1,0,"Bhavani Junction, Namakkal Bypass, Krishnagiri Bypass"
+Route 572,Krishnagiri,Salem,Krishnagiri → Namakkal → Salem,313,0,0,1,"Hosur Toll Plaza, Kangeyam Circle"
+Route 992,Tiruppur,Dharmapuri,Tiruppur → Hosur → Dharmapuri,114,1,0,1,"Hosur Toll Plaza, Kodumudi Stretch, Bhavani Junction"
+Route 2,Salem,Karur,Salem → Tiruppur → Karur,191,5,0,1,"Perundurai Highway, Hosur Toll Plaza"
+Route 981,Erode,Chennai,Erode → Namakkal → Chennai,346,2,0,1,Mettur Ghat
+Route 997,Hosur,Krishnagiri,Hosur → Coimbatore → Krishnagiri,160,3,1,1,"Kodumudi Stretch, Krishnagiri Bypass, Karur NH-44"
+Route 313,Dharmapuri,Karur,Dharmapuri → Hosur → Karur,330,2,0,1,Karur NH-44
+Route 981,Chennai,Coimbatore,Chennai → Chennai → Coimbatore,120,4,0,1,"Kangeyam Circle, Perundurai Highway, Hosur Toll Plaza"
+Route 516,Dharmapuri,Krishnagiri,Dharmapuri → Coimbatore → Krishnagiri,96,3,1,0,"Mettur Ghat, Bhavani Junction, NH-81 Junction"
+Route 530,Krishnagiri,Salem,Krishnagiri → Namakkal → Salem,134,0,1,1,"Kodumudi Stretch, Karur NH-44, Kangeyam Circle"
+Route 659,Tiruppur,Krishnagiri,Tiruppur → Tiruppur → Krishnagiri,188,0,0,1,"Krishnagiri Bypass, Perundurai Highway, Namakkal Bypass"
+Route 238,Hosur,Erode,Hosur → Krishnagiri → Erode,228,4,1,0,"Bhavani Junction, Hosur Toll Plaza, Krishnagiri Bypass"
+Route 112,Namakkal,Chennai,Namakkal → Chennai → Chennai,176,2,0,0,Namakkal Bypass
+Route 191,Coimbatore,Chennai,Coimbatore → Erode → Chennai,154,2,0,0,"Bhavani Junction, NH-81 Junction"
+Route 174,Salem,Hosur,Salem → Coimbatore → Hosur,216,1,0,0,Mettur Ghat
+Route 891,Chennai,Karur,Chennai → Chennai → Karur,333,3,0,1,"Bhavani Junction, Perundurai Highway, Kangeyam Circle"
+Route 466,Tiruppur,Namakkal,Tiruppur → Krishnagiri → Namakkal,172,2,1,0,"Krishnagiri Bypass, Kodumudi Stretch"
+Route 198,Namakkal,Coimbatore,Namakkal → Chennai → Coimbatore,108,3,1,0,"Kodumudi Stretch, Hosur Toll Plaza, Mettur Ghat"
+Route 618,Hosur,Karur,Hosur → Erode → Karur,218,4,0,0,"Namakkal Bypass, Kangeyam Circle"
+Route 484,Dharmapuri,Krishnagiri,Dharmapuri → Coimbatore → Krishnagiri,246,1,1,0,"Kodumudi Stretch, Perundurai Highway, Bhavani Junction"
+Route 4,Hosur,Chennai,Hosur → Karur → Chennai,197,1,1,1,"Hosur Toll Plaza, Karur NH-44, Mettur Ghat"
+Route 221,Coimbatore,Erode,Coimbatore → Karur → Erode,260,2,0,0,"Karur NH-44, Namakkal Bypass, NH-81 Junction"
+Route 123,Karur,Erode,Karur → Karur → Erode,296,5,1,1,"Perundurai Highway, Bhavani Junction"
+Route 693,Tiruppur,Chennai,Tiruppur → Salem → Chennai,336,1,0,0,"Kodumudi Stretch, Kangeyam Circle"
+Route 517,Dharmapuri,Namakkal,Dharmapuri → Salem → Namakkal,163,1,1,1,Namakkal Bypass
+Route 4,Krishnagiri,Tiruppur,Krishnagiri → Tiruppur → Tiruppur,82,4,0,1,Mettur Ghat
+Route 140,Tiruppur,Karur,Tiruppur → Chennai → Karur,105,2,0,0,"Hosur Toll Plaza, Namakkal Bypass"
+Route 500,Erode,Krishnagiri,Erode → Chennai → Krishnagiri,89,1,0,1,Bhavani Junction
+Route 163,Salem,Dharmapuri,Salem → Tiruppur → Dharmapuri,313,0,1,0,"Mettur Ghat, Namakkal Bypass, Karur NH-44"
+Route 654,Erode,Namakkal,Erode → Chennai → Namakkal,176,4,0,0,"Hosur Toll Plaza, Kodumudi Stretch, Karur NH-44"
+Route 502,Salem,Karur,Salem → Coimbatore → Karur,110,1,0,1,"Mettur Ghat, NH-81 Junction"
+Route 681,Coimbatore,Erode,Coimbatore → Tiruppur → Erode,226,0,0,1,Namakkal Bypass
+Route 635,Hosur,Tiruppur,Hosur → Coimbatore → Tiruppur,333,0,0,0,Namakkal Bypass
+Route 776,Erode,Namakkal,Erode → Krishnagiri → Namakkal,206,0,1,0,"Karur NH-44, Namakkal Bypass, Krishnagiri Bypass"
+Route 729,Karur,Krishnagiri,Karur → Coimbatore → Krishnagiri,181,4,0,1,Namakkal Bypass
+Route 778,Chennai,Erode,Chennai → Karur → Erode,88,0,0,0,"Perundurai Highway, NH-81 Junction"
+Route 394,Namakkal,Karur,Namakkal → Namakkal → Karur,335,4,1,0,"Kodumudi Stretch, Karur NH-44, Perundurai Highway"
+Route 13,Tiruppur,Krishnagiri,Tiruppur → Chennai → Krishnagiri,170,1,1,1,Kodumudi Stretch
+Route 538,Salem,Krishnagiri,Salem → Krishnagiri → Krishnagiri,108,3,1,1,Karur NH-44
+Route 400,Karur,Hosur,Karur → Erode → Hosur,222,3,1,0,"Bhavani Junction, Mettur Ghat"
+Route 16,Karur,Krishnagiri,Karur → Dharmapuri → Krishnagiri,279,5,0,1,"Kangeyam Circle, Bhavani Junction, Perundurai Highway"
+Route 485,Chennai,Hosur,Chennai → Chennai → Hosur,132,0,1,0,"Namakkal Bypass, Hosur Toll Plaza"
+Route 326,Dharmapuri,Karur,Dharmapuri → Tiruppur → Karur,232,3,1,0,"NH-81 Junction, Bhavani Junction"
+Route 398,Tiruppur,Karur,Tiruppur → Hosur → Karur,94,1,0,1,"Mettur Ghat, Karur NH-44, NH-81 Junction"
+Route 702,Salem,Tiruppur,Salem → Coimbatore → Tiruppur,280,2,1,1,"NH-81 Junction, Kodumudi Stretch"
+Route 36,Chennai,Erode,Chennai → Coimbatore → Erode,105,2,0,1,"Hosur Toll Plaza, NH-81 Junction"
+Route 365,Namakkal,Hosur,Namakkal → Tiruppur → Hosur,191,1,0,1,"Kodumudi Stretch, Perundurai Highway"
+Route 671,Karur,Hosur,Karur → Chennai → Hosur,99,4,0,1,"Karur NH-44, Kangeyam Circle"
+Route 441,Tiruppur,Karur,Tiruppur → Coimbatore → Karur,299,1,1,0,Namakkal Bypass
+Route 493,Salem,Tiruppur,Salem → Salem → Tiruppur,142,3,1,0,"Kangeyam Circle, Kodumudi Stretch"
+Route 173,Karur,Hosur,Karur → Krishnagiri → Hosur,271,4,0,1,"NH-81 Junction, Krishnagiri Bypass, Perundurai Highway"
+Route 138,Namakkal,Erode,Namakkal → Chennai → Erode,175,5,0,0,"Namakkal Bypass, Kangeyam Circle"
+Route 652,Erode,Tiruppur,Erode → Karur → Tiruppur,262,1,1,1,"Perundurai Highway, Bhavani Junction"
+Route 92,Namakkal,Salem,Namakkal → Namakkal → Salem,342,0,0,0,Perundurai Highway
+Route 117,Chennai,Namakkal,Chennai → Namakkal → Namakkal,125,3,0,0,"Namakkal Bypass, NH-81 Junction"
+Route 518,Hosur,Erode,Hosur → Tiruppur → Erode,311,2,1,1,"NH-81 Junction, Namakkal Bypass"
+Route 958,Chennai,Coimbatore,Chennai → Salem → Coimbatore,280,5,1,1,"Bhavani Junction, Krishnagiri Bypass"
+Route 854,Namakkal,Erode,Namakkal → Krishnagiri → Erode,221,5,0,0,"Namakkal Bypass, Perundurai Highway"
+Route 730,Salem,Namakkal,Salem → Erode → Namakkal,317,5,1,0,Kodumudi Stretch
+Route 765,Chennai,Namakkal,Chennai → Erode → Namakkal,100,4,0,0,NH-81 Junction
+Route 52,Namakkal,Erode,Namakkal → Hosur → Erode,289,2,1,1,"Mettur Ghat, Karur NH-44, Perundurai Highway"
+Route 126,Hosur,Tiruppur,Hosur → Erode → Tiruppur,296,1,1,0,"Hosur Toll Plaza, Namakkal Bypass"
+Route 534,Coimbatore,Namakkal,Coimbatore → Namakkal → Namakkal,344,0,0,0,"Karur NH-44, Mettur Ghat, Krishnagiri Bypass"
+Route 317,Krishnagiri,Tiruppur,Krishnagiri → Hosur → Tiruppur,273,1,1,1,"Namakkal Bypass, Perundurai Highway"
+Route 395,Tiruppur,Krishnagiri,Tiruppur → Salem → Krishnagiri,159,5,1,0,"Krishnagiri Bypass, Namakkal Bypass, Kodumudi Stretch"
+Route 774,Tiruppur,Chennai,Tiruppur → Chennai → Chennai,135,2,1,0,"Bhavani Junction, Karur NH-44, NH-81 Junction"
+Route 741,Erode,Hosur,Erode → Chennai → Hosur,170,3,0,1,"Bhavani Junction, Karur NH-44"
+Route 447,Chennai,Karur,Chennai → Dharmapuri → Karur,189,2,0,1,Hosur Toll Plaza
+Route 781,Dharmapuri,Namakkal,Dharmapuri → Karur → Namakkal,259,2,1,0,Perundurai Highway
+Route 926,Tiruppur,Dharmapuri,Tiruppur → Namakkal → Dharmapuri,231,2,1,1,"Namakkal Bypass, Kodumudi Stretch"
+Route 416,Chennai,Dharmapuri,Chennai → Chennai → Dharmapuri,259,5,0,1,"Hosur Toll Plaza, Perundurai Highway, Mettur Ghat"
+Route 771,Namakkal,Hosur,Namakkal → Salem → Hosur,275,0,0,1,Kodumudi Stretch
+Route 808,Hosur,Krishnagiri,Hosur → Erode → Krishnagiri,244,1,1,1,"NH-81 Junction, Bhavani Junction, Kangeyam Circle"
+Route 886,Namakkal,Tiruppur,Namakkal → Dharmapuri → Tiruppur,214,0,0,0,Hosur Toll Plaza
+Route 260,Krishnagiri,Coimbatore,Krishnagiri → Namakkal → Coimbatore,336,0,0,1,Bhavani Junction
+Route 260,Salem,Dharmapuri,Salem → Karur → Dharmapuri,244,2,1,0,Kangeyam Circle
+Route 179,Chennai,Krishnagiri,Chennai → Tiruppur → Krishnagiri,308,3,0,1,"Krishnagiri Bypass, NH-81 Junction, Karur NH-44"
+Route 877,Coimbatore,Karur,Coimbatore → Coimbatore → Karur,157,1,0,0,"Hosur Toll Plaza, NH-81 Junction, Karur NH-44"
+Route 904,Tiruppur,Dharmapuri,Tiruppur → Erode → Dharmapuri,311,1,0,0,"Perundurai Highway, Bhavani Junction"
+Route 898,Krishnagiri,Coimbatore,Krishnagiri → Tiruppur → Coimbatore,142,3,1,1,"NH-81 Junction, Kangeyam Circle"
+Route 384,Salem,Karur,Salem → Chennai → Karur,102,1,1,0,"Bhavani Junction, Namakkal Bypass"
+Route 742,Dharmapuri,Karur,Dharmapuri → Namakkal → Karur,130,3,1,1,"Mettur Ghat, Krishnagiri Bypass"
+Route 772,Dharmapuri,Karur,Dharmapuri → Dharmapuri → Karur,130,4,0,1,"Krishnagiri Bypass, Hosur Toll Plaza, Perundurai Highway"
+Route 496,Krishnagiri,Coimbatore,Krishnagiri → Hosur → Coimbatore,169,5,0,1,Mettur Ghat
+Route 98,Karur,Namakkal,Karur → Tiruppur → Namakkal,262,1,1,1,"Bhavani Junction, Krishnagiri Bypass, Karur NH-44"
+Route 518,Karur,Salem,Karur → Karur → Salem,219,4,0,1,NH-81 Junction
+Route 525,Salem,Karur,Salem → Karur → Karur,221,1,0,1,"Kodumudi Stretch, Karur NH-44, NH-81 Junction"
+Route 955,Namakkal,Coimbatore,Namakkal → Erode → Coimbatore,287,2,0,1,Hosur Toll Plaza
+Route 28,Chennai,Erode,Chennai → Hosur → Erode,139,5,1,1,"NH-81 Junction, Kangeyam Circle"
+Route 988,Karur,Salem,Karur → Erode → Salem,127,1,1,0,"Kodumudi Stretch, NH-81 Junction"
+Route 93,Hosur,Tiruppur,Hosur → Krishnagiri → Tiruppur,250,1,1,1,"Namakkal Bypass, Mettur Ghat, Krishnagiri Bypass"
+Route 271,Krishnagiri,Tiruppur,Krishnagiri → Dharmapuri → Tiruppur,317,2,0,1,Mettur Ghat
+Route 527,Karur,Krishnagiri,Karur → Salem → Krishnagiri,228,5,0,0,"Namakkal Bypass, Kodumudi Stretch, Mettur Ghat"
+Route 317,Krishnagiri,Coimbatore,Krishnagiri → Karur → Coimbatore,301,3,0,0,Hosur Toll Plaza
+Route 613,Krishnagiri,Coimbatore,Krishnagiri → Tiruppur → Coimbatore,276,3,1,1,"NH-81 Junction, Namakkal Bypass, Karur NH-44"
+Route 417,Hosur,Erode,Hosur → Salem → Erode,324,1,0,0,Krishnagiri Bypass
+Route 232,Namakkal,Chennai,Namakkal → Chennai → Chennai,220,1,0,0,"Kangeyam Circle, Karur NH-44, Mettur Ghat"
+Route 648,Namakkal,Erode,Namakkal → Erode → Erode,84,1,0,1,"NH-81 Junction, Kangeyam Circle, Mettur Ghat"
+Route 537,Tiruppur,Hosur,Tiruppur → Coimbatore → Hosur,304,3,1,0,"Karur NH-44, Mettur Ghat"
+Route 622,Erode,Krishnagiri,Erode → Krishnagiri → Krishnagiri,207,4,1,1,Kodumudi Stretch
+Route 237,Hosur,Erode,Hosur → Hosur → Erode,268,2,1,0,Krishnagiri Bypass
+Route 780,Coimbatore,Dharmapuri,Coimbatore → Erode → Dharmapuri,103,0,1,0,Karur NH-44
+Route 574,Erode,Chennai,Erode → Hosur → Chennai,199,4,0,0,Hosur Toll Plaza
+Route 906,Tiruppur,Dharmapuri,Tiruppur → Hosur → Dharmapuri,172,2,1,1,"Kodumudi Stretch, Krishnagiri Bypass, Bhavani Junction"
+Route 835,Chennai,Coimbatore,Chennai → Coimbatore → Coimbatore,109,0,1,1,"Karur NH-44, NH-81 Junction"
+Route 778,Namakkal,Karur,Namakkal → Dharmapuri → Karur,123,2,1,0,"Karur NH-44, Mettur Ghat, NH-81 Junction"
+Route 220,Dharmapuri,Coimbatore,Dharmapuri → Hosur → Coimbatore,98,0,0,0,"Karur NH-44, Namakkal Bypass, Mettur Ghat"
+Route 896,Chennai,Erode,Chennai → Karur → Erode,230,5,1,1,"Krishnagiri Bypass, Karur NH-44, Kangeyam Circle"
+Route 8,Chennai,Dharmapuri,Chennai → Krishnagiri → Dharmapuri,189,4,0,0,"NH-81 Junction, Kodumudi Stretch"
+Route 809,Coimbatore,Krishnagiri,Coimbatore → Coimbatore → Krishnagiri,226,3,0,0,Karur NH-44
+Route 70,Karur,Namakkal,Karur → Namakkal → Namakkal,84,3,0,1,"Krishnagiri Bypass, Mettur Ghat, Kodumudi Stretch"
+Route 765,Tiruppur,Coimbatore,Tiruppur → Erode → Coimbatore,235,3,1,1,Krishnagiri Bypass
+Route 516,Erode,Namakkal,Erode → Dharmapuri → Namakkal,272,2,0,0,Perundurai Highway
+Route 611,Namakkal,Hosur,Namakkal → Erode → Hosur,305,3,1,1,"Perundurai Highway, Kodumudi Stretch, NH-81 Junction"
+Route 368,Namakkal,Krishnagiri,Namakkal → Dharmapuri → Krishnagiri,267,1,1,1,"Namakkal Bypass, Karur NH-44, Mettur Ghat"
+Route 901,Namakkal,Chennai,Namakkal → Coimbatore → Chennai,201,2,1,0,Karur NH-44
+Route 228,Chennai,Namakkal,Chennai → Salem → Namakkal,249,2,0,0,"Bhavani Junction, NH-81 Junction, Perundurai Highway"
+Route 994,Tiruppur,Erode,Tiruppur → Salem → Erode,287,5,1,0,"Namakkal Bypass, Kangeyam Circle"
+Route 782,Salem,Dharmapuri,Salem → Chennai → Dharmapuri,165,3,0,0,"Mettur Ghat, Namakkal Bypass, Krishnagiri Bypass"
+Route 107,Namakkal,Erode,Namakkal → Dharmapuri → Erode,100,1,0,0,"Bhavani Junction, Kangeyam Circle, Perundurai Highway"
+Route 706,Chennai,Tiruppur,Chennai → Karur → Tiruppur,347,2,1,0,Perundurai Highway
+Route 997,Namakkal,Krishnagiri,Namakkal → Erode → Krishnagiri,232,5,1,1,"Karur NH-44, NH-81 Junction, Kodumudi Stretch"
+Route 926,Namakkal,Salem,Namakkal → Hosur → Salem,229,5,1,1,"Namakkal Bypass, Karur NH-44"
+Route 388,Dharmapuri,Salem,Dharmapuri → Dharmapuri → Salem,150,0,1,0,"Perundurai Highway, NH-81 Junction, Karur NH-44"
+Route 53,Chennai,Dharmapuri,Chennai → Tiruppur → Dharmapuri,320,2,0,0,Karur NH-44
+Route 434,Tiruppur,Namakkal,Tiruppur → Erode → Namakkal,100,3,1,0,"NH-81 Junction, Krishnagiri Bypass"
+Route 320,Karur,Erode,Karur → Karur → Erode,330,2,1,1,"Kodumudi Stretch, Karur NH-44, NH-81 Junction"
+Route 507,Chennai,Tiruppur,Chennai → Chennai → Tiruppur,313,0,1,0,"Perundurai Highway, Kodumudi Stretch"
+Route 915,Erode,Namakkal,Erode → Coimbatore → Namakkal,191,5,1,0,"Krishnagiri Bypass, Kodumudi Stretch"
+Route 6,Salem,Hosur,Salem → Karur → Hosur,349,2,1,1,"Kangeyam Circle, Bhavani Junction, Kodumudi Stretch"
+Route 527,Chennai,Salem,Chennai → Krishnagiri → Salem,132,5,1,0,"Kodumudi Stretch, NH-81 Junction"
+Route 281,Tiruppur,Chennai,Tiruppur → Hosur → Chennai,90,5,0,0,Karur NH-44
+Route 969,Namakkal,Erode,Namakkal → Salem → Erode,277,0,1,1,"Perundurai Highway, NH-81 Junction, Namakkal Bypass"
+Route 745,Tiruppur,Namakkal,Tiruppur → Dharmapuri → Namakkal,159,3,1,1,"Perundurai Highway, Karur NH-44"
+Route 936,Hosur,Krishnagiri,Hosur → Karur → Krishnagiri,294,1,0,0,"Namakkal Bypass, Kangeyam Circle, Perundurai Highway"
+Route 100,Tiruppur,Krishnagiri,Tiruppur → Namakkal → Krishnagiri,141,3,0,1,"Kodumudi Stretch, Mettur Ghat, Kangeyam Circle"
+Route 884,Namakkal,Tiruppur,Namakkal → Hosur → Tiruppur,225,2,0,0,"Kodumudi Stretch, Kangeyam Circle"
+Route 567,Erode,Chennai,Erode → Dharmapuri → Chennai,191,3,1,1,Bhavani Junction
+Route 256,Hosur,Tiruppur,Hosur → Dharmapuri → Tiruppur,346,1,0,0,Kangeyam Circle
+Route 80,Erode,Namakkal,Erode → Erode → Namakkal,153,5,1,1,"Kangeyam Circle, Bhavani Junction"
+Route 837,Dharmapuri,Karur,Dharmapuri → Erode → Karur,132,0,0,1,NH-81 Junction
+Route 343,Dharmapuri,Coimbatore,Dharmapuri → Tiruppur → Coimbatore,167,3,1,0,"Kangeyam Circle, Namakkal Bypass"
+Route 69,Chennai,Dharmapuri,Chennai → Namakkal → Dharmapuri,98,4,0,0,"Perundurai Highway, Krishnagiri Bypass, Namakkal Bypass"
+Route 797,Karur,Coimbatore,Karur → Tiruppur → Coimbatore,334,0,0,1,Karur NH-44
+Route 965,Krishnagiri,Coimbatore,Krishnagiri → Salem → Coimbatore,272,5,1,0,"Karur NH-44, Bhavani Junction, Perundurai Highway"
+Route 225,Dharmapuri,Erode,Dharmapuri → Karur → Erode,291,3,0,1,"Bhavani Junction, Hosur Toll Plaza"
+Route 299,Chennai,Erode,Chennai → Hosur → Erode,234,4,0,0,"Krishnagiri Bypass, Kangeyam Circle, Hosur Toll Plaza"
+Route 982,Namakkal,Coimbatore,Namakkal → Namakkal → Coimbatore,258,0,1,1,Perundurai Highway
+Route 528,Coimbatore,Salem,Coimbatore → Krishnagiri → Salem,172,2,1,1,"Kodumudi Stretch, Namakkal Bypass"
+Route 671,Krishnagiri,Dharmapuri,Krishnagiri → Chennai → Dharmapuri,220,2,0,1,"Kodumudi Stretch, Namakkal Bypass"
+Route 2,Salem,Krishnagiri,Salem → Krishnagiri → Krishnagiri,285,5,1,0,"Kodumudi Stretch, Namakkal Bypass, NH-81 Junction"
+Route 345,Tiruppur,Namakkal,Tiruppur → Krishnagiri → Namakkal,145,1,1,1,Krishnagiri Bypass
+Route 752,Tiruppur,Salem,Tiruppur → Coimbatore → Salem,337,0,0,0,Kangeyam Circle
+Route 158,Hosur,Karur,Hosur → Krishnagiri → Karur,185,4,0,1,Krishnagiri Bypass
+Route 371,Karur,Chennai,Karur → Krishnagiri → Chennai,272,1,1,0,"Bhavani Junction, NH-81 Junction, Perundurai Highway"
+Route 863,Hosur,Dharmapuri,Hosur → Coimbatore → Dharmapuri,98,1,1,1,"Namakkal Bypass, Mettur Ghat, Perundurai Highway"
+Route 560,Karur,Dharmapuri,Karur → Coimbatore → Dharmapuri,94,1,1,0,"Kangeyam Circle, Namakkal Bypass, Kodumudi Stretch"
+Route 442,Chennai,Salem,Chennai → Karur → Salem,137,5,0,1,Karur NH-44
+Route 318,Salem,Coimbatore,Salem → Krishnagiri → Coimbatore,340,2,0,1,"Kangeyam Circle, Kodumudi Stretch"
+Route 745,Erode,Tiruppur,Erode → Salem → Tiruppur,214,3,1,0,"Karur NH-44, Krishnagiri Bypass, Kangeyam Circle"
+Route 214,Erode,Salem,Erode → Chennai → Salem,324,0,0,0,Namakkal Bypass
+Route 679,Coimbatore,Dharmapuri,Coimbatore → Hosur → Dharmapuri,160,0,0,0,"Krishnagiri Bypass, Namakkal Bypass, Kangeyam Circle"
+Route 245,Erode,Chennai,Erode → Krishnagiri → Chennai,319,1,1,0,"Kodumudi Stretch, Hosur Toll Plaza"
+Route 640,Dharmapuri,Coimbatore,Dharmapuri → Karur → Coimbatore,271,4,0,1,Krishnagiri Bypass
+Route 819,Krishnagiri,Hosur,Krishnagiri → Coimbatore → Hosur,129,1,1,0,Mettur Ghat
+Route 16,Krishnagiri,Coimbatore,Krishnagiri → Namakkal → Coimbatore,133,5,0,0,NH-81 Junction
+Route 331,Krishnagiri,Hosur,Krishnagiri → Chennai → Hosur,161,2,1,0,NH-81 Junction
+Route 752,Hosur,Karur,Hosur → Krishnagiri → Karur,297,1,0,1,"Karur NH-44, Mettur Ghat, Hosur Toll Plaza"
+Route 141,Chennai,Hosur,Chennai → Coimbatore → Hosur,311,0,0,1,"NH-81 Junction, Kangeyam Circle, Kodumudi Stretch"
+Route 464,Chennai,Tiruppur,Chennai → Tiruppur → Tiruppur,237,4,0,0,"Karur NH-44, Perundurai Highway"
+Route 187,Tiruppur,Chennai,Tiruppur → Dharmapuri → Chennai,241,1,1,1,"Perundurai Highway, NH-81 Junction, Bhavani Junction"
+Route 633,Namakkal,Dharmapuri,Namakkal → Erode → Dharmapuri,100,2,0,0,"Namakkal Bypass, NH-81 Junction, Kangeyam Circle"
+Route 532,Krishnagiri,Karur,Krishnagiri → Dharmapuri → Karur,219,3,0,0,Krishnagiri Bypass
+Route 163,Chennai,Coimbatore,Chennai → Krishnagiri → Coimbatore,349,1,0,1,"NH-81 Junction, Bhavani Junction, Hosur Toll Plaza"
+Route 776,Hosur,Chennai,Hosur → Hosur → Chennai,290,1,1,0,Mettur Ghat
+Route 357,Namakkal,Krishnagiri,Namakkal → Tiruppur → Krishnagiri,276,3,1,0,Krishnagiri Bypass
+Route 559,Hosur,Namakkal,Hosur → Chennai → Namakkal,258,1,1,0,"Hosur Toll Plaza, NH-81 Junction, Namakkal Bypass"
+Route 27,Hosur,Dharmapuri,Hosur → Krishnagiri → Dharmapuri,324,2,1,0,Perundurai Highway
+Route 945,Krishnagiri,Salem,Krishnagiri → Salem → Salem,345,4,0,0,"NH-81 Junction, Kodumudi Stretch, Kangeyam Circle"
+Route 161,Krishnagiri,Namakkal,Krishnagiri → Salem → Namakkal,236,3,0,0,"Krishnagiri Bypass, Karur NH-44"
+Route 935,Coimbatore,Erode,Coimbatore → Dharmapuri → Erode,162,4,0,0,"NH-81 Junction, Krishnagiri Bypass, Mettur Ghat"
+Route 263,Karur,Salem,Karur → Salem → Salem,161,1,0,0,"Perundurai Highway, Karur NH-44"
+Route 434,Chennai,Dharmapuri,Chennai → Erode → Dharmapuri,233,2,0,0,"Kangeyam Circle, Namakkal Bypass"
+Route 141,Dharmapuri,Erode,Dharmapuri → Namakkal → Erode,331,2,0,0,"Perundurai Highway, Kangeyam Circle, Kodumudi Stretch"
+Route 870,Dharmapuri,Coimbatore,Dharmapuri → Erode → Coimbatore,81,1,0,0,"Bhavani Junction, Namakkal Bypass, Hosur Toll Plaza"
+Route 961,Hosur,Erode,Hosur → Coimbatore → Erode,241,0,0,0,"Perundurai Highway, NH-81 Junction"
+Route 643,Hosur,Chennai,Hosur → Karur → Chennai,107,4,0,0,"Krishnagiri Bypass, Namakkal Bypass"
+Route 689,Krishnagiri,Namakkal,Krishnagiri → Karur → Namakkal,182,0,1,0,"NH-81 Junction, Mettur Ghat"
+Route 291,Karur,Tiruppur,Karur → Tiruppur → Tiruppur,106,4,1,0,"Perundurai Highway, Hosur Toll Plaza"
+Route 819,Tiruppur,Krishnagiri,Tiruppur → Krishnagiri → Krishnagiri,118,3,0,0,"Kangeyam Circle, Kodumudi Stretch, Krishnagiri Bypass"
+Route 10,Karur,Erode,Karur → Karur → Erode,197,3,1,1,"Kodumudi Stretch, Namakkal Bypass"
+Route 339,Tiruppur,Salem,Tiruppur → Hosur → Salem,335,1,1,1,Namakkal Bypass
+Route 454,Erode,Chennai,Erode → Coimbatore → Chennai,293,0,1,0,"Namakkal Bypass, Mettur Ghat, Karur NH-44"
+Route 988,Krishnagiri,Tiruppur,Krishnagiri → Dharmapuri → Tiruppur,107,1,1,0,"NH-81 Junction, Hosur Toll Plaza, Karur NH-44"
+Route 73,Namakkal,Erode,Namakkal → Krishnagiri → Erode,336,0,1,0,"Hosur Toll Plaza, Namakkal Bypass, Perundurai Highway"
+Route 432,Coimbatore,Namakkal,Coimbatore → Salem → Namakkal,210,4,1,0,Hosur Toll Plaza
+Route 440,Coimbatore,Dharmapuri,Coimbatore → Karur → Dharmapuri,226,3,0,0,"Kodumudi Stretch, Perundurai Highway, Kangeyam Circle"
+Route 141,Coimbatore,Hosur,Coimbatore → Namakkal → Hosur,242,0,0,0,Bhavani Junction
+Route 673,Hosur,Krishnagiri,Hosur → Salem → Krishnagiri,91,1,0,1,Kangeyam Circle
+Route 477,Tiruppur,Krishnagiri,Tiruppur → Dharmapuri → Krishnagiri,168,5,1,0,Kodumudi Stretch
+Route 376,Krishnagiri,Chennai,Krishnagiri → Namakkal → Chennai,267,3,1,0,"Mettur Ghat, Bhavani Junction"
+Route 27,Tiruppur,Krishnagiri,Tiruppur → Namakkal → Krishnagiri,251,3,1,0,"NH-81 Junction, Kangeyam Circle, Kodumudi Stretch"
+Route 564,Karur,Coimbatore,Karur → Namakkal → Coimbatore,253,4,0,0,NH-81 Junction
+Route 929,Hosur,Coimbatore,Hosur → Dharmapuri → Coimbatore,192,0,0,0,"Hosur Toll Plaza, NH-81 Junction, Krishnagiri Bypass"
+Route 688,Salem,Karur,Salem → Erode → Karur,220,3,1,0,"Mettur Ghat, Karur NH-44"
+Route 402,Chennai,Erode,Chennai → Chennai → Erode,281,3,0,0,Karur NH-44
+Route 320,Chennai,Hosur,Chennai → Namakkal → Hosur,152,5,0,1,"Krishnagiri Bypass, Hosur Toll Plaza, Bhavani Junction"
+Route 493,Erode,Krishnagiri,Erode → Chennai → Krishnagiri,211,3,0,1,Namakkal Bypass
+Route 192,Chennai,Krishnagiri,Chennai → Salem → Krishnagiri,337,4,0,1,"Mettur Ghat, Namakkal Bypass, Perundurai Highway"
+Route 632,Hosur,Erode,Hosur → Salem → Erode,106,5,1,1,"NH-81 Junction, Hosur Toll Plaza"
+Route 163,Hosur,Krishnagiri,Hosur → Erode → Krishnagiri,211,0,0,1,Bhavani Junction
+Route 48,Namakkal,Hosur,Namakkal → Coimbatore → Hosur,202,1,1,1,"Namakkal Bypass, Krishnagiri Bypass, NH-81 Junction"
+Route 113,Salem,Coimbatore,Salem → Tiruppur → Coimbatore,317,3,0,0,"Kangeyam Circle, Kodumudi Stretch, Hosur Toll Plaza"
+Route 326,Salem,Dharmapuri,Salem → Namakkal → Dharmapuri,80,1,1,0,"NH-81 Junction, Mettur Ghat"
+Route 306,Namakkal,Coimbatore,Namakkal → Erode → Coimbatore,105,0,0,1,"Mettur Ghat, Namakkal Bypass, Hosur Toll Plaza"
+Route 128,Namakkal,Krishnagiri,Namakkal → Dharmapuri → Krishnagiri,189,3,1,1,"Krishnagiri Bypass, Karur NH-44"
+Route 319,Hosur,Namakkal,Hosur → Krishnagiri → Namakkal,348,1,1,0,"Namakkal Bypass, Karur NH-44, Krishnagiri Bypass"
+Route 303,Erode,Chennai,Erode → Hosur → Chennai,145,4,0,0,"Perundurai Highway, Karur NH-44, Mettur Ghat"
+Route 592,Krishnagiri,Coimbatore,Krishnagiri → Karur → Coimbatore,148,1,0,1,"Mettur Ghat, Namakkal Bypass, NH-81 Junction"
+Route 885,Salem,Erode,Salem → Erode → Erode,200,5,1,0,Krishnagiri Bypass
+Route 831,Karur,Hosur,Karur → Krishnagiri → Hosur,90,0,0,1,"Namakkal Bypass, Perundurai Highway"
+Route 940,Namakkal,Hosur,Namakkal → Chennai → Hosur,234,4,0,0,"Kodumudi Stretch, NH-81 Junction"
+Route 97,Karur,Krishnagiri,Karur → Salem → Krishnagiri,200,5,0,0,Mettur Ghat
+Route 783,Tiruppur,Salem,Tiruppur → Karur → Salem,265,2,0,1,"Kangeyam Circle, Karur NH-44, Kodumudi Stretch"
+Route 848,Chennai,Salem,Chennai → Hosur → Salem,251,3,1,0,"Hosur Toll Plaza, Mettur Ghat, Krishnagiri Bypass"
+Route 527,Chennai,Krishnagiri,Chennai → Krishnagiri → Krishnagiri,98,5,1,0,NH-81 Junction
+Route 721,Karur,Coimbatore,Karur → Karur → Coimbatore,184,4,1,1,"Hosur Toll Plaza, Krishnagiri Bypass, Perundurai Highway"
+Route 255,Karur,Tiruppur,Karur → Coimbatore → Tiruppur,334,2,1,0,NH-81 Junction
+Route 177,Hosur,Tiruppur,Hosur → Namakkal → Tiruppur,270,1,0,1,"Karur NH-44, Kodumudi Stretch"
+Route 921,Coimbatore,Tiruppur,Coimbatore → Erode → Tiruppur,183,0,0,1,"Mettur Ghat, Karur NH-44, Kodumudi Stretch"
+Route 419,Krishnagiri,Erode,Krishnagiri → Chennai → Erode,102,5,0,1,Mettur Ghat
+Route 377,Erode,Dharmapuri,Erode → Tiruppur → Dharmapuri,278,0,0,1,"Namakkal Bypass, Kangeyam Circle, Karur NH-44"
+Route 65,Dharmapuri,Salem,Dharmapuri → Erode → Salem,157,4,1,1,"Krishnagiri Bypass, Hosur Toll Plaza"
+Route 959,Tiruppur,Hosur,Tiruppur → Coimbatore → Hosur,256,2,1,1,"Hosur Toll Plaza, Karur NH-44"
+Route 331,Dharmapuri,Salem,Dharmapuri → Salem → Salem,240,2,0,0,"Perundurai Highway, Karur NH-44, NH-81 Junction"
+Route 733,Krishnagiri,Karur,Krishnagiri → Namakkal → Karur,99,0,0,0,"Kangeyam Circle, Mettur Ghat"
+Route 69,Chennai,Erode,Chennai → Krishnagiri → Erode,201,4,1,0,NH-81 Junction
+Route 702,Karur,Namakkal,Karur → Erode → Namakkal,192,2,1,1,Karur NH-44
+Route 829,Dharmapuri,Erode,Dharmapuri → Dharmapuri → Erode,133,5,1,0,"Bhavani Junction, NH-81 Junction"
+Route 138,Tiruppur,Namakkal,Tiruppur → Dharmapuri → Namakkal,85,5,0,1,"Kodumudi Stretch, Kangeyam Circle, Hosur Toll Plaza"
+Route 739,Dharmapuri,Krishnagiri,Dharmapuri → Dharmapuri → Krishnagiri,226,0,0,1,"Mettur Ghat, Perundurai Highway, NH-81 Junction"
+Route 732,Salem,Dharmapuri,Salem → Chennai → Dharmapuri,189,5,0,1,"Hosur Toll Plaza, Perundurai Highway, Bhavani Junction"
+Route 296,Krishnagiri,Hosur,Krishnagiri → Tiruppur → Hosur,223,5,1,1,"NH-81 Junction, Kodumudi Stretch, Hosur Toll Plaza"
+Route 225,Coimbatore,Karur,Coimbatore → Dharmapuri → Karur,155,5,0,0,Namakkal Bypass
+Route 685,Chennai,Coimbatore,Chennai → Salem → Coimbatore,245,3,0,0,"Kodumudi Stretch, Kangeyam Circle, NH-81 Junction"
+Route 359,Erode,Karur,Erode → Krishnagiri → Karur,198,0,0,1,"Mettur Ghat, Kodumudi Stretch"
+Route 345,Hosur,Tiruppur,Hosur → Namakkal → Tiruppur,310,3,1,0,"Namakkal Bypass, Hosur Toll Plaza"
+Route 682,Coimbatore,Hosur,Coimbatore → Dharmapuri → Hosur,239,2,1,1,"Karur NH-44, NH-81 Junction"
+Route 339,Namakkal,Krishnagiri,Namakkal → Tiruppur → Krishnagiri,226,1,0,1,"NH-81 Junction, Kodumudi Stretch, Kangeyam Circle"
+Route 715,Krishnagiri,Chennai,Krishnagiri → Tiruppur → Chennai,349,5,0,1,"Hosur Toll Plaza, Namakkal Bypass, Karur NH-44"
+Route 558,Hosur,Chennai,Hosur → Karur → Chennai,178,2,0,0,Mettur Ghat
+Route 59,Coimbatore,Tiruppur,Coimbatore → Erode → Tiruppur,222,0,1,1,Kangeyam Circle
+Route 264,Erode,Salem,Erode → Coimbatore → Salem,157,1,0,0,"Perundurai Highway, Kangeyam Circle, NH-81 Junction"
+Route 561,Namakkal,Dharmapuri,Namakkal → Karur → Dharmapuri,230,4,1,1,"Hosur Toll Plaza, Perundurai Highway"
+Route 871,Coimbatore,Salem,Coimbatore → Tiruppur → Salem,350,1,0,1,"Hosur Toll Plaza, NH-81 Junction, Kangeyam Circle"
+Route 650,Krishnagiri,Dharmapuri,Krishnagiri → Salem → Dharmapuri,203,2,0,0,"Perundurai Highway, Hosur Toll Plaza, Bhavani Junction"
+Route 61,Krishnagiri,Karur,Krishnagiri → Coimbatore → Karur,335,3,1,1,"Kodumudi Stretch, Kangeyam Circle"
+Route 586,Namakkal,Erode,Namakkal → Dharmapuri → Erode,275,4,0,1,"Karur NH-44, Mettur Ghat, Krishnagiri Bypass"
+Route 619,Erode,Coimbatore,Erode → Salem → Coimbatore,274,3,1,1,Kangeyam Circle
+Route 57,Hosur,Salem,Hosur → Tiruppur → Salem,163,3,1,0,"Perundurai Highway, Hosur Toll Plaza"
+Route 140,Erode,Karur,Erode → Dharmapuri → Karur,108,3,0,0,"Karur NH-44, Namakkal Bypass, Mettur Ghat"
+Route 183,Hosur,Namakkal,Hosur → Karur → Namakkal,134,5,1,1,"NH-81 Junction, Bhavani Junction, Kodumudi Stretch"
+Route 550,Tiruppur,Dharmapuri,Tiruppur → Karur → Dharmapuri,100,1,1,1,Hosur Toll Plaza
+Route 711,Namakkal,Hosur,Namakkal → Karur → Hosur,283,5,0,1,"Namakkal Bypass, Kangeyam Circle, Krishnagiri Bypass"
+Route 860,Tiruppur,Krishnagiri,Tiruppur → Hosur → Krishnagiri,159,3,0,0,Mettur Ghat
+Route 189,Coimbatore,Dharmapuri,Coimbatore → Hosur → Dharmapuri,274,1,0,1,"Namakkal Bypass, Krishnagiri Bypass, Karur NH-44"
+Route 413,Salem,Karur,Salem → Erode → Karur,156,2,1,1,"Namakkal Bypass, NH-81 Junction"
+Route 856,Salem,Tiruppur,Salem → Erode → Tiruppur,267,3,1,1,Kodumudi Stretch
+Route 828,Karur,Krishnagiri,Karur → Krishnagiri → Krishnagiri,251,0,0,1,"Bhavani Junction, Perundurai Highway, Karur NH-44"
+Route 55,Erode,Chennai,Erode → Dharmapuri → Chennai,202,4,0,0,"NH-81 Junction, Kodumudi Stretch"
+Route 134,Tiruppur,Namakkal,Tiruppur → Namakkal → Namakkal,195,4,0,0,"Kodumudi Stretch, Perundurai Highway, Namakkal Bypass"
+Route 515,Krishnagiri,Coimbatore,Krishnagiri → Hosur → Coimbatore,287,3,0,0,NH-81 Junction
+Route 350,Coimbatore,Namakkal,Coimbatore → Erode → Namakkal,286,5,0,0,"Krishnagiri Bypass, Namakkal Bypass"
+Route 910,Karur,Hosur,Karur → Coimbatore → Hosur,335,5,0,1,"Karur NH-44, Namakkal Bypass"
+Route 569,Hosur,Chennai,Hosur → Tiruppur → Chennai,162,0,1,0,Hosur Toll Plaza
+Route 883,Salem,Chennai,Salem → Coimbatore → Chennai,97,1,1,0,"Bhavani Junction, Krishnagiri Bypass"
+Route 278,Tiruppur,Erode,Tiruppur → Dharmapuri → Erode,341,2,0,0,"Kodumudi Stretch, NH-81 Junction"
+Route 181,Salem,Krishnagiri,Salem → Coimbatore → Krishnagiri,295,5,0,1,"Perundurai Highway, Namakkal Bypass, Bhavani Junction"
+Route 996,Erode,Salem,Erode → Chennai → Salem,301,1,0,1,"Namakkal Bypass, Mettur Ghat"
+Route 313,Hosur,Krishnagiri,Hosur → Salem → Krishnagiri,250,3,0,1,Namakkal Bypass
+Route 7,Karur,Salem,Karur → Karur → Salem,86,5,0,1,"Krishnagiri Bypass, Kangeyam Circle, Kodumudi Stretch"
+Route 279,Hosur,Namakkal,Hosur → Karur → Namakkal,183,0,1,1,"Perundurai Highway, Hosur Toll Plaza, Kangeyam Circle"
+Route 436,Salem,Erode,Salem → Coimbatore → Erode,225,5,0,1,Hosur Toll Plaza
+Route 265,Dharmapuri,Coimbatore,Dharmapuri → Chennai → Coimbatore,206,2,0,0,Namakkal Bypass
+Route 675,Karur,Namakkal,Karur → Tiruppur → Namakkal,304,5,1,0,"Kangeyam Circle, Krishnagiri Bypass"
+Route 407,Krishnagiri,Chennai,Krishnagiri → Dharmapuri → Chennai,211,2,0,1,"Hosur Toll Plaza, Bhavani Junction"
+Route 550,Namakkal,Tiruppur,Namakkal → Namakkal → Tiruppur,312,3,0,0,"Krishnagiri Bypass, Hosur Toll Plaza, Mettur Ghat"
+Route 912,Hosur,Tiruppur,Hosur → Krishnagiri → Tiruppur,96,3,1,0,"NH-81 Junction, Kodumudi Stretch"
+Route 194,Salem,Erode,Salem → Tiruppur → Erode,104,0,1,0,"Perundurai Highway, Karur NH-44"
+Route 413,Tiruppur,Coimbatore,Tiruppur → Tiruppur → Coimbatore,342,5,0,0,Kodumudi Stretch
+Route 830,Hosur,Namakkal,Hosur → Coimbatore → Namakkal,130,5,0,0,"Kodumudi Stretch, Kangeyam Circle"
+Route 805,Krishnagiri,Karur,Krishnagiri → Erode → Karur,235,0,1,0,"Namakkal Bypass, Bhavani Junction"
+Route 452,Krishnagiri,Namakkal,Krishnagiri → Namakkal → Namakkal,186,0,0,0,"Kodumudi Stretch, Krishnagiri Bypass"
+Route 550,Hosur,Dharmapuri,Hosur → Salem → Dharmapuri,151,0,1,0,"Bhavani Junction, NH-81 Junction"
+Route 312,Salem,Hosur,Salem → Namakkal → Hosur,223,1,1,0,Namakkal Bypass
+Route 199,Karur,Tiruppur,Karur → Salem → Tiruppur,183,5,0,0,"NH-81 Junction, Bhavani Junction, Kodumudi Stretch"
+Route 207,Tiruppur,Chennai,Tiruppur → Coimbatore → Chennai,195,0,1,0,"Perundurai Highway, Mettur Ghat"
+Route 852,Erode,Coimbatore,Erode → Tiruppur → Coimbatore,255,0,1,0,"NH-81 Junction, Kodumudi Stretch"
+Route 913,Hosur,Coimbatore,Hosur → Hosur → Coimbatore,132,3,0,1,Perundurai Highway
+Route 446,Erode,Namakkal,Erode → Namakkal → Namakkal,182,5,1,0,"Perundurai Highway, NH-81 Junction, Namakkal Bypass"
+Route 595,Krishnagiri,Dharmapuri,Krishnagiri → Dharmapuri → Dharmapuri,278,3,1,1,"Kodumudi Stretch, Bhavani Junction, Namakkal Bypass"
+Route 264,Erode,Salem,Erode → Namakkal → Salem,314,1,1,1,"Namakkal Bypass, Perundurai Highway"
+Route 245,Hosur,Dharmapuri,Hosur → Coimbatore → Dharmapuri,295,2,0,0,"Kangeyam Circle, Hosur Toll Plaza, Mettur Ghat"
+Route 329,Krishnagiri,Erode,Krishnagiri → Hosur → Erode,313,1,0,1,"Mettur Ghat, Kangeyam Circle, Perundurai Highway"
+Route 101,Chennai,Krishnagiri,Chennai → Coimbatore → Krishnagiri,223,2,0,1,"Karur NH-44, Perundurai Highway, Hosur Toll Plaza"
+Route 486,Erode,Karur,Erode → Erode → Karur,345,1,0,0,NH-81 Junction
+Route 583,Salem,Hosur,Salem → Namakkal → Hosur,238,3,0,1,"Karur NH-44, Perundurai Highway"
+Route 164,Erode,Namakkal,Erode → Dharmapuri → Namakkal,198,4,0,0,"Kangeyam Circle, Bhavani Junction"
+Route 193,Salem,Karur,Salem → Krishnagiri → Karur,286,5,1,1,Hosur Toll Plaza
+Route 527,Coimbatore,Krishnagiri,Coimbatore → Karur → Krishnagiri,332,0,1,1,"Mettur Ghat, NH-81 Junction, Namakkal Bypass"
+Route 354,Erode,Karur,Erode → Hosur → Karur,209,5,1,1,Krishnagiri Bypass
+Route 467,Chennai,Hosur,Chennai → Hosur → Hosur,90,0,1,1,"Namakkal Bypass, Karur NH-44, Perundurai Highway"
+Route 377,Tiruppur,Hosur,Tiruppur → Coimbatore → Hosur,229,2,1,1,"Bhavani Junction, Krishnagiri Bypass"
+Route 705,Dharmapuri,Salem,Dharmapuri → Tiruppur → Salem,202,2,1,1,"Karur NH-44, Perundurai Highway"
+Route 245,Namakkal,Coimbatore,Namakkal → Namakkal → Coimbatore,234,1,1,0,"Perundurai Highway, Mettur Ghat, Kangeyam Circle"
+Route 773,Erode,Namakkal,Erode → Hosur → Namakkal,84,2,1,0,"Kodumudi Stretch, Mettur Ghat"
+Route 563,Erode,Salem,Erode → Dharmapuri → Salem,350,0,1,1,Hosur Toll Plaza
+Route 183,Tiruppur,Salem,Tiruppur → Coimbatore → Salem,235,4,1,0,"Kangeyam Circle, Namakkal Bypass"
+Route 116,Krishnagiri,Chennai,Krishnagiri → Krishnagiri → Chennai,203,2,0,1,Namakkal Bypass
+Route 492,Erode,Coimbatore,Erode → Dharmapuri → Coimbatore,138,3,0,0,"Kodumudi Stretch, NH-81 Junction, Perundurai Highway"
+Route 666,Namakkal,Coimbatore,Namakkal → Karur → Coimbatore,216,0,1,1,"Namakkal Bypass, NH-81 Junction"
+Route 116,Hosur,Karur,Hosur → Hosur → Karur,137,2,1,1,Karur NH-44
+Route 187,Hosur,Salem,Hosur → Tiruppur → Salem,117,4,1,1,Kangeyam Circle
+Route 664,Salem,Hosur,Salem → Chennai → Hosur,131,0,1,0,"Bhavani Junction, Namakkal Bypass, Perundurai Highway"
+Route 450,Chennai,Erode,Chennai → Coimbatore → Erode,182,3,1,0,Hosur Toll Plaza
+Route 630,Erode,Chennai,Erode → Krishnagiri → Chennai,216,0,0,0,Bhavani Junction
+Route 528,Chennai,Krishnagiri,Chennai → Dharmapuri → Krishnagiri,334,2,0,1,"Hosur Toll Plaza, Mettur Ghat, Krishnagiri Bypass"
+Route 386,Salem,Krishnagiri,Salem → Dharmapuri → Krishnagiri,317,2,0,0,Mettur Ghat
+Route 351,Namakkal,Hosur,Namakkal → Krishnagiri → Hosur,261,0,1,1,Namakkal Bypass
+Route 733,Coimbatore,Chennai,Coimbatore → Dharmapuri → Chennai,153,2,0,1,"Mettur Ghat, Bhavani Junction"
+Route 890,Namakkal,Chennai,Namakkal → Namakkal → Chennai,273,0,0,1,"Krishnagiri Bypass, Bhavani Junction, Mettur Ghat"
+Route 932,Chennai,Karur,Chennai → Erode → Karur,191,5,1,0,"Namakkal Bypass, NH-81 Junction"
+Route 731,Tiruppur,Namakkal,Tiruppur → Namakkal → Namakkal,128,4,1,0,"Krishnagiri Bypass, Namakkal Bypass, NH-81 Junction"
+Route 698,Tiruppur,Coimbatore,Tiruppur → Salem → Coimbatore,274,5,1,0,"Namakkal Bypass, Karur NH-44, Kodumudi Stretch"
+Route 540,Karur,Erode,Karur → Salem → Erode,142,5,0,1,Perundurai Highway
+Route 979,Tiruppur,Karur,Tiruppur → Tiruppur → Karur,210,5,1,1,Namakkal Bypass
+Route 65,Chennai,Karur,Chennai → Krishnagiri → Karur,349,1,0,0,"Mettur Ghat, Kangeyam Circle, Hosur Toll Plaza"
+Route 627,Namakkal,Chennai,Namakkal → Dharmapuri → Chennai,151,2,0,1,"Namakkal Bypass, Hosur Toll Plaza, Kangeyam Circle"
+Route 673,Erode,Salem,Erode → Dharmapuri → Salem,204,4,1,1,"Mettur Ghat, NH-81 Junction, Namakkal Bypass"
+Route 659,Namakkal,Coimbatore,Namakkal → Hosur → Coimbatore,303,0,0,0,"Kodumudi Stretch, NH-81 Junction, Karur NH-44"
+Route 254,Coimbatore,Karur,Coimbatore → Erode → Karur,337,3,1,0,"Hosur Toll Plaza, Kodumudi Stretch, Mettur Ghat"
+Route 212,Tiruppur,Hosur,Tiruppur → Coimbatore → Hosur,292,4,1,1,NH-81 Junction
+Route 859,Namakkal,Karur,Namakkal → Chennai → Karur,309,0,0,1,Bhavani Junction
+Route 411,Chennai,Namakkal,Chennai → Hosur → Namakkal,274,2,1,0,"NH-81 Junction, Krishnagiri Bypass, Kodumudi Stretch"
+Route 750,Coimbatore,Namakkal,Coimbatore → Hosur → Namakkal,194,3,0,0,"Kodumudi Stretch, Kangeyam Circle"
+Route 511,Tiruppur,Hosur,Tiruppur → Salem → Hosur,165,4,0,1,"Hosur Toll Plaza, Kangeyam Circle"
+Route 707,Karur,Krishnagiri,Karur → Krishnagiri → Krishnagiri,205,3,0,0,"NH-81 Junction, Mettur Ghat, Bhavani Junction"
+Route 122,Karur,Hosur,Karur → Namakkal → Hosur,225,0,1,0,"Kodumudi Stretch, Krishnagiri Bypass, Namakkal Bypass"
+Route 629,Krishnagiri,Salem,Krishnagiri → Karur → Salem,306,1,1,1,Hosur Toll Plaza
+Route 174,Salem,Dharmapuri,Salem → Karur → Dharmapuri,207,2,1,0,"Bhavani Junction, Kangeyam Circle"
+Route 575,Namakkal,Erode,Namakkal → Erode → Erode,255,4,0,1,"Krishnagiri Bypass, Kodumudi Stretch, Karur NH-44"
+Route 446,Erode,Coimbatore,Erode → Karur → Coimbatore,93,4,0,1,"Kodumudi Stretch, Bhavani Junction, Namakkal Bypass"
+Route 280,Chennai,Coimbatore,Chennai → Dharmapuri → Coimbatore,329,0,0,1,Kangeyam Circle
+Route 43,Karur,Salem,Karur → Coimbatore → Salem,306,0,0,0,"Kangeyam Circle, Perundurai Highway"
+Route 867,Salem,Erode,Salem → Namakkal → Erode,255,1,1,1,Hosur Toll Plaza
+Route 39,Coimbatore,Hosur,Coimbatore → Namakkal → Hosur,283,4,1,0,Krishnagiri Bypass
+Route 138,Hosur,Dharmapuri,Hosur → Salem → Dharmapuri,175,1,0,1,"Hosur Toll Plaza, Krishnagiri Bypass, Namakkal Bypass"
+Route 760,Coimbatore,Dharmapuri,Coimbatore → Chennai → Dharmapuri,140,0,0,1,Bhavani Junction
+Route 976,Erode,Dharmapuri,Erode → Chennai → Dharmapuri,164,5,1,0,"Kodumudi Stretch, Kangeyam Circle, Mettur Ghat"
+Route 511,Dharmapuri,Salem,Dharmapuri → Coimbatore → Salem,177,4,1,1,"Krishnagiri Bypass, Hosur Toll Plaza, Mettur Ghat"
+Route 602,Salem,Krishnagiri,Salem → Karur → Krishnagiri,210,4,0,1,Perundurai Highway
+Route 321,Karur,Erode,Karur → Erode → Erode,123,2,1,1,Perundurai Highway
+Route 878,Karur,Chennai,Karur → Erode → Chennai,249,0,1,0,Perundurai Highway
+Route 409,Tiruppur,Salem,Tiruppur → Coimbatore → Salem,226,5,1,1,Bhavani Junction
+Route 458,Chennai,Namakkal,Chennai → Coimbatore → Namakkal,250,2,0,0,"Mettur Ghat, Perundurai Highway, Kodumudi Stretch"
+Route 746,Chennai,Coimbatore,Chennai → Dharmapuri → Coimbatore,129,4,0,1,"Mettur Ghat, Perundurai Highway, Krishnagiri Bypass"
+Route 334,Namakkal,Salem,Namakkal → Erode → Salem,254,5,0,1,Kodumudi Stretch
+Route 885,Chennai,Erode,Chennai → Erode → Erode,210,2,1,1,"NH-81 Junction, Karur NH-44"
+Route 118,Krishnagiri,Coimbatore,Krishnagiri → Namakkal → Coimbatore,256,0,1,1,"NH-81 Junction, Karur NH-44, Hosur Toll Plaza"
+Route 587,Erode,Karur,Erode → Salem → Karur,99,0,0,0,"Hosur Toll Plaza, Perundurai Highway"
+Route 293,Chennai,Namakkal,Chennai → Salem → Namakkal,220,0,1,1,"Mettur Ghat, Bhavani Junction"
+Route 700,Krishnagiri,Dharmapuri,Krishnagiri → Coimbatore → Dharmapuri,316,1,1,0,"Kangeyam Circle, Karur NH-44, Namakkal Bypass"
+Route 980,Krishnagiri,Chennai,Krishnagiri → Karur → Chennai,211,4,1,0,Bhavani Junction
+Route 236,Dharmapuri,Hosur,Dharmapuri → Chennai → Hosur,245,1,1,1,"NH-81 Junction, Bhavani Junction"
+Route 881,Namakkal,Hosur,Namakkal → Salem → Hosur,338,3,1,0,"Krishnagiri Bypass, Karur NH-44, Namakkal Bypass"
+Route 373,Karur,Chennai,Karur → Krishnagiri → Chennai,161,4,0,1,"Kangeyam Circle, NH-81 Junction"
+Route 528,Krishnagiri,Coimbatore,Krishnagiri → Salem → Coimbatore,137,0,0,0,Mettur Ghat
+Route 476,Tiruppur,Namakkal,Tiruppur → Tiruppur → Namakkal,143,5,0,0,Bhavani Junction
+Route 408,Tiruppur,Chennai,Tiruppur → Karur → Chennai,272,1,0,0,"Namakkal Bypass, Bhavani Junction"
+Route 453,Salem,Hosur,Salem → Coimbatore → Hosur,86,0,0,1,"Perundurai Highway, Mettur Ghat, Namakkal Bypass"
+Route 207,Dharmapuri,Karur,Dharmapuri → Krishnagiri → Karur,115,3,0,1,"Krishnagiri Bypass, Mettur Ghat, NH-81 Junction"
+Route 570,Salem,Erode,Salem → Dharmapuri → Erode,86,1,0,0,"Karur NH-44, Perundurai Highway, Hosur Toll Plaza"
+Route 422,Chennai,Hosur,Chennai → Salem → Hosur,278,2,1,0,"Karur NH-44, Hosur Toll Plaza"
+Route 52,Coimbatore,Namakkal,Coimbatore → Krishnagiri → Namakkal,123,2,1,1,Krishnagiri Bypass
+Route 112,Chennai,Dharmapuri,Chennai → Salem → Dharmapuri,287,3,0,1,Bhavani Junction
+Route 259,Erode,Karur,Erode → Karur → Karur,319,5,1,1,NH-81 Junction
+Route 378,Krishnagiri,Namakkal,Krishnagiri → Coimbatore → Namakkal,286,3,0,0,Perundurai Highway
+Route 455,Erode,Tiruppur,Erode → Salem → Tiruppur,304,0,0,0,Hosur Toll Plaza
+Route 251,Chennai,Dharmapuri,Chennai → Erode → Dharmapuri,322,4,1,0,"Mettur Ghat, Kangeyam Circle"
+Route 420,Salem,Tiruppur,Salem → Hosur → Tiruppur,118,5,1,0,"Mettur Ghat, Kangeyam Circle, Perundurai Highway"
+Route 189,Tiruppur,Chennai,Tiruppur → Dharmapuri → Chennai,173,5,1,0,"Mettur Ghat, Karur NH-44"
+Route 961,Erode,Tiruppur,Erode → Tiruppur → Tiruppur,193,0,0,1,"Kangeyam Circle, Bhavani Junction"
+Route 76,Namakkal,Karur,Namakkal → Tiruppur → Karur,349,3,1,0,"Krishnagiri Bypass, Kodumudi Stretch"
+Route 50,Hosur,Dharmapuri,Hosur → Tiruppur → Dharmapuri,117,2,0,0,"Bhavani Junction, Namakkal Bypass"
+Route 412,Karur,Tiruppur,Karur → Namakkal → Tiruppur,251,4,0,1,Karur NH-44
+Route 387,Hosur,Namakkal,Hosur → Salem → Namakkal,224,3,1,1,"Namakkal Bypass, NH-81 Junction, Krishnagiri Bypass"
+Route 425,Namakkal,Salem,Namakkal → Tiruppur → Salem,154,1,0,1,"Karur NH-44, Bhavani Junction, Kangeyam Circle"
+Route 99,Krishnagiri,Hosur,Krishnagiri → Dharmapuri → Hosur,95,2,0,0,"Kangeyam Circle, NH-81 Junction"
+Route 478,Tiruppur,Krishnagiri,Tiruppur → Karur → Krishnagiri,346,1,1,0,Krishnagiri Bypass
+Route 118,Salem,Chennai,Salem → Hosur → Chennai,245,0,0,0,Kangeyam Circle
+Route 626,Tiruppur,Hosur,Tiruppur → Erode → Hosur,284,1,1,1,Krishnagiri Bypass
+Route 692,Krishnagiri,Dharmapuri,Krishnagiri → Namakkal → Dharmapuri,178,5,1,0,"Mettur Ghat, Hosur Toll Plaza"
+Route 70,Salem,Tiruppur,Salem → Erode → Tiruppur,149,4,0,1,"Kangeyam Circle, Hosur Toll Plaza"
+Route 100,Erode,Hosur,Erode → Karur → Hosur,304,2,1,1,"Kodumudi Stretch, Hosur Toll Plaza"
+Route 853,Dharmapuri,Erode,Dharmapuri → Tiruppur → Erode,277,0,0,0,"Kodumudi Stretch, Bhavani Junction, Namakkal Bypass"
+Route 125,Coimbatore,Dharmapuri,Coimbatore → Coimbatore → Dharmapuri,294,2,0,0,Mettur Ghat
+Route 698,Salem,Erode,Salem → Chennai → Erode,350,5,0,1,"Krishnagiri Bypass, Hosur Toll Plaza"
+Route 134,Hosur,Tiruppur,Hosur → Hosur → Tiruppur,319,3,1,1,"Mettur Ghat, Bhavani Junction, Kangeyam Circle"
+Route 380,Dharmapuri,Hosur,Dharmapuri → Namakkal → Hosur,104,0,0,1,"Krishnagiri Bypass, Mettur Ghat"
+Route 683,Coimbatore,Dharmapuri,Coimbatore → Dharmapuri → Dharmapuri,264,5,0,1,"NH-81 Junction, Karur NH-44"
+Route 243,Chennai,Coimbatore,Chennai → Salem → Coimbatore,93,1,0,0,Kodumudi Stretch
+Route 275,Karur,Tiruppur,Karur → Chennai → Tiruppur,115,2,0,1,Kangeyam Circle
+Route 212,Tiruppur,Erode,Tiruppur → Chennai → Erode,164,4,0,1,Hosur Toll Plaza
+Route 493,Chennai,Hosur,Chennai → Salem → Hosur,140,4,1,1,"Hosur Toll Plaza, Karur NH-44"
+Route 421,Namakkal,Chennai,Namakkal → Salem → Chennai,312,3,0,1,"Kodumudi Stretch, Namakkal Bypass, Perundurai Highway"
+Route 24,Coimbatore,Namakkal,Coimbatore → Chennai → Namakkal,256,0,1,1,"Hosur Toll Plaza, Krishnagiri Bypass, Kangeyam Circle"
+Route 549,Tiruppur,Erode,Tiruppur → Krishnagiri → Erode,140,1,0,1,"Perundurai Highway, Kangeyam Circle, Karur NH-44"
+Route 801,Chennai,Namakkal,Chennai → Krishnagiri → Namakkal,141,1,0,1,Karur NH-44
+Route 896,Salem,Tiruppur,Salem → Hosur → Tiruppur,121,0,1,1,"Mettur Ghat, Namakkal Bypass"
+Route 490,Erode,Karur,Erode → Dharmapuri → Karur,88,3,0,1,"NH-81 Junction, Namakkal Bypass, Krishnagiri Bypass"
+Route 516,Chennai,Dharmapuri,Chennai → Erode → Dharmapuri,243,0,1,1,"NH-81 Junction, Karur NH-44, Hosur Toll Plaza"
+Route 11,Karur,Tiruppur,Karur → Chennai → Tiruppur,333,5,1,0,Bhavani Junction
+Route 663,Salem,Chennai,Salem → Dharmapuri → Chennai,141,5,1,1,"NH-81 Junction, Hosur Toll Plaza"
+Route 191,Karur,Namakkal,Karur → Chennai → Namakkal,80,2,1,0,"Kangeyam Circle, Hosur Toll Plaza"
+Route 455,Salem,Coimbatore,Salem → Krishnagiri → Coimbatore,316,3,1,1,"Krishnagiri Bypass, Perundurai Highway"
+Route 126,Erode,Dharmapuri,Erode → Dharmapuri → Dharmapuri,312,0,1,1,"Bhavani Junction, Mettur Ghat, Perundurai Highway"
+Route 302,Krishnagiri,Coimbatore,Krishnagiri → Hosur → Coimbatore,133,5,1,1,"Kangeyam Circle, Karur NH-44"
+Route 144,Coimbatore,Hosur,Coimbatore → Erode → Hosur,199,4,0,1,Namakkal Bypass
+Route 264,Erode,Chennai,Erode → Dharmapuri → Chennai,93,0,1,1,"Perundurai Highway, Krishnagiri Bypass"
+Route 6,Erode,Salem,Erode → Tiruppur → Salem,104,0,0,0,Namakkal Bypass
+Route 621,Krishnagiri,Namakkal,Krishnagiri → Namakkal → Namakkal,237,4,1,1,"Kodumudi Stretch, NH-81 Junction"
+Route 456,Hosur,Karur,Hosur → Hosur → Karur,349,1,0,0,Kodumudi Stretch
+Route 11,Karur,Chennai,Karur → Dharmapuri → Chennai,97,0,1,0,Perundurai Highway
+Route 455,Tiruppur,Karur,Tiruppur → Namakkal → Karur,116,1,0,1,NH-81 Junction
+Route 696,Coimbatore,Krishnagiri,Coimbatore → Coimbatore → Krishnagiri,103,3,1,0,"Perundurai Highway, Bhavani Junction"
+Route 767,Dharmapuri,Hosur,Dharmapuri → Karur → Hosur,339,5,1,0,"Mettur Ghat, Kangeyam Circle, Kodumudi Stretch"
+Route 616,Tiruppur,Erode,Tiruppur → Erode → Erode,124,2,0,0,"Kangeyam Circle, Hosur Toll Plaza, Mettur Ghat"
+Route 631,Dharmapuri,Chennai,Dharmapuri → Karur → Chennai,271,3,0,0,"Kangeyam Circle, NH-81 Junction, Namakkal Bypass"
+Route 364,Krishnagiri,Erode,Krishnagiri → Salem → Erode,141,5,0,0,"Krishnagiri Bypass, Karur NH-44, Namakkal Bypass"
+Route 178,Dharmapuri,Namakkal,Dharmapuri → Chennai → Namakkal,171,5,1,0,Kodumudi Stretch
+Route 348,Krishnagiri,Dharmapuri,Krishnagiri → Coimbatore → Dharmapuri,323,0,0,0,"NH-81 Junction, Kodumudi Stretch, Kangeyam Circle"
+Route 289,Tiruppur,Erode,Tiruppur → Tiruppur → Erode,107,5,0,1,Bhavani Junction
+Route 511,Tiruppur,Coimbatore,Tiruppur → Chennai → Coimbatore,178,2,0,0,"Namakkal Bypass, Bhavani Junction"
+Route 296,Namakkal,Krishnagiri,Namakkal → Hosur → Krishnagiri,133,1,0,1,"Kodumudi Stretch, Krishnagiri Bypass, Hosur Toll Plaza"
+Route 375,Hosur,Krishnagiri,Hosur → Hosur → Krishnagiri,177,4,1,1,"NH-81 Junction, Hosur Toll Plaza"
+Route 107,Chennai,Coimbatore,Chennai → Chennai → Coimbatore,311,0,1,0,"Kangeyam Circle, Mettur Ghat, Kodumudi Stretch"
+Route 454,Hosur,Erode,Hosur → Hosur → Erode,244,0,1,0,Kodumudi Stretch
+Route 77,Karur,Namakkal,Karur → Salem → Namakkal,299,2,1,1,"Bhavani Junction, Karur NH-44, NH-81 Junction"
+Route 449,Erode,Chennai,Erode → Krishnagiri → Chennai,117,4,0,0,Krishnagiri Bypass
+Route 41,Namakkal,Hosur,Namakkal → Hosur → Hosur,196,3,0,0,"Kangeyam Circle, Hosur Toll Plaza"
+Route 836,Erode,Salem,Erode → Salem → Salem,268,0,1,1,"Namakkal Bypass, Mettur Ghat, Krishnagiri Bypass"
+Route 192,Erode,Karur,Erode → Hosur → Karur,301,1,1,1,"Krishnagiri Bypass, Mettur Ghat, Karur NH-44"
+Route 510,Coimbatore,Namakkal,Coimbatore → Dharmapuri → Namakkal,138,1,0,0,"Kodumudi Stretch, Perundurai Highway, Kangeyam Circle"
+Route 632,Krishnagiri,Salem,Krishnagiri → Coimbatore → Salem,258,3,1,0,"Namakkal Bypass, Hosur Toll Plaza, Mettur Ghat"
+Route 377,Karur,Tiruppur,Karur → Tiruppur → Tiruppur,196,5,1,1,NH-81 Junction
+Route 670,Tiruppur,Salem,Tiruppur → Hosur → Salem,291,5,1,1,Bhavani Junction
+Route 412,Erode,Coimbatore,Erode → Krishnagiri → Coimbatore,193,2,0,0,"Perundurai Highway, Karur NH-44"
+Route 976,Karur,Chennai,Karur → Dharmapuri → Chennai,249,1,0,1,Krishnagiri Bypass
+Route 233,Dharmapuri,Coimbatore,Dharmapuri → Namakkal → Coimbatore,103,2,0,0,"Bhavani Junction, NH-81 Junction, Perundurai Highway"
+Route 98,Erode,Tiruppur,Erode → Chennai → Tiruppur,112,1,1,0,Mettur Ghat
+Route 689,Erode,Karur,Erode → Namakkal → Karur,219,1,1,1,Kangeyam Circle
+Route 224,Chennai,Tiruppur,Chennai → Tiruppur → Tiruppur,261,5,0,0,NH-81 Junction
+Route 82,Namakkal,Dharmapuri,Namakkal → Tiruppur → Dharmapuri,303,3,1,0,Kangeyam Circle
+Route 398,Chennai,Karur,Chennai → Hosur → Karur,122,2,0,0,"Bhavani Junction, Kodumudi Stretch, Namakkal Bypass"
+Route 48,Namakkal,Coimbatore,Namakkal → Dharmapuri → Coimbatore,316,5,0,1,NH-81 Junction
+Route 803,Erode,Karur,Erode → Tiruppur → Karur,199,0,0,1,"NH-81 Junction, Perundurai Highway"
+Route 175,Karur,Namakkal,Karur → Salem → Namakkal,207,2,1,1,"Bhavani Junction, Kodumudi Stretch"
+Route 878,Hosur,Karur,Hosur → Krishnagiri → Karur,270,4,0,1,"Bhavani Junction, NH-81 Junction, Karur NH-44"
+Route 287,Dharmapuri,Chennai,Dharmapuri → Chennai → Chennai,214,2,0,0,"Hosur Toll Plaza, Kangeyam Circle, NH-81 Junction"
+Route 472,Coimbatore,Karur,Coimbatore → Salem → Karur,247,1,0,0,"Perundurai Highway, Kodumudi Stretch, Bhavani Junction"
+Route 551,Krishnagiri,Namakkal,Krishnagiri → Erode → Namakkal,157,0,1,1,"Bhavani Junction, Kodumudi Stretch"
+Route 37,Coimbatore,Salem,Coimbatore → Krishnagiri → Salem,304,5,0,1,Kodumudi Stretch
+Route 495,Salem,Krishnagiri,Salem → Dharmapuri → Krishnagiri,153,2,1,0,"Krishnagiri Bypass, Karur NH-44"
+Route 166,Tiruppur,Erode,Tiruppur → Coimbatore → Erode,225,3,1,1,NH-81 Junction
+Route 889,Karur,Erode,Karur → Tiruppur → Erode,183,4,1,1,"Krishnagiri Bypass, NH-81 Junction"
+Route 539,Namakkal,Erode,Namakkal → Hosur → Erode,110,3,1,0,"Mettur Ghat, Bhavani Junction, Hosur Toll Plaza"
+Route 816,Dharmapuri,Karur,Dharmapuri → Tiruppur → Karur,214,1,0,1,Mettur Ghat
+Route 738,Coimbatore,Erode,Coimbatore → Namakkal → Erode,88,2,1,0,Perundurai Highway
+Route 1000,Tiruppur,Krishnagiri,Tiruppur → Salem → Krishnagiri,248,2,0,0,NH-81 Junction
+Route 77,Dharmapuri,Tiruppur,Dharmapuri → Dharmapuri → Tiruppur,103,2,0,1,Perundurai Highway
+Route 940,Namakkal,Erode,Namakkal → Dharmapuri → Erode,250,3,0,0,"Bhavani Junction, Hosur Toll Plaza, Perundurai Highway"
+Route 62,Chennai,Namakkal,Chennai → Hosur → Namakkal,93,3,0,1,"Kodumudi Stretch, Karur NH-44, Perundurai Highway"
+Route 651,Hosur,Tiruppur,Hosur → Salem → Tiruppur,118,4,0,1,"Bhavani Junction, Kodumudi Stretch, Kangeyam Circle"
+Route 239,Tiruppur,Erode,Tiruppur → Erode → Erode,97,2,0,0,"Namakkal Bypass, Krishnagiri Bypass, NH-81 Junction"
+Route 809,Dharmapuri,Coimbatore,Dharmapuri → Karur → Coimbatore,153,3,0,1,"Karur NH-44, Hosur Toll Plaza"
+Route 534,Krishnagiri,Hosur,Krishnagiri → Coimbatore → Hosur,176,5,0,1,Namakkal Bypass
+Route 204,Namakkal,Salem,Namakkal → Erode → Salem,149,5,0,0,"Bhavani Junction, NH-81 Junction, Mettur Ghat"
+Route 143,Namakkal,Erode,Namakkal → Namakkal → Erode,327,3,1,1,Kangeyam Circle
+Route 417,Namakkal,Karur,Namakkal → Chennai → Karur,304,2,0,1,Bhavani Junction
+Route 27,Karur,Erode,Karur → Krishnagiri → Erode,92,0,1,1,Krishnagiri Bypass
+Route 815,Krishnagiri,Dharmapuri,Krishnagiri → Coimbatore → Dharmapuri,347,1,1,0,Kangeyam Circle
+Route 7,Namakkal,Krishnagiri,Namakkal → Erode → Krishnagiri,147,4,1,1,"NH-81 Junction, Krishnagiri Bypass"
+Route 403,Krishnagiri,Hosur,Krishnagiri → Hosur → Hosur,191,1,0,0,Namakkal Bypass
+Route 980,Salem,Coimbatore,Salem → Hosur → Coimbatore,104,3,1,0,"Perundurai Highway, Mettur Ghat, Kodumudi Stretch"
+Route 786,Hosur,Tiruppur,Hosur → Chennai → Tiruppur,294,0,1,0,Bhavani Junction
+Route 882,Tiruppur,Krishnagiri,Tiruppur → Hosur → Krishnagiri,131,2,1,1,"Bhavani Junction, Perundurai Highway, Krishnagiri Bypass"
+Route 17,Tiruppur,Coimbatore,Tiruppur → Chennai → Coimbatore,138,4,1,0,"Perundurai Highway, Hosur Toll Plaza"
+Route 467,Coimbatore,Erode,Coimbatore → Coimbatore → Erode,232,4,0,0,"Kangeyam Circle, Mettur Ghat, Krishnagiri Bypass"
+Route 770,Namakkal,Karur,Namakkal → Dharmapuri → Karur,131,5,0,1,"Krishnagiri Bypass, Kodumudi Stretch, Namakkal Bypass"
+Route 461,Tiruppur,Namakkal,Tiruppur → Salem → Namakkal,283,1,1,1,"Kodumudi Stretch, NH-81 Junction"
+Route 419,Krishnagiri,Dharmapuri,Krishnagiri → Namakkal → Dharmapuri,321,1,0,1,Namakkal Bypass
+Route 423,Hosur,Erode,Hosur → Karur → Erode,97,2,0,1,Krishnagiri Bypass
+Route 14,Dharmapuri,Salem,Dharmapuri → Erode → Salem,138,2,0,0,NH-81 Junction
+Route 32,Krishnagiri,Namakkal,Krishnagiri → Hosur → Namakkal,260,4,1,1,Hosur Toll Plaza
+Route 75,Chennai,Karur,Chennai → Karur → Karur,80,1,0,1,"Mettur Ghat, NH-81 Junction, Namakkal Bypass"
+Route 395,Chennai,Tiruppur,Chennai → Hosur → Tiruppur,193,1,1,1,Bhavani Junction
+Route 419,Erode,Krishnagiri,Erode → Namakkal → Krishnagiri,314,3,1,0,"Namakkal Bypass, Kodumudi Stretch, Kangeyam Circle"
+Route 876,Coimbatore,Hosur,Coimbatore → Dharmapuri → Hosur,86,0,0,1,Mettur Ghat
+Route 115,Erode,Hosur,Erode → Dharmapuri → Hosur,207,3,1,0,"Kodumudi Stretch, Mettur Ghat"
+Route 232,Chennai,Dharmapuri,Chennai → Dharmapuri → Dharmapuri,203,3,0,0,"Kodumudi Stretch, Namakkal Bypass"
+Route 926,Erode,Namakkal,Erode → Tiruppur → Namakkal,157,2,0,0,Hosur Toll Plaza
+Route 827,Karur,Salem,Karur → Dharmapuri → Salem,160,2,0,1,"Bhavani Junction, Kodumudi Stretch"
+Route 236,Namakkal,Chennai,Namakkal → Tiruppur → Chennai,220,3,1,1,Hosur Toll Plaza
+Route 649,Chennai,Dharmapuri,Chennai → Hosur → Dharmapuri,133,4,1,1,"Karur NH-44, Perundurai Highway, Krishnagiri Bypass"
+Route 254,Erode,Karur,Erode → Salem → Karur,258,2,1,0,Krishnagiri Bypass
+Route 282,Erode,Chennai,Erode → Krishnagiri → Chennai,295,2,0,0,"Karur NH-44, Mettur Ghat, Krishnagiri Bypass"
+Route 353,Erode,Tiruppur,Erode → Karur → Tiruppur,119,2,0,0,"NH-81 Junction, Krishnagiri Bypass"
+Route 425,Karur,Chennai,Karur → Dharmapuri → Chennai,171,3,0,1,"Namakkal Bypass, Kodumudi Stretch"
+Route 82,Karur,Hosur,Karur → Krishnagiri → Hosur,113,2,1,0,"NH-81 Junction, Mettur Ghat"
+Route 414,Coimbatore,Salem,Coimbatore → Salem → Salem,162,2,1,0,Hosur Toll Plaza
+Route 830,Tiruppur,Hosur,Tiruppur → Erode → Hosur,167,1,0,0,"NH-81 Junction, Mettur Ghat, Kodumudi Stretch"
+Route 539,Namakkal,Chennai,Namakkal → Dharmapuri → Chennai,101,4,1,0,"Mettur Ghat, Hosur Toll Plaza"
+Route 805,Hosur,Coimbatore,Hosur → Tiruppur → Coimbatore,124,3,0,1,"Hosur Toll Plaza, NH-81 Junction"
+Route 580,Chennai,Tiruppur,Chennai → Dharmapuri → Tiruppur,193,3,0,1,"Karur NH-44, Namakkal Bypass"
+Route 600,Karur,Coimbatore,Karur → Dharmapuri → Coimbatore,104,0,1,1,"Namakkal Bypass, Karur NH-44, Krishnagiri Bypass"
+Route 32,Salem,Coimbatore,Salem → Karur → Coimbatore,96,3,0,0,Namakkal Bypass
+Route 748,Erode,Dharmapuri,Erode → Karur → Dharmapuri,268,4,0,0,"Kangeyam Circle, Bhavani Junction"
+Route 159,Chennai,Karur,Chennai → Hosur → Karur,244,0,1,0,"Krishnagiri Bypass, NH-81 Junction, Bhavani Junction"
+Route 67,Namakkal,Krishnagiri,Namakkal → Dharmapuri → Krishnagiri,277,1,0,1,Kodumudi Stretch
+Route 555,Hosur,Dharmapuri,Hosur → Tiruppur → Dharmapuri,184,4,0,1,"Mettur Ghat, NH-81 Junction, Hosur Toll Plaza"
+Route 910,Erode,Tiruppur,Erode → Karur → Tiruppur,112,4,0,1,NH-81 Junction
+Route 401,Namakkal,Hosur,Namakkal → Karur → Hosur,256,2,0,0,"Karur NH-44, Mettur Ghat, Hosur Toll Plaza"
+Route 38,Tiruppur,Erode,Tiruppur → Coimbatore → Erode,100,4,1,0,Mettur Ghat
+Route 628,Salem,Karur,Salem → Karur → Karur,343,5,0,1,NH-81 Junction
+Route 339,Tiruppur,Hosur,Tiruppur → Krishnagiri → Hosur,178,1,1,1,Namakkal Bypass
+Route 608,Erode,Dharmapuri,Erode → Chennai → Dharmapuri,100,5,0,0,"Mettur Ghat, Perundurai Highway, Kangeyam Circle"
+Route 662,Namakkal,Erode,Namakkal → Tiruppur → Erode,111,5,0,1,"Bhavani Junction, Perundurai Highway"
+Route 767,Hosur,Karur,Hosur → Krishnagiri → Karur,145,0,1,1,Hosur Toll Plaza
+Route 264,Dharmapuri,Erode,Dharmapuri → Namakkal → Erode,310,2,1,1,Mettur Ghat
+Route 942,Namakkal,Salem,Namakkal → Chennai → Salem,266,4,1,1,"Mettur Ghat, Bhavani Junction, Namakkal Bypass"
+Route 843,Salem,Tiruppur,Salem → Erode → Tiruppur,166,2,0,0,"Kangeyam Circle, Bhavani Junction"
+Route 975,Tiruppur,Hosur,Tiruppur → Krishnagiri → Hosur,312,4,1,0,"Perundurai Highway, Namakkal Bypass, Kodumudi Stretch"
+Route 563,Chennai,Namakkal,Chennai → Krishnagiri → Namakkal,318,3,0,1,"Karur NH-44, Kodumudi Stretch"
+Route 905,Erode,Namakkal,Erode → Tiruppur → Namakkal,205,4,0,0,"Karur NH-44, Mettur Ghat"
+Route 416,Coimbatore,Karur,Coimbatore → Namakkal → Karur,106,4,0,0,Hosur Toll Plaza
+Route 123,Hosur,Karur,Hosur → Chennai → Karur,82,1,1,1,"Karur NH-44, Perundurai Highway, Hosur Toll Plaza"
+Route 299,Salem,Hosur,Salem → Tiruppur → Hosur,174,5,0,0,"Perundurai Highway, NH-81 Junction"
+Route 552,Chennai,Krishnagiri,Chennai → Karur → Krishnagiri,237,3,1,0,"Mettur Ghat, Krishnagiri Bypass"
+Route 996,Dharmapuri,Hosur,Dharmapuri → Erode → Hosur,209,2,1,1,"Perundurai Highway, Namakkal Bypass, Krishnagiri Bypass"
+Route 661,Krishnagiri,Chennai,Krishnagiri → Krishnagiri → Chennai,312,5,0,1,Karur NH-44
+Route 707,Namakkal,Karur,Namakkal → Chennai → Karur,300,0,0,0,"NH-81 Junction, Krishnagiri Bypass"
+Route 828,Tiruppur,Coimbatore,Tiruppur → Dharmapuri → Coimbatore,266,4,0,0,Mettur Ghat
+Route 297,Salem,Coimbatore,Salem → Coimbatore → Coimbatore,123,1,0,1,"Namakkal Bypass, Bhavani Junction"
+Route 739,Hosur,Karur,Hosur → Salem → Karur,251,1,0,1,Perundurai Highway
+Route 391,Hosur,Karur,Hosur → Dharmapuri → Karur,156,1,0,0,"Bhavani Junction, Namakkal Bypass"
+Route 354,Namakkal,Hosur,Namakkal → Erode → Hosur,198,0,0,0,"Bhavani Junction, Kangeyam Circle"
+Route 356,Chennai,Tiruppur,Chennai → Coimbatore → Tiruppur,218,0,0,1,"Namakkal Bypass, Hosur Toll Plaza"
+Route 736,Karur,Krishnagiri,Karur → Chennai → Krishnagiri,239,1,0,1,NH-81 Junction
+Route 802,Hosur,Namakkal,Hosur → Namakkal → Namakkal,103,4,0,0,Krishnagiri Bypass
+Route 500,Chennai,Tiruppur,Chennai → Krishnagiri → Tiruppur,101,2,1,1,Bhavani Junction
+Route 231,Namakkal,Krishnagiri,Namakkal → Coimbatore → Krishnagiri,158,5,0,1,"Perundurai Highway, Kangeyam Circle"
+Route 833,Karur,Dharmapuri,Karur → Karur → Dharmapuri,152,5,0,1,"Hosur Toll Plaza, Kangeyam Circle"
+Route 659,Krishnagiri,Hosur,Krishnagiri → Coimbatore → Hosur,328,1,0,0,"Kodumudi Stretch, Namakkal Bypass"
+Route 67,Namakkal,Chennai,Namakkal → Hosur → Chennai,290,1,0,0,"NH-81 Junction, Kodumudi Stretch, Kangeyam Circle"
+Route 540,Krishnagiri,Chennai,Krishnagiri → Karur → Chennai,238,5,0,0,"Namakkal Bypass, Karur NH-44"
+Route 996,Tiruppur,Coimbatore,Tiruppur → Karur → Coimbatore,120,3,1,0,"Kodumudi Stretch, Mettur Ghat"
+Route 282,Salem,Erode,Salem → Salem → Erode,150,4,1,1,"NH-81 Junction, Karur NH-44"
+Route 535,Dharmapuri,Coimbatore,Dharmapuri → Krishnagiri → Coimbatore,332,1,1,0,"Perundurai Highway, Bhavani Junction"
+Route 798,Karur,Salem,Karur → Tiruppur → Salem,187,3,0,0,Kodumudi Stretch
+Route 879,Hosur,Dharmapuri,Hosur → Dharmapuri → Dharmapuri,94,3,1,1,Namakkal Bypass
+Route 95,Dharmapuri,Salem,Dharmapuri → Krishnagiri → Salem,127,5,0,1,"Perundurai Highway, NH-81 Junction"
+Route 1001,Pollachi,Salem,Tirupur,230,8,1,1,Palladam traffic light
+Route 1001,Pollachi,Salem,Karur,215,7,0,0,"NH-81 Junction, Karur NH-44"

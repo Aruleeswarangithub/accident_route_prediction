@@ -1,49 +1,53 @@
 from flask import Flask, request, render_template
 import pandas as pd
-import os
 
-# Initialize Flask app
 app = Flask(__name__)
 
-# Load dataset
+# Load the dataset
 df = pd.read_csv('routes.csv')
 
-# Home page route to show the form
+# Function to calculate safety percentage
+def calculate_safety(route):
+    score = 100
+
+    # Deduct points based on blackspot count, night-time travel, and poor streetlight
+    score -= route['blackspot_count'] * 5
+    score -= route['night_time'] * 10
+    score -= route['poor_streetlight'] * 10
+
+    # Minimum 40% safety guaranteed
+    return max(score, 40)
+
+# Route for form input
 @app.route('/')
-def index():
+def home():
     return render_template('index.html')
 
-# Prediction route to handle the form submission and search for route details
+# Route for prediction
 @app.route('/predict', methods=['POST'])
 def predict():
-    # Extract data from the form
-    source = request.form['source']
-    destination = request.form['destination']
-    
-    # Search for the route in the dataset
-    route = df[(df['source'] == source) & (df['destination'] == destination)]
-    
-    if not route.empty:
-        # If route found, display details
-        route_details = route.iloc[0]
-        return render_template(
-            'index.html', 
-            source=source,
-            destination=destination,
-            safety_level=route_details['safety_level'],
-            distance_km=route_details['distance_km'],
-            blackspot_count=route_details['blackspot_count'],
-            night_time=route_details['night_time'],
-            poor_streetlight=route_details['poor_streetlight'],
-            via=route_details['via'],
-            accident_prone_area=route_details['accident_prone_area']
-        )
-    else:
-        # If no route found
-        return render_template('index.html', source=source, destination=destination,
-                               error="No route found for the given source and destination.")
+    source = request.form['source'].strip()
+    destination = request.form['destination'].strip()
 
-# Run app using proper host and port for Render
+    # Filter matching routes
+    matching_routes = df[
+        (df['source'].str.lower() == source.lower()) & 
+        (df['destination'].str.lower() == destination.lower())
+    ]
+
+    if matching_routes.empty:
+        return render_template('index.html', error="No routes found between the selected locations.")
+
+    # Add safety score
+    matching_routes = matching_routes.copy()
+    matching_routes['safety_percentage'] = matching_routes.apply(calculate_safety, axis=1)
+
+    # Sort by safety
+    sorted_routes = matching_routes.sort_values(by='safety_percentage', ascending=False)
+
+    # Send to UI
+    routes = sorted_routes.to_dict(orient='records')
+    return render_template('index.html', routes=routes, source=source, destination=destination)
+
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
+    app.run(debug=True)

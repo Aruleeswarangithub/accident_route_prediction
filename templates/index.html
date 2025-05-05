@@ -1,43 +1,48 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accident Route Prediction</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Safe Route Predictor</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <div class="container">
-        <h1>Accident Route Prediction</h1>
-        
-        <form action="/predict" method="POST">
-            <label for="source">Source City:</label>
-            <input type="text" name="source" id="source" value="{{ request.form.source or '' }}" required>
-            
-            <label for="destination">Destination City:</label>
-            <input type="text" name="destination" id="destination" value="{{ request.form.destination or '' }}" required>
-            
-            <button type="submit">Get Route Details</button>
-        </form>
 
-        {% if safety_level %}
-            <div class="result">
-                <h2>Route Details</h2>
-                <p><strong>Safety Level:</strong> {{ safety_level }}</p>
-                <p><strong>Distance:</strong> {{ distance_km }} km</p>
-                <p><strong>Blackspot Count:</strong> {{ blackspot_count }}</p>
-                <p><strong>Night Time:</strong> {{ night_time }}</p>
-                <p><strong>Poor Streetlight:</strong> {{ poor_streetlight }}</p>
-                <p><strong>Via:</strong> {{ via }}</p>
-                <p><strong>Accident Prone Area:</strong> {{ accident_prone_area }}</p>
+<div class="container">
+    <h2>🚗 Route Safety Prediction</h2>
+
+    <form method="POST" action="/predict">
+        <label for="source">Source City:</label>
+        <input type="text" name="source" id="source" required placeholder="e.g., Salem">
+
+        <label for="destination">Destination City:</label>
+        <input type="text" name="destination" id="destination" required placeholder="e.g., Tiruppur">
+
+        <input type="submit" value="Find Safe Routes">
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if routes %}
+        <h3>Showing {{ routes|length }} route(s) from <span class="highlight">{{ source }}</span> to <span class="highlight">{{ destination }}</span></h3>
+        {% for route in routes %}
+            <div class="route-card">
+                <h4>{{ route.route_name }} ({{ route.safety_percentage }}% Safe)</h4>
+                <div class="route-info">
+                    <p><strong>Route:</strong> {{ route.via }}</p>
+                    <p><strong>Distance:</strong> {{ route.distance_km }} km</p>
+                    <p><strong>Blackspots:</strong> {{ route.blackspot_count }}</p>
+                    <p><strong>Night Time:</strong> {{ route.night_time }}</p>
+                    <p><strong>Poor Streetlights:</strong> {{ route.poor_streetlight }}</p>
+                    <p><strong>Accident Areas:</strong> {{ route.accident_prone_areas }}</p>
+                </div>
             </div>
-        {% endif %}
-        
-        {% if error %}
-            <div class="error">
-                <p>{{ error }}</p>
-            </div>
-        {% endif %}
-    </div>
+        {% endfor %}
+    {% endif %}
+</div>
+
 </body>
 </html>
