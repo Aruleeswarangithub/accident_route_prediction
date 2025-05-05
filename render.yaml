@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: accident-route-prediction
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
